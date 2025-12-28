@@ -1,0 +1,137 @@
+[
+  {
+    "alias": "afegan",
+    "canonical": "afeghan",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "afeganian",
+    "canonical": "afeghan",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "afeghba",
+    "canonical": "afeghan",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "bubaa",
+    "canonical": "bubba",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "bubba kush",
+    "canonical": "bubba",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "sower haze",
+    "canonical": "sower",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "super lemos",
+    "canonical": "super lemon",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "export",
+    "canonical": "exporta",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "exports",
+    "canonical": "exporta",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "ice kalifa",
+    "canonical": "ice khalifa",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "gelo khalifa",
+    "canonical": "ice khalifa",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "ice nugg",
+    "canonical": "ice nugg",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "gelo nugg",
+    "canonical": "ice nugg",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "nugg",
+    "canonical": "ice nugg",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "dry milano",
+    "canonical": "dry",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "dry milao",
+    "canonical": "dry",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "dry suíço",
+    "canonical": "dry",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "cnn",
+    "canonical": "bala cnn",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "canadian",
+    "canonical": "bala canadian",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "elon musk",
+    "canonical": "bala elon musk",
+    "reason": "variante inicial"
+  },
+  {
+    "alias": "afeganian kush",
+    "canonical": "afeghan",
+    "reason": "variante do produto afeghan com sufixo kush"
+  },
+  {
+    "alias": "bubaa kush",
+    "canonical": "bubba",
+    "reason": "erro de digitação comum de bubba com sufixo kush"
+  },
+  {
+    "alias": "pren",
+    "canonical": "prensado",
+    "reason": "abreviação comum para prensado"
+  },
+  {
+    "alias": "abacaxi",
+    "canonical": "abacaxi",
+    "reason": "novo produto identificado"
+  },
+  {
+    "alias": "escama",
+    "canonical": "escama",
+    "reason": "novo produto identificado"
+  },
+  {
+    "alias": "meleca",
+    "canonical": "meleca",
+    "reason": "produto novo identificado, verificar se é nome válido ou alias de produto existente"
+  },
+  {
+    "alias": "MD",
+    "canonical": "MD",
+    "reason": "novo produto identificado, necessita classificação"
+  }
+]

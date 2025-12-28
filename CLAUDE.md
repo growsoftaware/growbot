@@ -1,0 +1,198 @@
+# GrowBot - Contexto para Claude
+
+## O que é este projeto
+Sou um agente exportador que ajuda o André a processar exports de conversas do WhatsApp contendo pedidos de entregas. Meu trabalho é parsear, validar e exportar esses dados de forma estruturada.
+
+## Fluxo de trabalho
+```
+exports/*.txt → Parser → LLM (Claude/OpenAI) → Validador → output/*.csv
+```
+
+## Estrutura do projeto
+```
+growbot/
+├── exports/           # Colar arquivos .txt do WhatsApp aqui
+├── output/            # JSONs gerados (entregas, estoque, recarga, resgate)
+├── growbot.duckdb     # Banco de dados analítico (DuckDB)
+├── aliases.json       # Dicionário de produtos (aprendizado contínuo)
+├── main.py            # CLI principal - orquestra tudo
+├── parser.py          # Pré-processador determinístico
+├── llm.py             # Wrapper Claude/OpenAI
+├── validator.py       # Validação de output
+├── db.py              # Banco de dados DuckDB
+├── api.py             # FastAPI (UI futura)
+└── system_prompt.md   # Prompt do extrator
+```
+
+## Como funciona o Parser (parser.py)
+
+### Formato de entrada
+```
+[26/12/25, 00:50:56] Akita: 4 abacaxi e 3 escama
+[26/12/25, 00:50:57] Akita: 🏎️2
+...
+[26/12/25, 00:51:09] Akita: Rodrigo
+Quinta
+```
+
+### Regras importantes
+1. **Marcador 🏎️N** = fecha um bloco de entrega (ID = N com 3 dígitos)
+2. **Linha sem [timestamp]** = continua pertencendo ao bloco anterior
+3. **Rodapé (driver + data)** = aplica a TODAS as entregas anteriores da sessão
+4. **Nova sessão** = quando aparece novo driver, IDs reiniciam
+5. **"Francisco"** ≠ "FRANCIS" (usar word boundary no regex)
+
+### Drivers válidos (ENUM)
+RAFA, FRANCIS, RODRIGO, KAROL, ARTHUR
+
+### Detecção de data
+- DD/MM/YYYY, DD/MM/YY, DD/MM
+- "DD do MM" (ex: 26 do 12)
+- Dia da semana (segunda...domingo) → calcula relativo ao timestamp
+
+## Como funciona o LLM (llm.py)
+
+### O que o LLM faz
+- Extrai produtos/quantidades de frases humanas ("me vê 20g de pren")
+- Separa múltiplos produtos ("4 abacaxi e 3 escama" → 2 itens)
+- Detecta endereços
+- Sugere novos aliases para o dicionário
+
+### O que o Parser faz (não precisa de LLM)
+- Separar blocos por 🏎️
+- Detectar driver/data do rodapé
+- Aplicar driver/data a todos os blocos da sessão
+
+## Comandos úteis
+
+```bash
+# Ativar ambiente
+cd /Users/andremaciel/dev/growbot
+source venv/bin/activate
+
+# Testar parser
+python parser.py exports/_chat.txt
+
+# Processar com Claude
+python main.py --provider claude --limit 10
+
+# Processar com OpenAI
+python main.py --provider openai --limit 10
+
+# Processar tudo
+python main.py --provider claude
+```
+
+## Output esperado (CSV)
+```
+id_pedido_item,id_sale_delivery,produto,quantidade,endereco_1,endereco_2,driver,data_entrega
+1,001,prensado,20,,,RODRIGO,25/12/2025
+1,002,abacaxi,4,,,RODRIGO,25/12/2025
+2,002,escama,3,,,RODRIGO,25/12/2025
+```
+
+## Aprendizado (aliases.json)
+O LLM sugere novos aliases quando encontra variantes:
+- "pren" → "prensado"
+- "dry suíço" → "dry"
+- "ice kalifa" → "ice khalifa"
+
+Revisar e aprovar antes de usar na próxima execução.
+
+## Regras de Quantidade (IMPORTANTE)
+- **Sem unidade** = quantidade em unidades (ex: "4 abacaxi" = 4)
+- **1g** = 1 unidade (ex: "1g meleca" = 1)
+- **Xg** = X unidades (ex: "5g arizona" = 5)
+- **Prensado 20g** = 1 unidade (caso especial)
+
+Sempre validar com o André quando aparecer unidade de medida diferente.
+
+## Comandos Claude CLI
+
+```bash
+# Validar export interativamente
+/validar exports/_chat.txt
+
+# Auditar output vs raw
+/auditar
+
+# Comparar duas versões
+/comparar output/v1.json output/v2.json
+
+# Gerar relatório
+/relatorio totais
+/relatorio driver RODRIGO
+/relatorio produto
+/relatorio periodo 26/12/2025
+
+# Importar novos tipos de dados
+/importar estoque arquivo.txt
+/importar recarga arquivo.txt
+/importar resgate arquivo.txt
+
+# Sincronizar dados com DuckDB
+/sync
+/sync --force
+```
+
+## Banco de Dados (DuckDB)
+
+Após `/sync`, consultas analíticas instantâneas:
+
+```bash
+python db.py saldo           # Saldo por driver
+python db.py saldo RODRIGO   # Saldo de um driver
+python db.py negativos       # Produtos com saldo negativo (alertas)
+python db.py stats           # Estatísticas gerais
+python db.py query "SELECT * FROM v_saldo_produto WHERE driver='RODRIGO'"
+```
+
+### Views disponíveis
+- `v_saldo_driver` - Estoque + Recargas - Saídas = Saldo
+- `v_saldo_produto` - Saldo por produto por driver
+- `v_produtos_negativos` - Alertas de inconsistência
+- `v_movimentos_dia` - Resumo diário por tipo/driver
+
+## Agents Disponíveis
+- **validador** - Processa exports bloco a bloco
+- **auditor** - Verifica qualidade (raw vs JSON)
+- **relatorios** - Gera métricas e análises
+- **importador** - Parser inteligente para novos formatos
+
+## Tipos de Dados
+
+### entregas (atual)
+Pedidos de entrega validados do WhatsApp.
+```
+Output: output/entregas_validadas.json
+Campos: id_sale_delivery, produto, quantidade, endereco_1, driver, data_entrega
+```
+
+### estoque
+Estoque atual de cada driver.
+```
+Output: output/estoque_YYYYMMDD.json
+Campos: driver, produto, quantidade, data_registro
+```
+
+### recarga
+Produtos retirados do estoque central para o driver entregar.
+```
+Output: output/recarga_YYYYMMDD_DRIVER.json
+Campos: driver, produto, quantidade, data_recarga, observacao
+```
+
+### resgate
+Transferência de produtos entre drivers (um "resgata" do outro).
+```
+Output: output/resgate_YYYYMMDD.json
+Campos: driver_origem, driver_destino, produto, quantidade, data_resgate, motivo
+```
+
+Ver schemas completos em `.claude/schemas/`
+
+## Próximos passos sugeridos
+1. [ ] UI web (FastAPI + React/shadcn) para comparar outputs
+2. [ ] Detecção de endereços no parser (antes do LLM)
+3. [ ] Batch processing para arquivos grandes
+4. [x] Banco de dados analítico (DuckDB implementado)

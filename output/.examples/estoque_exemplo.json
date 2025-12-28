@@ -1,0 +1,18 @@
+{
+  "tipo": "estoque",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 100, "data_registro": "27/12/2025"},
+    {"driver": "RODRIGO", "produto": "arizona", "quantidade": 50, "data_registro": "27/12/2025"},
+    {"driver": "RODRIGO", "produto": "marmita", "quantidade": 30, "data_registro": "27/12/2025"},
+    {"driver": "KAROL", "produto": "prensado", "quantidade": 80, "data_registro": "27/12/2025"},
+    {"driver": "KAROL", "produto": "escama", "quantidade": 40, "data_registro": "27/12/2025"},
+    {"driver": "ARTHUR", "produto": "dry", "quantidade": 25, "data_registro": "27/12/2025"},
+    {"driver": "ARTHUR", "produto": "afghan", "quantidade": 20, "data_registro": "27/12/2025"}
+  ],
+  "resumo": {
+    "total_drivers": 3,
+    "total_produtos": 7,
+    "total_unidades": 345
+  }
+}

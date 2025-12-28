@@ -1,0 +1,19 @@
+{
+  "tipo": "retiradas",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 50, "data_retirada": "27/12/2025", "observacao": null},
+    {"driver": "RODRIGO", "produto": "arizona", "quantidade": 30, "data_retirada": "27/12/2025", "observacao": "pra festa do bairro"},
+    {"driver": "KAROL", "produto": "marmita", "quantidade": 20, "data_retirada": "27/12/2025", "observacao": null},
+    {"driver": "ARTHUR", "produto": "dry", "quantidade": 15, "data_retirada": "27/12/2025", "observacao": "cliente especial"}
+  ],
+  "resumo": {
+    "total_retiradas": 4,
+    "total_unidades": 115,
+    "por_driver": {
+      "RODRIGO": 80,
+      "KAROL": 20,
+      "ARTHUR": 15
+    }
+  }
+}

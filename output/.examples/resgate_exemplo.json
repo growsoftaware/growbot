@@ -1,0 +1,19 @@
+{
+  "tipo": "resgate",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver_origem": "RODRIGO", "driver_destino": "KAROL", "produto": "prensado", "quantidade": 10, "data_resgate": "27/12/2025", "motivo": "acabou estoque da Karol"},
+    {"driver_origem": "ARTHUR", "driver_destino": "FRANCIS", "produto": "arizona", "quantidade": 5, "data_resgate": "27/12/2025", "motivo": null},
+    {"driver_origem": "KAROL", "driver_destino": "RODRIGO", "produto": "escama", "quantidade": 8, "data_resgate": "27/12/2025", "motivo": "cliente pediu urgente"}
+  ],
+  "resumo": {
+    "total_transferencias": 3,
+    "total_unidades": 23,
+    "saldo_por_driver": {
+      "RODRIGO": -2,
+      "KAROL": 2,
+      "ARTHUR": -5,
+      "FRANCIS": 5
+    }
+  }
+}

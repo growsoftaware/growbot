@@ -1,0 +1,20 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver": "FRANCIS", "produto": "orange", "quantidade": 20, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "arizona", "quantidade": 15, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "packi", "quantidade": 10, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "texas", "quantidade": 15, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "ice", "quantidade": 15, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "ice nug", "quantidade": 24, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "MD", "quantidade": 7, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "cogumelo", "quantidade": 20, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "sower", "quantidade": 15, "data_recarga": "27/12/2025"},
+    {"driver": "FRANCIS", "produto": "afghan", "quantidade": 20, "data_recarga": "27/12/2025"}
+  ],
+  "resumo": {
+    "total_produtos": 10,
+    "total_unidades": 161
+  }
+}

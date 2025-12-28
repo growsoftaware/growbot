@@ -1,0 +1,19 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver": "ARTHUR", "produto": "bubba", "quantidade": 50, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "orange", "quantidade": 50, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "escama", "quantidade": 18, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "pretinho 5g", "quantidade": 5, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "abacaxi", "quantidade": 3, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "fly pig", "quantidade": 3, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "MD", "quantidade": 10, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "marmita comercial 50g", "quantidade": 10, "data_recarga": "26/12/2025"},
+    {"driver": "ARTHUR", "produto": "cogumelo", "quantidade": 25, "data_recarga": "26/12/2025"}
+  ],
+  "resumo": {
+    "total_produtos": 9,
+    "total_unidades": 174
+  }
+}
