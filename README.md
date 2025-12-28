@@ -1,12 +1,13 @@
 # GrowBot
 
-Extrator de entregas a partir de exports do WhatsApp. Usa LLM (Claude/OpenAI) para interpretar pedidos e exporta CSV estruturado.
+Extrator de entregas a partir de exports do WhatsApp. Usa LLM (Claude/OpenAI) para interpretar pedidos e exporta dados estruturados para DuckDB.
 
 ## Quick Start
 
 ```bash
-# Setup
-cd /Users/andremaciel/dev/growbot
+# Clone e setup
+git clone git@github.com:growsoftaware/growbot.git
+cd growbot
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -15,9 +16,7 @@ pip install -r requirements.txt
 cp .env.example .env
 # Editar .env com suas keys
 
-# Colar export do WhatsApp
-# Salvar como exports/arquivo.txt
-
+# Colar export do WhatsApp em exports/
 # Rodar
 python main.py --provider claude
 ```
@@ -37,8 +36,28 @@ python parser.py exports/_chat.txt
 
 ## Output
 
-- `output/entregas_claude_YYYYMMDD_HHMMSS.json`
-- `output/entregas_claude_YYYYMMDD_HHMMSS.csv`
+- `output/entregas_validadas.json` - Entregas extraídas
+- `output/estoque_YYYYMMDD_DRIVER.json` - Estoque por driver
+- `output/recarga_YYYYMMDD_DRIVER.json` - Recargas
+- `growbot.duckdb` - Banco analítico
+
+## DuckDB
+
+```bash
+python db.py saldo           # Saldo por driver
+python db.py saldo RODRIGO   # Saldo de um driver
+python db.py negativos       # Produtos com saldo negativo
+python db.py stats           # Estatísticas gerais
+```
+
+## Claude Code CLI
+
+```bash
+/validar exports/_chat.txt   # Validar export interativamente
+/auditar                     # Auditar output vs raw
+/relatorio totais            # Gerar relatório
+/sync                        # Sincronizar com DuckDB
+```
 
 ## Formato do CSV
 
@@ -57,9 +76,12 @@ python parser.py exports/_chat.txt
 
 | Arquivo | Função |
 |---------|--------|
-| main.py | Pipeline completo |
+| main.py | CLI principal - orquestra tudo |
 | parser.py | Separa blocos por 🏎️ |
 | llm.py | Wrapper Claude/OpenAI |
 | validator.py | Valida output |
+| db.py | Banco de dados DuckDB |
+| ui.py | Interface terminal (Rich) |
 | aliases.json | Dicionário de produtos |
 | system_prompt.md | Prompt do extrator |
+| .claude/ | Agents, commands e skills |

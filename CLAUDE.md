@@ -11,6 +11,11 @@ exports/*.txt → Parser → LLM (Claude/OpenAI) → Validador → output/*.csv
 ## Estrutura do projeto
 ```
 growbot/
+├── .claude/           # Configuração Claude Code
+│   ├── agents/        # Agents especializados (validador, auditor, etc)
+│   ├── commands/      # Slash commands (/validar, /sync, etc)
+│   ├── schemas/       # Schemas de dados (estoque, recarga, resgate)
+│   └── skills/        # Skills reutilizáveis
 ├── exports/           # Colar arquivos .txt do WhatsApp aqui
 ├── output/            # JSONs gerados (entregas, estoque, recarga, resgate)
 ├── growbot.duckdb     # Banco de dados analítico (DuckDB)
@@ -20,6 +25,7 @@ growbot/
 ├── llm.py             # Wrapper Claude/OpenAI
 ├── validator.py       # Validação de output
 ├── db.py              # Banco de dados DuckDB
+├── ui.py              # Interface terminal (Rich)
 ├── api.py             # FastAPI (UI futura)
 └── system_prompt.md   # Prompt do extrator
 ```
@@ -67,7 +73,6 @@ RAFA, FRANCIS, RODRIGO, KAROL, ARTHUR
 
 ```bash
 # Ativar ambiente
-cd /Users/andremaciel/dev/growbot
 source venv/bin/activate
 
 # Testar parser
