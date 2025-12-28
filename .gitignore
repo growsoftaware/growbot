@@ -17,3 +17,6 @@ logs/
 # IDE
 .vscode/
 .idea/
+
+# Nested repos
+grow/
