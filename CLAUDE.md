@@ -172,6 +172,11 @@ Ver lista completa em `aliases.json`.
 /relatorio produto
 /relatorio periodo 26/12/2025
 
+# Relatório diário formatado para WhatsApp
+/relatorio-diario 28/12
+/relatorio-diario 28/12/2025
+/relatorio-diario hoje
+
 # Importar novos tipos de dados
 /importar estoque arquivo.txt
 /importar recarga arquivo.txt
