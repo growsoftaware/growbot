@@ -5,7 +5,7 @@ Sou um agente exportador que ajuda o André a processar exports de conversas do 
 
 ## Fluxo de trabalho
 ```
-exports/*.txt → Parser → LLM (Claude/OpenAI) → Validador → output/*.csv
+exports/*.txt → Parser → LLM (Claude/OpenAI) → Validador → output/*.json
 ```
 
 ## Estrutura do projeto
@@ -16,7 +16,8 @@ growbot/
 │   ├── commands/      # Slash commands (/validar, /sync, etc)
 │   ├── schemas/       # Schemas de dados (estoque, recarga, resgate)
 │   └── skills/        # Skills reutilizáveis
-├── exports/           # Colar arquivos .txt do WhatsApp aqui
+├── docs/              # Documentação e planos
+├── exports/           # Colar arquivos .txt do WhatsApp aqui (gitignore)
 ├── output/            # JSONs gerados (entregas, estoque, recarga, resgate)
 ├── growbot.duckdb     # Banco de dados analítico (DuckDB)
 ├── aliases.json       # Dicionário de produtos (aprendizado contínuo)
@@ -25,8 +26,8 @@ growbot/
 ├── llm.py             # Wrapper Claude/OpenAI
 ├── validator.py       # Validação de output
 ├── db.py              # Banco de dados DuckDB
-├── ui.py              # Interface terminal (Rich)
-├── tui.py             # Dashboard TUI (Textual)
+├── ui.py              # Interface terminal (Rich) - legado
+├── tui.py             # Dashboard TUI (Textual) - principal
 ├── api.py             # FastAPI (UI futura)
 └── system_prompt.md   # Prompt do extrator
 ```
@@ -89,13 +90,22 @@ python main.py --provider openai --limit 10
 python main.py --provider claude
 ```
 
-## Output esperado (CSV)
+## Output esperado (JSON)
+```json
+{
+  "items": [
+    {
+      "id_sale_delivery": "001",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "25/12/2025"
+    }
+  ]
+}
 ```
-id_pedido_item,id_sale_delivery,produto,quantidade,endereco_1,endereco_2,driver,data_entrega
-1,001,prensado,20,,,RODRIGO,25/12/2025
-1,002,abacaxi,4,,,RODRIGO,25/12/2025
-2,002,escama,3,,,RODRIGO,25/12/2025
-```
+Arquivo: `output/entregas_validadas.json`
 
 ## Aprendizado (aliases.json)
 O LLM sugere novos aliases quando encontra variantes:
@@ -192,22 +202,47 @@ python db.py query "SELECT * FROM v_saldo_produto WHERE driver='RODRIGO'"
 
 ## Dashboard TUI
 
-Dashboard interativo no terminal para visualizar entregas e recargas.
+Dashboard interativo no terminal com duas visões.
 
 ```bash
 python tui.py
 ```
 
-### Funcionalidades
-- **Filtro por data** - Data início/fim (DD/MM/YYYY)
-- **Filtro por driver** - TODOS ou driver específico
-- **Cards diários** - Visualização por dia com entregas e recargas
-- **Resumo geral** - Total de entregas, unidades e recargas
+### Visões
+- **DASHBOARD** (padrão) - Tabela de movimentos por driver/produto/data
+- **CARDS** - Cards diários agrupados por driver
 
-### Atalhos
-- `q` - Sair
-- `r` - Atualizar dados
-- `f` - Foco nos filtros
+### Funcionalidades DASHBOARD
+- Tabela com drivers expansíveis (Enter para ver produtos)
+- Colunas por data: 📸 Estoque | 📦 Recarga | 🏎️ Saída
+- Coluna 💰 TOTAL com saldo calculado (Estoque + Recarga - Saída)
+- Ordenação por clique no header (▲/▼)
+- KPIs: Entregas, Retiradas, Negativos, Tot.Ret, Tot.Del
+- KPIs extras ao filtrar driver: Estoque, Saldo
+- Painel de detalhes ao selecionar produto (Enter)
+- Auto-expande produtos ao filtrar por driver específico
+
+### Funcionalidades CARDS
+- Cards por dia/driver com resumo de entregas e recargas
+- Seções colapsáveis para ver detalhes
+
+### Filtros
+- Data início/fim (DD/MM/YYYY)
+- Driver (TODOS ou específico)
+- Resumo dos filtros + legenda visível no topo
+
+### Atalhos de Teclado
+| Tecla | Ação |
+|-------|------|
+| `q` | Sair |
+| `r` | Atualizar dados |
+| `f` | Toggle painel de filtros |
+| `1` | Visão Dashboard |
+| `2` | Visão Cards |
+| `z/x` | Driver anterior/próximo |
+| `w/e` | Data início −/+ |
+| `s/d` | Data fim −/+ |
+| `Enter` | Expandir driver / Ver detalhes produto |
 
 ## Agents Disponíveis
 - **validador** - Processa exports bloco a bloco
@@ -251,5 +286,5 @@ Ver schemas completos em `.claude/schemas/`
 1. [ ] UI web (FastAPI + React/shadcn) para comparar outputs
 2. [ ] Detecção de endereços no parser (antes do LLM)
 3. [ ] Batch processing para arquivos grandes
-4. [x] Banco de dados analítico (DuckDB implementado)
-5. [x] Dashboard TUI (Textual implementado)
+4. [ ] Exportar relatórios do TUI para PDF/Excel
+5. [ ] Gráficos de tendência no Dashboard
