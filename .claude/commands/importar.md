@@ -1,7 +1,7 @@
 ---
 allowed-tools: Read, Write, Glob, Grep
-description: Importar novo tipo de dados (estoque, retiradas, resgate)
-argument-hint: [tipo] [arquivo]
+description: Importar novo tipo de dados (estoque, recarga, resgate)
+argument-hint: [tipo] [dados ou arquivo]
 ---
 
 Importar dados: $ARGUMENTS
@@ -42,28 +42,28 @@ Estoque Rodrigo 27/12:
 
 ---
 
-### retiradas
+### recarga
 Produtos retirados do estoque central para o driver entregar.
 
-**Campos:** driver, produto, quantidade, data_retirada, observacao
-**Output:** `output/retiradas_YYYYMMDD.json`
+**Campos:** driver, produto, quantidade, data_recarga, observacao
+**Output:** `output/recarga_YYYYMMDD_DRIVER.json`
 
 ```json
 {
-  "tipo": "retiradas",
+  "tipo": "recarga",
   "data_import": "2025-12-27",
   "items": [
-    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 50, "data_retirada": "27/12/2025", "observacao": null}
+    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 50, "data_recarga": "27/12/2025", "observacao": null}
   ],
-  "resumo": {"total_retiradas": 1, "total_unidades": 50, "por_driver": {"RODRIGO": 50}}
+  "resumo": {"total_recargas": 1, "total_unidades": 50, "por_driver": {"RODRIGO": 50}}
 }
 ```
 
 **Exemplo de input:**
 ```
-Rodrigo retirou 27/12:
+Rodrigo recarga 27/12:
 - 50 prensado
-- 30 arizona (pra festa)
+- 30 arizona
 ```
 
 ---
@@ -97,7 +97,7 @@ Resgate 27/12:
 
 ## Processo de Importação
 
-1. **Identificar tipo** - estoque, retiradas ou resgate
+1. **Identificar tipo** - estoque, recarga ou resgate
 2. **Ler arquivo** - WhatsApp export ou texto livre
 3. **Parsear conteúdo**
    - Identificar driver(s)

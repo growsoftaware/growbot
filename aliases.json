@@ -2,136 +2,231 @@
   {
     "alias": "afegan",
     "canonical": "afeghan",
-    "reason": "variante inicial"
+    "reason": "variante ortográfica"
   },
   {
     "alias": "afeganian",
     "canonical": "afeghan",
-    "reason": "variante inicial"
+    "reason": "variante ortográfica"
   },
   {
-    "alias": "afeghba",
+    "alias": "afghan",
     "canonical": "afeghan",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "bubaa",
-    "canonical": "bubba",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "bubba kush",
-    "canonical": "bubba",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "sower haze",
-    "canonical": "sower",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "super lemos",
-    "canonical": "super lemon",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "export",
-    "canonical": "exporta",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "exports",
-    "canonical": "exporta",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "ice kalifa",
-    "canonical": "ice khalifa",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "gelo khalifa",
-    "canonical": "ice khalifa",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "ice nugg",
-    "canonical": "ice nugg",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "gelo nugg",
-    "canonical": "ice nugg",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "nugg",
-    "canonical": "ice nugg",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "dry milano",
-    "canonical": "dry",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "dry milao",
-    "canonical": "dry",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "dry suíço",
-    "canonical": "dry",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "cnn",
-    "canonical": "bala cnn",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "canadian",
-    "canonical": "bala canadian",
-    "reason": "variante inicial"
-  },
-  {
-    "alias": "elon musk",
-    "canonical": "bala elon musk",
-    "reason": "variante inicial"
+    "reason": "variante ortográfica inglês"
   },
   {
     "alias": "afeganian kush",
     "canonical": "afeghan",
-    "reason": "variante do produto afeghan com sufixo kush"
+    "reason": "variante com sufixo kush"
+  },
+  {
+    "alias": "bubaa",
+    "canonical": "bubba",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "bubba kush",
+    "canonical": "bubba",
+    "reason": "variante com sufixo kush"
   },
   {
     "alias": "bubaa kush",
     "canonical": "bubba",
-    "reason": "erro de digitação comum de bubba com sufixo kush"
+    "reason": "erro de digitação com sufixo kush"
+  },
+  {
+    "alias": "sower haze",
+    "canonical": "sower",
+    "reason": "variante com sufixo haze"
+  },
+  {
+    "alias": "super lemos",
+    "canonical": "super lemon",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "export",
+    "canonical": "exporta",
+    "reason": "variante inglês"
+  },
+  {
+    "alias": "exports",
+    "canonical": "exporta",
+    "reason": "variante inglês plural"
+  },
+  {
+    "alias": "exportação",
+    "canonical": "exporta",
+    "reason": "variante formal"
+  },
+  {
+    "alias": "99",
+    "canonical": "exporta",
+    "reason": "código interno"
+  },
+  {
+    "alias": "expor",
+    "canonical": "exporta",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "ice kalifa",
+    "canonical": "ice khalifa",
+    "reason": "variante ortográfica"
+  },
+  {
+    "alias": "gelo khalifa",
+    "canonical": "ice khalifa",
+    "reason": "variante português"
+  },
+  {
+    "alias": "kalifa",
+    "canonical": "ice khalifa",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "ice nug",
+    "canonical": "ice nugg",
+    "reason": "variante ortográfica"
+  },
+  {
+    "alias": "gelo nugg",
+    "canonical": "ice nugg",
+    "reason": "variante português"
+  },
+  {
+    "alias": "nugg",
+    "canonical": "ice nugg",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "nug",
+    "canonical": "ice nugg",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "dry milano",
+    "canonical": "dry",
+    "reason": "variante com origem"
+  },
+  {
+    "alias": "dry milao",
+    "canonical": "dry",
+    "reason": "variante com origem"
+  },
+  {
+    "alias": "dry suíço",
+    "canonical": "dry",
+    "reason": "variante com origem"
+  },
+  {
+    "alias": "suíço",
+    "canonical": "dry",
+    "reason": "abreviação por origem"
+  },
+  {
+    "alias": "cnn",
+    "canonical": "bala cnn",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "canadian",
+    "canonical": "bala canadian",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "bala elon musk",
+    "canonical": "elon musk",
+    "reason": "nome simplificado"
   },
   {
     "alias": "pren",
     "canonical": "prensado",
-    "reason": "abreviação comum para prensado"
+    "reason": "abreviação"
   },
   {
-    "alias": "abacaxi",
-    "canonical": "abacaxi",
-    "reason": "novo produto identificado"
+    "alias": "prensa",
+    "canonical": "prensado",
+    "reason": "abreviação"
   },
   {
-    "alias": "escama",
-    "canonical": "escama",
-    "reason": "novo produto identificado"
+    "alias": "massa",
+    "canonical": "prensado",
+    "reason": "gíria"
   },
   {
-    "alias": "meleca",
-    "canonical": "meleca",
-    "reason": "produto novo identificado, verificar se é nome válido ou alias de produto existente"
+    "alias": "peso",
+    "canonical": "prensado",
+    "reason": "gíria"
+  },
+  {
+    "alias": "prensadin",
+    "canonical": "prensado",
+    "reason": "variante informal"
+  },
+  {
+    "alias": "50g pren comercial",
+    "canonical": "marmita comercial",
+    "reason": "prensado comercial 50g = 1 marmita comercial"
   },
   {
     "alias": "MD",
-    "canonical": "MD",
-    "reason": "novo produto identificado, necessita classificação"
+    "canonical": "md",
+    "reason": "normalização maiúsculas"
+  },
+  {
+    "alias": "cogu",
+    "canonical": "cogumelo",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "bruce banner",
+    "canonical": "bruce",
+    "reason": "nome simplificado"
+  },
+  {
+    "alias": "marga rosa",
+    "canonical": "manga rosa",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "manga",
+    "canonical": "manga rosa",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "kief",
+    "canonical": "kieef",
+    "reason": "variante ortográfica"
+  },
+  {
+    "alias": "escaminha",
+    "canonical": "escama",
+    "reason": "variante diminutivo"
+  },
+  {
+    "alias": "escam",
+    "canonical": "escama",
+    "reason": "abreviação"
+  },
+  {
+    "alias": "marmitw",
+    "canonical": "marmita",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "marmira",
+    "canonical": "marmita",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "orangeel",
+    "canonical": "orange",
+    "reason": "erro de digitação"
+  },
+  {
+    "alias": "colomba",
+    "canonical": "colombia",
+    "reason": "erro de digitação"
   }
 ]

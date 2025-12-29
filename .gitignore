@@ -20,3 +20,9 @@ logs/
 
 # Nested repos
 grow/
+
+# DuckDB
+*.wal
+
+# Raw exports (user data)
+exports/

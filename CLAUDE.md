@@ -26,6 +26,7 @@ growbot/
 ├── validator.py       # Validação de output
 ├── db.py              # Banco de dados DuckDB
 ├── ui.py              # Interface terminal (Rich)
+├── tui.py             # Dashboard TUI (Textual)
 ├── api.py             # FastAPI (UI futura)
 └── system_prompt.md   # Prompt do extrator
 ```
@@ -108,9 +109,40 @@ Revisar e aprovar antes de usar na próxima execução.
 - **Sem unidade** = quantidade em unidades (ex: "4 abacaxi" = 4)
 - **1g** = 1 unidade (ex: "1g meleca" = 1)
 - **Xg** = X unidades (ex: "5g arizona" = 5)
-- **Prensado 20g** = 1 unidade (caso especial)
+- **Prensado 20g / marmita** = 1 unidade de "prensado"
+- **50g pren comercial** = 1 unidade de "marmita comercial" (produto diferente!)
+
+⚠️ **prensado** e **marmita comercial** são produtos DIFERENTES:
+- `prensado` = 20g (marmita normal)
+- `marmita comercial` = 50g (peso maior)
 
 Sempre validar com o André quando aparecer unidade de medida diferente.
+
+## Normalização de Produtos
+
+Produtos canônicos (usar sempre estes nomes):
+
+| Canônico | Aliases |
+|----------|---------|
+| afeghan | afghan, afegan, afeganian |
+| bubba | bubaa, bubba kush |
+| bruce | bruce banner |
+| cogumelo | cogu |
+| dry | dry milano, dry suíço, suíço |
+| elon musk | bala elon musk |
+| escama | escam, escaminha |
+| exporta | export, exportação, 99, expor |
+| ice khalifa | ice kalifa, kalifa, gelo khalifa |
+| ice nugg | ice nug, nug, nugg, gelo nugg |
+| kieef | kief |
+| manga rosa | manga, marga rosa |
+| marmita | marmitw, marmira |
+| md | MD |
+| prensado | pren, prensa, massa, peso, prensadin |
+| sower | sower haze |
+| super lemon | super lemos |
+
+Ver lista completa em `aliases.json`.
 
 ## Comandos Claude CLI
 
@@ -158,6 +190,25 @@ python db.py query "SELECT * FROM v_saldo_produto WHERE driver='RODRIGO'"
 - `v_produtos_negativos` - Alertas de inconsistência
 - `v_movimentos_dia` - Resumo diário por tipo/driver
 
+## Dashboard TUI
+
+Dashboard interativo no terminal para visualizar entregas e recargas.
+
+```bash
+python tui.py
+```
+
+### Funcionalidades
+- **Filtro por data** - Data início/fim (DD/MM/YYYY)
+- **Filtro por driver** - TODOS ou driver específico
+- **Cards diários** - Visualização por dia com entregas e recargas
+- **Resumo geral** - Total de entregas, unidades e recargas
+
+### Atalhos
+- `q` - Sair
+- `r` - Atualizar dados
+- `f` - Foco nos filtros
+
 ## Agents Disponíveis
 - **validador** - Processa exports bloco a bloco
 - **auditor** - Verifica qualidade (raw vs JSON)
@@ -201,3 +252,4 @@ Ver schemas completos em `.claude/schemas/`
 2. [ ] Detecção de endereços no parser (antes do LLM)
 3. [ ] Batch processing para arquivos grandes
 4. [x] Banco de dados analítico (DuckDB implementado)
+5. [x] Dashboard TUI (Textual implementado)
