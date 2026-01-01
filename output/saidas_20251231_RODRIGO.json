@@ -10,8 +10,8 @@
     },
     {
       "id_sale_delivery": "002",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "bairro segismundo pereira",
+      "quantidade": 57,
       "endereco_1": "[2026-01-01, 3:17:56 AM] Akita: 2 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -98,8 +98,8 @@
     },
     {
       "id_sale_delivery": "013",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "jardim brasília",
+      "quantidade": 445,
       "endereco_1": "[2026-01-01, 3:18:03 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -130,8 +130,8 @@
     },
     {
       "id_sale_delivery": "017",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "arizona",
+      "quantidade": 5,
       "endereco_1": "[2026-01-01, 3:18:06 AM] Akita: Niteroi callink",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -146,15 +146,15 @@
     },
     {
       "id_sale_delivery": "019",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "aqui pro bairro brasil",
+      "quantidade": 20,
       "endereco_1": "[2026-01-01, 3:18:07 AM] Akita: Se manda um peso de 20g aqui pro bairro Brasil, rua Bahia 1363",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "020",
-      "produto": "DESCONHECIDO",
+      "produto": "de afeghan",
       "quantidade": 1,
       "endereco_1": "[2026-01-01, 3:18:08 AM] Akita: vou querer 1g de afeghan",
       "driver": "RODRIGO",
@@ -258,8 +258,8 @@
     },
     {
       "id_sale_delivery": "033",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "nossa senhora aparecida",
+      "quantidade": 691,
       "endereco_1": "[2026-01-01, 3:18:17 AM] Akita: 1g orange",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -314,24 +314,24 @@
     },
     {
       "id_sale_delivery": "040",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "osvaldo rezende condomínio spazio up town",
+      "quantidade": 311,
       "endereco_1": "[2026-01-01, 3:18:22 AM] Akita: 3g nugg",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "041",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "gold",
+      "quantidade": 5,
       "endereco_1": "[2026-01-01, 3:18:22 AM] Akita: Rua Timbiras",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "042",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "stm",
+      "quantidade": 345,
       "endereco_1": "[2026-01-01, 3:18:23 AM] Akita: 2 canadian",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -362,8 +362,8 @@
     },
     {
       "id_sale_delivery": "046",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "chácaras tubalina",
+      "quantidade": 557,
       "endereco_1": "[2026-01-01, 3:18:27 AM] Akita: 4g bubba",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -378,8 +378,8 @@
     },
     {
       "id_sale_delivery": "048",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "escama",
+      "quantidade": 3,
       "endereco_1": "[2026-01-01, 3:18:28 AM] Akita: B&B Hotels Brasil (Praça Tubal Vilela, 192 - Centro, Uberlândia, 38400-186, MG, BR): https://www.hotel-bb.com/pt/hotel/uberlandia",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
@@ -394,8 +394,8 @@
     },
     {
       "id_sale_delivery": "050",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "jd brasilia",
+      "quantidade": 460,
       "endereco_1": "[2026-01-01, 3:18:29 AM] Akita: 5g Texas",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"

@@ -2,8 +2,8 @@
   "items": [
     {
       "id_sale_delivery": "014",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "da flor q vc me indicou",
+      "quantidade": 4,
       "endereco_1": "[2025-12-31, 3:07:14 AM] Akita: Maria das Dores Dias 345",
       "driver": "FRANCIS",
       "data_entrega": "30/12/2025"
@@ -42,8 +42,8 @@
     },
     {
       "id_sale_delivery": "019",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "exporta",
+      "quantidade": 2,
       "endereco_1": "[2025-12-31, 3:07:18 AM] Akita: Rua austin 96",
       "driver": "FRANCIS",
       "data_entrega": "30/12/2025"
@@ -90,7 +90,7 @@
     },
     {
       "id_sale_delivery": "025",
-      "produto": "DESCONHECIDO",
+      "produto": "bala",
       "quantidade": 1,
       "endereco_1": "[2025-12-31, 3:07:24 AM] Akita: rua do advogado 654",
       "driver": "FRANCIS",

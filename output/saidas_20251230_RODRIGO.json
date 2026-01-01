@@ -2,8 +2,8 @@
   "items": [
     {
       "id_sale_delivery": "003",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "dry",
+      "quantidade": 5,
       "endereco_1": "[2025-12-30, 2:58:09 AM] Akita: Rua Maria da Conceição de Andrade 240",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
@@ -18,7 +18,7 @@
     },
     {
       "id_sale_delivery": "007",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:10 AM] Akita: Rua Wilson Pantaleão de Oliveira 107",
       "driver": "RODRIGO",
@@ -26,7 +26,7 @@
     },
     {
       "id_sale_delivery": "008",
-      "produto": "DESCONHECIDO",
+      "produto": "dry",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:11 AM] Akita: Praça Renato Humberto Calcagno, 100",
       "driver": "RODRIGO",
@@ -34,7 +34,7 @@
     },
     {
       "id_sale_delivery": "010",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:12 AM] Akita: Rua Pedro José Samora 484",
       "driver": "RODRIGO",
@@ -50,7 +50,7 @@
     },
     {
       "id_sale_delivery": "012",
-      "produto": "DESCONHECIDO",
+      "produto": "pren comercial",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:13 AM] Akita: Jardim Brasília meu mn, rua cometa 445",
       "driver": "RODRIGO",
@@ -66,23 +66,23 @@
     },
     {
       "id_sale_delivery": "014",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "manga",
+      "quantidade": 5,
       "endereco_1": "[2025-12-30, 2:58:14 AM] Akita: rua turmalina, numero 52",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
     },
     {
       "id_sale_delivery": "016",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "dry",
+      "quantidade": 2,
       "endereco_1": "[2025-12-30, 2:58:15 AM] Akita: Passo fundo 201",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
     },
     {
       "id_sale_delivery": "017",
-      "produto": "DESCONHECIDO",
+      "produto": "sower",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:16 AM] Akita: rua antonio mano de carvalho 178",
       "driver": "RODRIGO",
@@ -90,15 +90,15 @@
     },
     {
       "id_sale_delivery": "018",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "ellon musk",
+      "quantidade": 2,
       "endereco_1": "[2025-12-30, 2:58:17 AM] Akita: Av esperança 385",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
     },
     {
       "id_sale_delivery": "019",
-      "produto": "DESCONHECIDO",
+      "produto": "md",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:18 AM] Akita: Coronel antonio alves 891",
       "driver": "RODRIGO",
@@ -106,7 +106,7 @@
     },
     {
       "id_sale_delivery": "020",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:19 AM] Akita: Rua Maria hambrisina de jesus 72",
       "driver": "RODRIGO",
@@ -114,15 +114,15 @@
     },
     {
       "id_sale_delivery": "021",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "escamas",
+      "quantidade": 2,
       "endereco_1": "[2025-12-30, 2:58:20 AM] Akita: Pro endereço da rua Luiz Fuad abib 105 shopping park",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
     },
     {
       "id_sale_delivery": "022",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:21 AM] Akita: Av. Iraque, 209 - Laranjeiras, Uberlândia - MG, 38410-663, Brasil (Av. Iraque, 209 - Laranjeiras, Uberlândia - MG, 38410-663, Brasil): https://maps.google.com/?q=-18.949759,-48.250336",
       "driver": "RODRIGO",
@@ -130,7 +130,7 @@
     },
     {
       "id_sale_delivery": "023",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
       "endereco_1": "[2025-12-30, 2:58:22 AM] Akita: Rua Luiz fuad abid 105",
       "driver": "RODRIGO",
@@ -146,16 +146,16 @@
     },
     {
       "id_sale_delivery": "025",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
+      "produto": "escamas",
+      "quantidade": 2,
       "endereco_1": "[2025-12-30, 2:58:23 AM] Akita: Rua Alaor Carlos Garcia, 455 Jardim Brasilia",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
     },
     {
       "id_sale_delivery": "026",
-      "produto": "da meleca e",
-      "quantidade": 1,
+      "produto": "do colombia",
+      "quantidade": 5,
       "endereco_1": "[2025-12-30, 2:58:24 AM] Akita: Mano, queria 5g do colombia , 1g da meleca e 1g do ice pistachio",
       "driver": "RODRIGO",
       "data_entrega": "30/12/2025"
