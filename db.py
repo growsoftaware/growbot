@@ -11,10 +11,12 @@ OUTPUT_PATH = Path(__file__).parent / "output"
 
 
 class GrowBotDB:
-    def __init__(self, db_path: Path = DB_PATH):
+    def __init__(self, db_path: Path = DB_PATH, read_only: bool = False):
         self.db_path = db_path
-        self.conn = duckdb.connect(str(db_path))
-        self._init_schema()
+        self.read_only = read_only
+        self.conn = duckdb.connect(str(db_path), read_only=read_only)
+        if not read_only:
+            self._init_schema()
 
     def _init_schema(self):
         """Cria tabelas e views se não existirem"""
