@@ -219,8 +219,13 @@ python tui.py
 
 ### Funcionalidades DASHBOARD
 - Tabela com drivers expansíveis (Enter para ver produtos)
-- Colunas por data: 📸 Estoque | 📦 Recarga | 🏎️ Saída
+- Colunas por data: 📋 Estoque | 📦 Recarga | 🏎️ Saída
 - Coluna 💰 TOTAL com saldo calculado (Estoque + Recarga - Saída)
+- **Modos de visualização** (tecla `v` para ciclar):
+  - **TUDO**: Mostra estoque, recarga e saídas (saldo = entradas - saídas)
+  - **RECARGAS**: Mostra só recargas (total = soma das retiradas)
+  - **SAIDAS**: Mostra só saídas/entregas (total = soma das entregas)
+  - **ESTOQUES**: Mostra só estoques (total = soma dos estoques)
 - Ordenação por clique no header (▲/▼)
 - KPIs: Entregas, Retiradas, Negativos, Tot.Ret, Tot.Del
 - KPIs extras ao filtrar driver: Estoque, Saldo
@@ -242,6 +247,7 @@ python tui.py
 | `q` | Sair |
 | `r` | Atualizar dados |
 | `f` | Toggle painel de filtros |
+| `v` | Ciclar modo: TUDO → RECARGAS → SAIDAS → ESTOQUES |
 | `1` | Visão Dashboard |
 | `2` | Visão Cards |
 | `z/x` | Driver anterior/próximo |

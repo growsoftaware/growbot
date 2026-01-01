@@ -21,8 +21,11 @@ DRIVERS = ["TODOS", "RAFA", "FRANCIS", "RODRIGO", "KAROL", "ARTHUR"]
 DIAS_SEMANA = ["Seg", "Ter", "Qua", "Qui", "Sex", "Sab", "Dom"]
 OUTPUT_PATH = Path(__file__).parent / "output"
 
+# Modos de visualização
+VIEW_MODES = ["TUDO", "RECARGAS", "SAIDAS", "ESTOQUES"]
+
 # Ícones
-ICON_ESTOQUE = "📸"
+ICON_ESTOQUE = "📋"
 ICON_RECARGA = "📦"
 ICON_SAIDA = "🏎️"
 ICON_SALDO = "💰"
@@ -33,8 +36,8 @@ def format_valor(valor: int, tipo: str = None, width: int = 8) -> Text:
 
     Cores:
     - estoque/recarga: verde (entrada = positivo)
-    - saida: vermelho (saída = negativo)
-    - saldo: verde (+) ou vermelho bold com parênteses (-)
+    - saida: coral/salmão (saída)
+    - saldo: verde (+) ou amarelo bold com parênteses (-)
     """
     if not valor:
         return Text("-".rjust(width), style="dim")
@@ -46,14 +49,14 @@ def format_valor(valor: int, tipo: str = None, width: int = 8) -> Text:
     elif tipo == "recarga":
         return Text(valor_str, style="dark_sea_green4")
     elif tipo == "saida":
-        return Text(valor_str, style="indian_red")
+        return Text(valor_str, style="light_coral")
     elif tipo == "saldo":
         if valor > 0:
             return Text(valor_str, style="green")
         elif valor < 0:
-            # Negativo com parênteses e negrito: (15)
+            # Negativo com parênteses e amarelo bold (mais legível)
             neg_str = f"({abs(valor)})".rjust(width)
-            return Text(neg_str, style="bold red")
+            return Text(neg_str, style="bold bright_yellow")
         else:
             return Text("-".rjust(width), style="dim")
     else:
@@ -187,7 +190,7 @@ class CardsPanel(VerticalScroll):
 class FilterSummary(Static):
     """Resumo dos filtros ativos + legenda"""
 
-    def update_summary(self, driver: str, data_ini: str, data_fim: str):
+    def update_summary(self, driver: str, data_ini: str, data_fim: str, view_mode: str = "TUDO"):
         """Atualiza o resumo dos filtros"""
         # Formatar datas para DD/MM
         def fmt_data(d):
@@ -199,8 +202,28 @@ class FilterSummary(Static):
             return d
 
         driver_txt = f"[bold yellow]{driver}[/]" if driver != "TODOS" else "[dim]TODOS[/]"
-        linha1 = f"👤 {driver_txt}  │  📅 {fmt_data(data_ini)} → {fmt_data(data_fim)}"
-        linha2 = f"[bold bright_green]{ICON_ESTOQUE} Estoque[/]  [bold bright_blue]{ICON_RECARGA} Recarga[/]  [bold bright_red]{ICON_SAIDA} Saída[/]  [bold bright_yellow]{ICON_SALDO} Saldo[/]"
+
+        # Indicador do modo de visualização
+        if view_mode == "RECARGAS":
+            mode_txt = "[bold magenta]📦 RECARGAS[/]"
+        elif view_mode == "SAIDAS":
+            mode_txt = "[bold red]🏎️ SAÍDAS[/]"
+        elif view_mode == "ESTOQUES":
+            mode_txt = "[bold green]📸 ESTOQUES[/]"
+        else:
+            mode_txt = "[dim]TUDO[/]"
+
+        linha1 = f"👤 {driver_txt}  │  📅 {fmt_data(data_ini)} → {fmt_data(data_fim)}  │  🔍 {mode_txt}"
+
+        # Legenda ajustada conforme o modo
+        if view_mode == "RECARGAS":
+            linha2 = f"[bold bright_blue]{ICON_RECARGA} Recarga[/]  [bold bright_yellow]{ICON_SALDO} Total[/]  [dim](v) próximo[/]"
+        elif view_mode == "SAIDAS":
+            linha2 = f"[bold bright_red]{ICON_SAIDA} Saída[/]  [bold bright_yellow]{ICON_SALDO} Total[/]  [dim](v) próximo[/]"
+        elif view_mode == "ESTOQUES":
+            linha2 = f"[bold bright_green]{ICON_ESTOQUE} Estoque[/]  [bold bright_yellow]{ICON_SALDO} Total[/]  [dim](v) próximo[/]"
+        else:
+            linha2 = f"[bold bright_green]{ICON_ESTOQUE} Estoque[/]  [bold bright_blue]{ICON_RECARGA} Recarga[/]  [bold bright_red]{ICON_SAIDA} Saída[/]  [bold bright_yellow]{ICON_SALDO} Saldo[/]"
         self.update(f"{linha1}\n{linha2}")
 
 
@@ -314,6 +337,102 @@ class DetailPanel(VerticalScroll):
         content = self.query_one("#detail_content", Vertical)
         for child in list(content.children):
             child.remove()
+
+
+class ComparisonPanel(VerticalScroll):
+    """Painel de comparação - mostra saídas quando no modo RECARGAS"""
+
+    def compose(self) -> ComposeResult:
+        yield Label(f"[bold cyan]{ICON_SAIDA} SAÍDAS[/]", classes="panel-title")
+        yield Rule()
+        table = DataTable(id="comparison_table", zebra_stripes=True, cursor_type="row")
+        table.header_height = 1
+        yield table
+
+    def update_data(self, dados: dict, datas: list):
+        """Atualiza tabela com dados de saídas agregados por driver/produto"""
+        table = self.query_one("#comparison_table", DataTable)
+        table.clear(columns=True)
+
+        if not dados:
+            table.add_column("Info")
+            table.add_row("Sem saídas no período")
+            return
+
+        # Colunas: Produto, Total
+        table.add_column("Produto", key="produto")
+        table.add_column("Total", key="total")
+
+        # Agregar por produto
+        produtos_total = defaultdict(int)
+        for driver_data in dados.values():
+            for produto, datas_dict in driver_data.items():
+                for data_str, tipos in datas_dict.items():
+                    produtos_total[produto] += tipos.get("saida", 0)
+
+        # Ordenar por total desc
+        for produto, total in sorted(produtos_total.items(), key=lambda x: -x[1]):
+            if total > 0:
+                table.add_row(
+                    Text(produto, style="dim"),
+                    format_valor(total, "saida", width=6)
+                )
+
+
+class AlertsPanel(VerticalScroll):
+    """Painel de alertas - produtos com mais saída que entrada (saldo negativo)"""
+
+    def compose(self) -> ComposeResult:
+        yield Label("[bold bright_yellow]⚠️ ALERTAS[/]", classes="panel-title")
+        yield Rule()
+        table = DataTable(id="alerts_table", zebra_stripes=True, cursor_type="row")
+        table.header_height = 1
+        yield table
+
+    def update_data(self, dados_produto: dict, dados_driver: dict):
+        """Atualiza tabela com produtos que têm saldo negativo"""
+        table = self.query_one("#alerts_table", DataTable)
+        table.clear(columns=True)
+
+        # Colunas: Driver, Produto, Saldo
+        table.add_column("Driver", key="driver")
+        table.add_column("Produto", key="produto")
+        table.add_column("Saldo", key="saldo")
+
+        alertas = []
+        for driver, produtos in dados_produto.items():
+            for produto, datas_dict in produtos.items():
+                saldo = 0
+                for data_str, tipos in datas_dict.items():
+                    saldo += tipos.get("estoque", 0)
+                    saldo += tipos.get("recarga", 0)
+                    saldo -= tipos.get("saida", 0)
+                if saldo < 0:
+                    alertas.append((driver, produto, saldo))
+
+        if not alertas:
+            table.add_row(
+                Text("✓", style="green"),
+                Text("Nenhum alerta", style="dim"),
+                Text("-", style="dim")
+            )
+            return
+
+        # Ordenar por saldo (mais negativo primeiro)
+        for driver, produto, saldo in sorted(alertas, key=lambda x: x[2]):
+            table.add_row(
+                Text(driver, style="yellow"),
+                Text(produto, style="dim"),
+                format_valor(saldo, "saldo", width=6)
+            )
+
+
+class RodrigoPanel(VerticalScroll):
+    """Painel exclusivo RODRIGO - igual ao TablePanel"""
+
+    def compose(self) -> ComposeResult:
+        table = DataTable(id="rodrigo_table", zebra_stripes=True, cursor_type="row")
+        yield table
 
 
 class GrowBotTUI(App):
@@ -472,6 +591,41 @@ class GrowBotTUI(App):
         display: block;
     }
 
+    #comparison-panel {
+        width: 30;
+        background: $panel;
+        border: solid $secondary;
+        padding: 1;
+        display: none;
+    }
+
+    #comparison-panel.visible {
+        display: block;
+    }
+
+    #alerts-panel {
+        width: 35;
+        background: $panel;
+        border: solid $warning;
+        padding: 1;
+        display: none;
+    }
+
+    #alerts-panel.visible {
+        display: block;
+    }
+
+    #tables-container {
+        height: 1fr;
+        overflow-y: auto;
+    }
+
+    #table-panel {
+        width: 1fr;
+        height: 100%;
+        overflow-y: auto;
+    }
+
     #table-container {
         width: 1fr;
     }
@@ -516,14 +670,20 @@ class GrowBotTUI(App):
         width: 1fr;
         height: 100%;
     }
+
+    #rodrigo_table {
+        width: auto;
+    }
     """
 
     BINDINGS = [
         Binding("q", "quit", "Sair"),
         Binding("r", "refresh", "Atualizar"),
         Binding("f", "toggle_filter", "Filtros"),
+        Binding("v", "toggle_view_mode", "Modo"),
         Binding("1", "show_table", "Dashboard"),
         Binding("2", "show_cards", "Cards"),
+        Binding("3", "show_rodrigo", "Rodrigo"),
         Binding("z", "driver_anterior", "Driver ←"),
         Binding("x", "driver_proximo", "Driver →"),
         Binding("w", "data_ini_menos", "Ini −"),
@@ -534,15 +694,18 @@ class GrowBotTUI(App):
 
     def __init__(self):
         super().__init__()
-        self.db = GrowBotDB()
+        self.db = None  # Conexão sob demanda para não bloquear sync
         self.data_inicio = None
         self.data_fim = None
         self.driver_filtro = "TODOS"
+        self.view_mode = "TUDO"  # TUDO ou RECARGAS
         self.show_estoque = True
         self.show_recarga = True
         self.show_saidas = True
         # Cache de dados expandidos
         self.expanded_drivers = set()
+        self.expanded_products = set()  # Set de tuples (driver, produto)
+        self.expanded_rodrigo_dates = set()  # Set de datas ISO expandidas na aba RODRIGO
         # Estado de ordenação da tabela
         self.sort_column = None  # Coluna sendo ordenada (key)
         self.sort_ascending = True  # True = asc, False = desc
@@ -551,6 +714,24 @@ class GrowBotTUI(App):
         self._colunas_visiveis = []
         self._dados_driver = {}
         self._dados_produto = {}
+
+    def _connect_db(self):
+        """Abre conexão com DB (fecha antiga se existir)"""
+        if self.db:
+            try:
+                self.db.conn.close()
+            except:
+                pass
+        self.db = GrowBotDB()
+
+    def _disconnect_db(self):
+        """Fecha conexão com DB para liberar lock"""
+        if self.db:
+            try:
+                self.db.conn.close()
+            except:
+                pass
+            self.db = None
 
     def compose(self) -> ComposeResult:
         yield Header(show_clock=True)
@@ -562,11 +743,15 @@ class GrowBotTUI(App):
                     with TabPane("DASHBOARD", id="tab-table"):
                         with Vertical():
                             yield KPIBar(id="kpi-bar")
-                            with Horizontal():
+                            with Horizontal(id="tables-container"):
                                 yield TablePanel(id="table-panel")
+                                yield ComparisonPanel(id="comparison-panel")
+                                yield AlertsPanel(id="alerts-panel")
                                 yield DetailPanel(id="detail-panel")
                     with TabPane("CARDS", id="tab-cards"):
                         yield CardsPanel(id="cards-panel")
+                    with TabPane("RODRIGO", id="tab-rodrigo"):
+                        yield RodrigoPanel(id="rodrigo-panel")
         yield Footer()
 
     def on_mount(self) -> None:
@@ -642,20 +827,28 @@ class GrowBotTUI(App):
 
     def refresh_data(self) -> None:
         """Atualiza ambas as visões"""
-        # Atualizar resumo dos filtros
+        # Conectar ao DB (libera lock após refresh)
+        self._connect_db()
+
         try:
-            self.query_one("#filter-summary", FilterSummary).update_summary(
-                self.driver_filtro, self.data_inicio, self.data_fim
-            )
-        except:
-            pass
+            # Atualizar resumo dos filtros
+            try:
+                self.query_one("#filter-summary", FilterSummary).update_summary(
+                    self.driver_filtro, self.data_inicio, self.data_fim, self.view_mode
+                )
+            except:
+                pass
 
-        # Auto-expandir driver quando específico selecionado
-        if self.driver_filtro != "TODOS":
-            self.expanded_drivers.add(self.driver_filtro)
+            # Auto-expandir driver quando específico selecionado
+            if self.driver_filtro != "TODOS":
+                self.expanded_drivers.add(self.driver_filtro)
 
-        self._refresh_cards()
-        self._refresh_table()
+            self._refresh_cards()
+            self._refresh_table()
+            self._refresh_rodrigo()
+        finally:
+            # Desconectar para liberar lock do arquivo
+            self._disconnect_db()
 
     def _refresh_cards(self) -> None:
         """Atualiza visão de cards"""
@@ -938,6 +1131,7 @@ class GrowBotTUI(App):
                 for produto in self._dados_produto[driver].keys():
                     saldo_prod = 0
                     valores_prod = {"name": produto}
+                    tem_dados = False  # Flag para verificar se tem algum valor
 
                     for data, tipo in colunas_visiveis:
                         d = self._dados_produto[driver][produto].get(data, {"estoque": 0, "recarga": 0, "saida": 0})
@@ -945,12 +1139,19 @@ class GrowBotTUI(App):
                         col_key = f"{data}_{tipo}"
                         valores_prod[col_key] = valor
 
+                        if valor > 0:
+                            tem_dados = True
+
                         if tipo == "estoque" and self.show_estoque:
                             saldo_prod += valor
                         elif tipo == "recarga" and self.show_recarga:
                             saldo_prod += valor
                         elif tipo == "saida" and self.show_saidas:
                             saldo_prod -= valor
+
+                    # Só incluir produto se tiver dados nas colunas visíveis
+                    if not tem_dados:
+                        continue
 
                     valores_prod["total"] = saldo_prod
                     produtos_data[produto] = valores_prod
@@ -986,6 +1187,18 @@ class GrowBotTUI(App):
 
                     row_prod.append(format_valor(saldo_prod, "saldo"))
                     table.add_row(*row_prod, key=f"prod_{driver}_{produto}")
+
+                    # Se produto está expandido, mostrar entregas inline
+                    expand_key = (driver, produto)
+                    if expand_key in self.expanded_products:
+                        entregas = self._get_entregas_produto(driver, produto)
+                        # Ordenar por data + id
+                        entregas.sort(key=lambda x: (x.get("data_entrega", ""), x.get("id_sale_delivery", "")))
+
+                        for i, e in enumerate(entregas[:30]):  # Limitar a 30
+                            is_last = (i == len(entregas) - 1) or (i == 29)
+                            row_entrega = self._build_entrega_row(e, len(colunas_visiveis), is_last)
+                            table.add_row(*row_entrega, key=f"entrega_{driver}_{produto}_{e.get('id_sale_delivery', '')}_{i}")
 
         # Calcular e atualizar KPIs
         # Contar entregas distintas (do JSON)
@@ -1033,6 +1246,132 @@ class GrowBotTUI(App):
             )
         except:
             pass
+
+        # Atualizar painéis laterais (no modo RECARGAS)
+        if self.view_mode == "RECARGAS":
+            try:
+                comparison_panel = self.query_one("#comparison-panel", ComparisonPanel)
+                comparison_panel.update_data(self._dados_produto, list(todas_datas))
+                comparison_panel.add_class("visible")
+
+                alerts_panel = self.query_one("#alerts-panel", AlertsPanel)
+                alerts_panel.update_data(self._dados_produto, self._dados_driver)
+                alerts_panel.add_class("visible")
+            except:
+                pass
+        else:
+            try:
+                self.query_one("#comparison-panel", ComparisonPanel).remove_class("visible")
+                self.query_one("#alerts-panel", AlertsPanel).remove_class("visible")
+            except:
+                pass
+
+    def _refresh_rodrigo(self) -> None:
+        """Atualiza aba RODRIGO - copiando padrao de _refresh_table"""
+        try:
+            table = self.query_one("#rodrigo_table", DataTable)
+        except:
+            return
+
+        table.clear(columns=True)
+
+        # Headers com Text - IGUAL ao _refresh_table que funciona
+        table.add_column(Text("Descrição", justify="left"), key="desc")
+        table.add_column(Text("Qtd", justify="right"), key="qtd")
+        table.add_column(Text("Acum", justify="right"), key="acum")
+
+        # Query
+        query = """
+            SELECT tipo, data_movimento, SUM(quantidade) as total
+            FROM movimentos WHERE driver = 'RODRIGO'
+            GROUP BY tipo, data_movimento ORDER BY data_movimento
+        """
+
+        try:
+            movimentos = self.db.conn.execute(query).fetchall()
+        except:
+            table.add_row("Erro ao carregar", "-", "-")
+            return
+
+        if not movimentos:
+            table.add_row("Sem dados - rode /sync", "-", "-")
+            return
+
+        # Separar por tipo
+        estoques, recargas, saidas = [], [], []
+        for tipo, data, total in movimentos:
+            data_iso = str(data)
+            data_br = self._iso_to_br(data_iso)
+            if tipo == "estoque":
+                estoques.append((data_br, total))
+            elif tipo == "recarga":
+                recargas.append((data_br, total))
+            elif tipo == "entrega":
+                saidas.append((data_br, data_iso, total))  # Guarda ISO para key
+
+        acum = 0
+
+        # Estoque
+        for data, total in estoques:
+            acum += total
+            table.add_row(f"📸 ESTOQUE {data[:5]}", str(total), str(acum))
+
+        # Separador
+        if estoques and recargas:
+            table.add_row("─" * 25, "─" * 6, "─" * 6)
+
+        # Recargas
+        for data, total in recargas:
+            acum += total
+            table.add_row(f"📦 Recarga {data[:5]}", str(total), str(acum))
+
+        # Total Entradas
+        total_entradas = acum
+        table.add_row("─" * 25, "─" * 6, "─" * 6)
+        table.add_row("✅ TOTAL ENTRADAS", str(total_entradas), "")
+        table.add_row("─" * 25, "─" * 6, "─" * 6)
+
+        # Saidas
+        acum_saidas = 0
+        for data_br, data_iso, total in saidas:
+            acum_saidas += total
+            # Indicador de expansão
+            expanded = data_iso in self.expanded_rodrigo_dates
+            indicator = "▾" if expanded else "▸"
+            table.add_row(
+                f"{indicator} 🏎️ Saída {data_br[:5]}",
+                str(total),
+                str(acum_saidas),
+                key=f"saida_{data_iso}"
+            )
+
+            # Se expandido, mostrar entregas daquela data
+            if expanded:
+                entregas = self._get_entregas_rodrigo_data(data_br)
+                for i, e in enumerate(entregas[:30]):
+                    is_last = (i == len(entregas) - 1) or (i == 29)
+                    prefix = "      └" if is_last else "      │"
+                    id_sale = e.get("id_sale_delivery", "-")
+                    produto = e.get("produto", "-")
+                    qtd = e.get("quantidade", 0)
+                    endereco = e.get("endereco_1") or "-"
+                    if len(endereco) > 15:
+                        endereco = endereco[:12] + "..."
+                    table.add_row(
+                        f"{prefix} #{id_sale} {produto}",
+                        str(qtd),
+                        endereco,
+                        key=f"entrega_rodrigo_{data_iso}_{i}"
+                    )
+
+        # Total Saidas
+        table.add_row("─" * 25, "─" * 6, "─" * 6)
+        table.add_row("❌ TOTAL SAÍDAS", str(acum_saidas), "")
+        table.add_row("─" * 25, "─" * 6, "─" * 6)
+
+        # Saldo
+        saldo = total_entradas - acum_saidas
+        table.add_row("💰 SALDO", str(saldo), "")
 
     def _normalizar_tipo(self, tipo: str) -> str:
         """Normaliza tipo do banco para tipo da tabela"""
@@ -1121,6 +1460,10 @@ class GrowBotTUI(App):
         elif event.button.id == "btn_fim_mais":
             self._ajustar_data("data_fim", 1)
 
+    def on_tabbed_content_tab_activated(self, event: TabbedContent.TabActivated) -> None:
+        """Refresh quando aba é ativada - resolve lazy mounting"""
+        if event.pane.id == "tab-rodrigo":
+            self._refresh_rodrigo()
 
     def on_data_table_header_selected(self, event: DataTable.HeaderSelected) -> None:
         """Handler para ordenação ao clicar no header da coluna"""
@@ -1169,11 +1512,30 @@ class GrowBotTUI(App):
             self._refresh_table()
 
         elif row_key and row_key.startswith("prod_"):
-            # Mostrar detalhes do produto
+            # Toggle expansão do produto (mostrar entregas inline)
             parts = row_key.replace("prod_", "").split("_", 1)
             if len(parts) == 2:
                 driver, produto = parts
+                expand_key = (driver, produto)
+
+                # Toggle expansão
+                if expand_key in self.expanded_products:
+                    self.expanded_products.discard(expand_key)
+                else:
+                    self.expanded_products.add(expand_key)
+
+                self._refresh_table()
+                # Também mostrar no DetailPanel lateral
                 self._show_product_details(driver, produto)
+
+        elif row_key and row_key.startswith("saida_"):
+            # Toggle expansão de saída na aba RODRIGO
+            data_iso = row_key.replace("saida_", "")
+            if data_iso in self.expanded_rodrigo_dates:
+                self.expanded_rodrigo_dates.discard(data_iso)
+            else:
+                self.expanded_rodrigo_dates.add(data_iso)
+            self._refresh_rodrigo()
 
     def _show_product_details(self, driver: str, produto: str) -> None:
         """Mostra detalhes das entregas de um produto"""
@@ -1202,6 +1564,50 @@ class GrowBotTUI(App):
         detail_panel.show_details(driver, produto, entregas_filtradas)
         detail_panel.add_class("visible")
 
+    def _get_entregas_produto(self, driver: str, produto: str) -> list:
+        """Busca entregas de um produto no período filtrado"""
+        all_entregas = load_entregas_from_json()
+        data_ini = self._parse_date_br(self.data_inicio)
+        data_fim = self._parse_date_br(self.data_fim)
+
+        return [
+            e for e in all_entregas
+            if e.get("driver") == driver
+            and e.get("produto") == produto
+            and self._date_in_range(e.get("data_entrega", ""), data_ini, data_fim)
+        ]
+
+    def _get_entregas_rodrigo_data(self, data_br: str) -> list:
+        """Busca entregas do RODRIGO em uma data específica"""
+        all_entregas = load_entregas_from_json()
+        return [
+            e for e in all_entregas
+            if e.get("driver") == "RODRIGO"
+            and e.get("data_entrega") == data_br
+        ]
+
+    def _build_entrega_row(self, entrega: dict, num_colunas: int, is_last: bool = False) -> list:
+        """Constrói linha de detalhe de entrega para exibição inline"""
+        id_sale = entrega.get("id_sale_delivery", "-")
+        qtd = entrega.get("quantidade", 0)
+        endereco = entrega.get("endereco_1") or "-"
+        data = entrega.get("data_entrega", "-")
+
+        # Truncar endereço se muito longo
+        if len(endereco) > 20:
+            endereco = endereco[:17] + "..."
+
+        # Prefixo visual: └ para último, │ para demais
+        prefix = "      └" if is_last else "      │"
+        cell_text = Text(f"{prefix} #{id_sale} | {qtd}un | {endereco} | {data}", style="dim cyan")
+
+        # Primeira coluna com texto, demais vazias
+        row = [cell_text]
+        for _ in range(num_colunas):
+            row.append(Text(""))
+        row.append(Text(""))  # Coluna total
+        return row
+
     def action_refresh(self) -> None:
         self.refresh_data()
 
@@ -1219,6 +1625,9 @@ class GrowBotTUI(App):
 
     def action_show_table(self) -> None:
         self.query_one(TabbedContent).active = "tab-table"
+
+    def action_show_rodrigo(self) -> None:
+        self.query_one(TabbedContent).active = "tab-rodrigo"
 
     def action_driver_anterior(self) -> None:
         """Muda para driver anterior na lista"""
@@ -1251,6 +1660,46 @@ class GrowBotTUI(App):
     def action_data_fim_mais(self) -> None:
         """Avança data fim em 1 dia"""
         self._ajustar_data("data_fim", 1)
+
+    def action_toggle_view_mode(self) -> None:
+        """Alterna entre modos de visualização: TUDO → RECARGAS → SAIDAS → ESTOQUES"""
+        idx = VIEW_MODES.index(self.view_mode)
+        novo_idx = (idx + 1) % len(VIEW_MODES)
+        self.view_mode = VIEW_MODES[novo_idx]
+
+        # Ajustar flags de exibição conforme o modo
+        if self.view_mode == "TUDO":
+            self.show_estoque = True
+            self.show_recarga = True
+            self.show_saidas = True
+        elif self.view_mode == "RECARGAS":
+            self.show_estoque = False
+            self.show_recarga = True
+            self.show_saidas = False
+        elif self.view_mode == "SAIDAS":
+            self.show_estoque = False
+            self.show_recarga = False
+            self.show_saidas = True
+        elif self.view_mode == "ESTOQUES":
+            self.show_estoque = True
+            self.show_recarga = False
+            self.show_saidas = False
+
+        # Mostrar/ocultar painéis laterais conforme o modo
+        try:
+            comparison_panel = self.query_one("#comparison-panel", ComparisonPanel)
+            alerts_panel = self.query_one("#alerts-panel", AlertsPanel)
+
+            if self.view_mode == "RECARGAS":
+                comparison_panel.add_class("visible")
+                alerts_panel.add_class("visible")
+            else:
+                comparison_panel.remove_class("visible")
+                alerts_panel.remove_class("visible")
+        except:
+            pass
+
+        self.refresh_data()
 
 
 def main():
