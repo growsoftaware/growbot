@@ -228,5 +228,65 @@
     "alias": "colomba",
     "canonical": "colombia",
     "reason": "erro de digitação"
+  },
+  {
+    "alias": "gold",
+    "canonical": "colombia gold",
+    "reason": "abreviação - validado 22/12"
+  },
+  {
+    "alias": "super bruce banner",
+    "canonical": "bruce",
+    "reason": "variante completa - validado 22/12"
+  },
+  {
+    "alias": "ice melt",
+    "canonical": "ice khalifa",
+    "reason": "variante - validado 22/12"
+  },
+  {
+    "alias": "gelo",
+    "canonical": "ice khalifa",
+    "reason": "tradução português - validado 22/12"
+  },
+  {
+    "alias": "ice",
+    "canonical": "ice khalifa",
+    "reason": "abreviação - validado 22/12"
+  },
+  {
+    "alias": "lemon",
+    "canonical": "super lemon",
+    "reason": "abreviação - validado 22/12"
+  },
+  {
+    "alias": "paki",
+    "canonical": "packi",
+    "reason": "typo - validado 30/12"
+  },
+  {
+    "alias": "prem",
+    "canonical": "prensado",
+    "reason": "abreviação - validado 30/12"
+  },
+  {
+    "alias": "orange blosson",
+    "canonical": "orange",
+    "reason": "typo blossom - validado 30/12"
+  },
+  {
+    "alias": "orange blossom",
+    "canonical": "orange",
+    "reason": "variante completa - validado 30/12"
+  },
+  {
+    "alias": "bubba kushe",
+    "canonical": "bubba",
+    "reason": "typo kush - validado 30/12"
+  },
+  {
+    "alias": "afeghan kush",
+    "canonical": "afeghan",
+    "reason": "variante com sufixo kush - validado 30/12"
   }
 ]
