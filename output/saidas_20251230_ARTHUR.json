@@ -169,7 +169,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "017",
+      "id_sale_delivery": "016",
       "produto": "prensado",
       "quantidade": 2,
       "endereco_1": "Rua Pericles Vieira da Mota 374, casa dos fundos",
@@ -177,7 +177,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "018",
+      "id_sale_delivery": "017",
       "produto": "sower",
       "quantidade": 4,
       "endereco_1": "rua eduardo marquzes 350",
@@ -185,7 +185,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "019",
+      "id_sale_delivery": "018",
       "produto": "bubba",
       "quantidade": 4,
       "endereco_1": "Av Lazara Alves Ferreira, 89",
@@ -193,7 +193,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "020",
+      "id_sale_delivery": "019",
       "produto": "escama",
       "quantidade": 2,
       "endereco_1": "Professor Joaquim Roberto 35",
@@ -201,7 +201,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "021",
+      "id_sale_delivery": "020",
       "produto": "prensado",
       "quantidade": 1,
       "endereco_1": "Rua dos angicos 530, Bairro Jaraguá",
@@ -209,7 +209,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "022",
+      "id_sale_delivery": "021",
       "produto": "sower",
       "quantidade": 4,
       "endereco_1": "Professor pedro Bernardo 40",
@@ -217,7 +217,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "023",
+      "id_sale_delivery": "022",
       "produto": "sower",
       "quantidade": 5,
       "endereco_1": "Antônio Salviano de Rezende 559",
@@ -225,7 +225,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "024",
+      "id_sale_delivery": "023",
       "produto": "exporta",
       "quantidade": 1,
       "endereco_1": "Rua das Seringueiras 931",
@@ -233,7 +233,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "025",
+      "id_sale_delivery": "024",
       "produto": "dry",
       "quantidade": 2,
       "endereco_1": "marques povoa 374",
@@ -241,7 +241,7 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "025",
+      "id_sale_delivery": "024",
       "produto": "bubba",
       "quantidade": 8,
       "endereco_1": "marques povoa 374",
@@ -249,7 +249,15 @@
       "data_entrega": "30/12/2025"
     },
     {
-      "id_sale_delivery": "026",
+      "id_sale_delivery": "025",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Quintino Bocaiuva 563",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
       "produto": "escama",
       "quantidade": 1,
       "endereco_1": "Quintino Bocaiuva 563",
@@ -258,14 +266,6 @@
     },
     {
       "id_sale_delivery": "026",
-      "produto": "escama",
-      "quantidade": 1,
-      "endereco_1": "Quintino Bocaiuva 563",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
-    },
-    {
-      "id_sale_delivery": "027",
       "produto": "dry",
       "quantidade": 1,
       "endereco_1": "Maria das dores dias 790",
