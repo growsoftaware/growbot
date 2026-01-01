@@ -1,0 +1,34 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-29",
+  "items": [
+    {
+      "driver": "RODRIGO",
+      "produto": "marmita",
+      "quantidade": 50,
+      "data_recarga": "24/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bala pizza hunt",
+      "quantidade": 30,
+      "data_recarga": "24/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "arizona",
+      "quantidade": 20,
+      "data_recarga": "24/12/2025",
+      "observacao": null
+    }
+  ],
+  "resumo": {
+    "total_recargas": 3,
+    "total_unidades": 100,
+    "por_driver": {
+      "RODRIGO": 100
+    }
+  }
+}

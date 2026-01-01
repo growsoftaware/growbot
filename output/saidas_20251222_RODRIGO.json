@@ -1,0 +1,372 @@
+{
+  "metadata": {
+    "driver": "RODRIGO",
+    "data": "22/12/2025",
+    "total_entregas": 36,
+    "total_itens": 46,
+    "gerado_em": "2025-12-30T00:00:00Z",
+    "fonte": "export WhatsApp validado manualmente"
+  },
+  "items": [
+    {
+      "id_sale_delivery": "001",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Av Platina 545",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "002",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Rua Delmira Cândida Rodrigues da Cunha, 128 apto 301",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "003",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Rua Pedro José Samora 978",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "004",
+      "produto": "bala cnn",
+      "quantidade": 3,
+      "endereco_1": "Rua Manoel Serralha 585",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Av Maranhão 1073",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Avenida Pará 2205",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "sower",
+      "quantidade": 4,
+      "endereco_1": "Avenida Rondon Pacheco, 3927",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "pretinho uva",
+      "quantidade": 5,
+      "endereco_1": "Avenida Rondon Pacheco, 3927",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "colombia",
+      "quantidade": 10,
+      "endereco_1": "Hildebrando Oliva 596, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Hildebrando Oliva 596, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Av Uirapuru 940",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "md",
+      "quantidade": 1,
+      "endereco_1": "Rua Ocidental 1054",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Alexandre Ribeiro Guimarães, 642, Saraiva",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "fly pig",
+      "quantidade": 1,
+      "endereco_1": "Avenida Pará 2205",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "013",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Av. Oscarina Cunha Chaves, 510 - Patrimônio",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "md",
+      "quantidade": 2,
+      "endereco_1": "Passo Fundo 201",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Passo Fundo 201",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "015",
+      "produto": "afghan",
+      "quantidade": 1,
+      "endereco_1": "Rua Alvredo Tormim 220",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "dry",
+      "quantidade": 4,
+      "endereco_1": "Rio Tibre 496",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rio Tibre 496",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "017",
+      "produto": "prensado",
+      "quantidade": 2,
+      "endereco_1": "Avenida Seguismundo Pereira 3333",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "018",
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "Nordau Gonçalves de Melo, 507",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "018",
+      "produto": "exporta",
+      "quantidade": 5,
+      "endereco_1": "Nordau Gonçalves de Melo, 507",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "019",
+      "produto": "manga rosa",
+      "quantidade": 10,
+      "endereco_1": "Ave Johen Carneiro 6",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "020",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Molibdenio 320",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "021",
+      "produto": "bubba",
+      "quantidade": 10,
+      "endereco_1": "Rua José de Oliveira Pinto 682",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "abacaxi",
+      "quantidade": 2,
+      "endereco_1": "Rua Monte Carmelo 311, Osvaldo Rezende, Cond. Spazio Up Town",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "bruce",
+      "quantidade": 2,
+      "endereco_1": "Rua Monte Carmelo 311, Osvaldo Rezende, Cond. Spazio Up Town",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "meleca",
+      "quantidade": 1,
+      "endereco_1": "Rua Monte Carmelo 311, Osvaldo Rezende, Cond. Spazio Up Town",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "023",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "R Rio de Janeiro, Bairro Brasil, 1755",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "024",
+      "produto": "dry",
+      "quantidade": 5,
+      "endereco_1": "Av José Paes de Almeida 107, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Carlos Tomazelli 69",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "026",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Cláudio Silveira, 348",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "027",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Avenida Teylor Silva 811",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "manga rosa",
+      "quantidade": 5,
+      "endereco_1": "Avenida James Siqueira, 550, Morumbi",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Alameda Paulo Cesar Santana, 885",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "030",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Amore 180, Jardim Karaiba (Deixar no correio)",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "031",
+      "produto": "orange",
+      "quantidade": 5,
+      "endereco_1": "João Pereira da Silva 163",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "031",
+      "produto": "super lemon",
+      "quantidade": 1,
+      "endereco_1": "João Pereira da Silva 163",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "032",
+      "produto": "arizona",
+      "quantidade": 15,
+      "endereco_1": "Rua Luzia Neves Fleck 150",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "032",
+      "produto": "manga rosa",
+      "quantidade": 5,
+      "endereco_1": "Rua Luzia Neves Fleck 150",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "033",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Nego Amancio 189",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "034",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "R. Vitalino Rezende do Carmo, 77 - Saraiva",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "035",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Av Manuel Lúcio 601",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    },
+    {
+      "id_sale_delivery": "036",
+      "produto": "exporta",
+      "quantidade": 4,
+      "endereco_1": "Avenida Babel 623, Canaã",
+      "driver": "RODRIGO",
+      "data_entrega": "22/12/2025"
+    }
+  ]
+}

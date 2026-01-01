@@ -1,0 +1,34 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-29",
+  "items": [
+    {
+      "driver": "RODRIGO",
+      "produto": "dry",
+      "quantidade": 30,
+      "data_recarga": "23/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "exporta",
+      "quantidade": 25,
+      "data_recarga": "23/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "marmita",
+      "quantidade": 10,
+      "data_recarga": "23/12/2025",
+      "observacao": null
+    }
+  ],
+  "resumo": {
+    "total_recargas": 3,
+    "total_unidades": 65,
+    "por_driver": {
+      "RODRIGO": 65
+    }
+  }
+}

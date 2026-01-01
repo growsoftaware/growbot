@@ -1,0 +1,285 @@
+{
+  "metadata": {
+    "driver": "KAROL",
+    "data_entrega": "29/12/2025",
+    "total_corridas": 30,
+    "total_itens": 34,
+    "validado_em": "2025-12-30T02:45:00",
+    "fonte": "WhatsApp export - Akita",
+    "notas": "Duas sessões de numeração. Sessão 1 (IDs com 'b') pode ser rascunho. Akita informou 20 corridas, mas export tem 30."
+  },
+  "items": [
+    {
+      "id_sale_delivery": "001b",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Neilton Cobo Victor 301",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "002b",
+      "produto": "orange",
+      "quantidade": 4,
+      "endereco_1": "Rua Duque de Caxias 495",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "003b",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua Lourival Gonçalves 91 Shopping Park",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "004b",
+      "produto": "abacaxi",
+      "quantidade": 3,
+      "endereco_1": "Avenida Imbaubas 2369",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "005b",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "José Abdulmassih 1680 (loja na esquina)",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006b",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Nego Amancio 189 (Correio)",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006b",
+      "produto": "bruce",
+      "quantidade": 1,
+      "endereco_1": "Rua Nego Amancio 189 (Correio)",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006b",
+      "produto": "meleca",
+      "quantidade": 1,
+      "endereco_1": "Rua Nego Amancio 189 (Correio)",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "007b",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Rua João Justino Fernandes 562",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "008b",
+      "produto": "bubba",
+      "quantidade": 5,
+      "endereco_1": "Rua Paraíba 2637 Umuarama",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "009b",
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "Rua Armando Tucci 1689",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "010b",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Rua México 562",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "011b",
+      "produto": "elon musk",
+      "quantidade": 5,
+      "endereco_1": "Nordau Gonçalves de Melo 810",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "012b",
+      "produto": "super lemon",
+      "quantidade": 2,
+      "endereco_1": "Av do Corinto 350",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "013b",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Antônio Salviano de Rezende 88",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "014b",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Av. Oscarina Cunha Chaves 510 Patrimônio",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Acre 1244",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "afeghan",
+      "quantidade": 4,
+      "endereco_1": "Oscarina Cunha Chaves 519",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "md",
+      "quantidade": 3,
+      "endereco_1": "Rua Aberlado Pena 576",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Prof. Maria Célia Cence 160, Cond. United States",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Golã 498 Canaã",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "orange",
+      "quantidade": 4,
+      "endereco_1": "Rua Antônio Domingues 360, Chácaras Tubalina",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Rezende 184",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "013",
+      "produto": "colombia",
+      "quantidade": 10,
+      "endereco_1": "Rua José Carrijo 1289 Santa Monica",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "013x",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Amore 180 Jardim Karaiba (Correio)",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "bala canadian",
+      "quantidade": 3,
+      "endereco_1": "Sebastião Gonçalves Cabral 245 Shopping Park",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "bala cnn",
+      "quantidade": 3,
+      "endereco_1": "Sebastião Gonçalves Cabral 245 Shopping Park",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "abacaxi",
+      "quantidade": 2,
+      "endereco_1": "Sebastião Gonçalves Cabral 245 Shopping Park",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "015",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Deboche",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "Deboche",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "017",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Rua Maria Antonieta Dantas 37",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "orange",
+      "quantidade": 4,
+      "endereco_1": "Denilson de Paula 201",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua Gerson Braga 660 Segismundo Pereira",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "030",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Av Austrália 542",
+      "driver": "KAROL",
+      "data_entrega": "29/12/2025"
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "driver": "RODRIGO",
+    "data": "29/12/2025",
+    "total_entregas": 48,
+    "total_itens": 71,
+    "gerado_em": "2025-12-30T00:00:00Z",
+    "fonte": "export WhatsApp validado manualmente",
+    "notas": "Bloco 20 ignorado (resgate zip, não venda). Bloco 21 inexistente. Bloco 18 duplicado (2 entregas)."
+  },
+  "items": [
+    {
+      "id_sale_delivery": "001",
+      "produto": "arizona",
+      "quantidade": 1,
+      "endereco_1": "Av dos Jardins 250",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "001",
+      "produto": "super lemon",
+      "quantidade": 1,
+      "endereco_1": "Av dos Jardins 250",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "002",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Francisco Custódio Pereira, 95, Jardim Patrícia",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "002",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Francisco Custódio Pereira, 95, Jardim Patrícia",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "003",
+      "produto": "flor da vida",
+      "quantidade": 1,
+      "endereco_1": "Rua Leila Diniz 200",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "003",
+      "produto": "packi",
+      "quantidade": 2,
+      "endereco_1": "Rua Leila Diniz 200",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "004",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua José Pena Rispoli 622",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Rua João Rodrigues da Silva, 162",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "sower",
+      "quantidade": 4,
+      "endereco_1": "Av Jacarandá, 100",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "papel abacaxi",
+      "quantidade": 1,
+      "endereco_1": "Av Jacarandá, 100",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Santa Edwirges 155, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "orange blossom",
+      "quantidade": 3,
+      "endereco_1": "Rua Santa Edwirges 155, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "colombia gold",
+      "quantidade": 15,
+      "endereco_1": "Rua Austin 135",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Austin 96",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "prensado",
+      "quantidade": 3,
+      "endereco_1": "Av Professora Juvelinia dos Santos, 1197, apto 103, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "dry",
+      "quantidade": 3,
+      "endereco_1": "Rua dos Bacuris 165",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "super lemon",
+      "quantidade": 1,
+      "endereco_1": "Estrela do Sul 2273",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "013",
+      "produto": "ice pistachio",
+      "quantidade": 2,
+      "endereco_1": "Pça Alcides Borges Oliveira 10",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "013",
+      "produto": "tabaco",
+      "quantidade": 1,
+      "endereco_1": "Pça Alcides Borges Oliveira 10",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "papel abacaxi",
+      "quantidade": 2,
+      "endereco_1": "Rua Rodrigues da Cunha, 790, Bairro Martins",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "015",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Avenida Teylor Silva 811",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Dr Luiz Antônio Waack 1585",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Rua Dr Luiz Antônio Waack 1585",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Rua Dr Luiz Antônio Waack 1585",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "017",
+      "produto": "bubba",
+      "quantidade": 30,
+      "endereco_1": "Av. Austrália, 143 - Tibery",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "018a",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua Gerson Braga 660, Segismundo Pereira",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "018b",
+      "produto": "prensado",
+      "quantidade": 2,
+      "endereco_1": "Rua Detroit, 273, Novo Mundo",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "019",
+      "produto": "colombia",
+      "quantidade": 5,
+      "endereco_1": "Av Liberdade 756",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "colombia gold",
+      "quantidade": 10,
+      "endereco_1": "Rua Timbiras 551",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "ice khalifa",
+      "quantidade": 3,
+      "endereco_1": "Rua Timbiras 551",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "023",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Rua Mário Pinto Sobrinho, 176",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "024",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Diamante 600, Jardim Patrícia",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "ice pistachio",
+      "quantidade": 1,
+      "endereco_1": "Rua Taranto 50",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua Taranto 50",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "026",
+      "produto": "cogumelo",
+      "quantidade": 3,
+      "endereco_1": "Rua Roosevelt de Oliveira 632",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "026",
+      "produto": "colombia",
+      "quantidade": 5,
+      "endereco_1": "Rua Roosevelt de Oliveira 632",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "027",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Avenida Francisco Ribeiro 301",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Av Godevino Alves da Rocha 797",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Av dos Jardins 250",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "bruce",
+      "quantidade": 1,
+      "endereco_1": "Av dos Jardins 250",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "030",
+      "produto": "dry",
+      "quantidade": 2,
+      "endereco_1": "Rua Paria 638, Tibery",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "031",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Rua Ronan Manuel Pereira, 1415",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "032",
+      "produto": "texas",
+      "quantidade": 10,
+      "endereco_1": "Jornalista João de Oliveira 70",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "033",
+      "produto": "super lemon",
+      "quantidade": 3,
+      "endereco_1": "Rua Otávio Rodrigues da Cunha 71",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "033",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Rua Otávio Rodrigues da Cunha 71",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "034",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua Alípio José de Souza 172, Laranjeiras, casa 1",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "035",
+      "produto": "colombia",
+      "quantidade": 5,
+      "endereco_1": "Goiás, 50",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "035",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Goiás, 50",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "035",
+      "produto": "exporta",
+      "quantidade": 3,
+      "endereco_1": "Goiás, 50",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "036",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Jamil Abraão 45",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "037",
+      "produto": "bubba",
+      "quantidade": 4,
+      "endereco_1": "Atilio Valentini 1345",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "038",
+      "produto": "prensado",
+      "quantidade": 2,
+      "endereco_1": "Rua Maria Dirce Ribeiro, 296, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "038",
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "Rua Maria Dirce Ribeiro, 296, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "039",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Pedro José Samora 978",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "040",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua do Engenheiro 1259",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "041",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Neilton Cobo Victor 301 (Correio)",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "042",
+      "produto": "md",
+      "quantidade": 1,
+      "endereco_1": "Av Confederação do Equador 785",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "043",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "R. Vitalino Rezende do Carmo, 77",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "044",
+      "produto": "ice pistachio",
+      "quantidade": 1,
+      "endereco_1": "Rua Francisco Antônio Fernandes 21",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "045",
+      "produto": "orange blossom",
+      "quantidade": 2,
+      "endereco_1": "Av Coronel José Teófilo Carneiro 436, Jardim Brasília",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "046",
+      "produto": "orange",
+      "quantidade": 4,
+      "endereco_1": "Antônia Saltão de Almeida, 250 - Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "046",
+      "produto": "afghan",
+      "quantidade": 4,
+      "endereco_1": "Antônia Saltão de Almeida, 250 - Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "047",
+      "produto": "arizona",
+      "quantidade": 15,
+      "endereco_1": "Rua das Gaivotas 657",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "048",
+      "produto": "manga rosa",
+      "quantidade": 5,
+      "endereco_1": "Ana Godoy de Souza 263",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "049",
+      "produto": "sower",
+      "quantidade": 2,
+      "endereco_1": "Rua Eduardo Marquez, 904",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    },
+    {
+      "id_sale_delivery": "050",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Pedro José Samora 484, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "29/12/2025"
+    }
+  ]
+}

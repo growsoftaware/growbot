@@ -1,0 +1,14 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-29",
+  "items": [
+    {"driver": "FRANCIS", "produto": "arizona", "quantidade": 10, "data_recarga": "29/12/2025", "observacao": null},
+    {"driver": "FRANCIS", "produto": "ice nugg", "quantidade": 10, "data_recarga": "29/12/2025", "observacao": null},
+    {"driver": "FRANCIS", "produto": "texas", "quantidade": 10, "data_recarga": "29/12/2025", "observacao": null}
+  ],
+  "resumo": {
+    "total_recargas": 3,
+    "total_unidades": 30,
+    "por_driver": {"FRANCIS": 30}
+  }
+}
