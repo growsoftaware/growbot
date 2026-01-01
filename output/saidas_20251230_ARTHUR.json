@@ -1,220 +1,572 @@
 {
   "items": [
     {
-      "id_sale_delivery": "001",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:49 AM] Akita: 1 marmita",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
-    },
-    {
       "id_sale_delivery": "002",
       "produto": "marmita",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:50 AM] Akita: 1 marmita",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "quantidade": 2,
+      "endereco_1": "rua noraldino ferreira 57 bairro segismundo pereira",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "003",
-      "produto": "shopping park",
-      "quantidade": 105,
-      "endereco_1": "[2025-12-31, 2:55:50 AM] Akita: 2 escama",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "gold",
+      "quantidade": 10,
+      "endereco_1": "Rua Salerno 111",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "004",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:51 AM] Akita: 1 marmita",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "005",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:52 AM] Akita: 1g dry suíço",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua Antônio Rufino Borges 8 luizote",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "cnn",
+      "quantidade": 1,
+      "endereco_1": "Rua Antônio Rufino Borges 8 luizote",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "006",
-      "produto": "DESCONHECIDO",
+      "produto": "exporta",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:53 AM] Akita: 1 marmita",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "seda",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "colombia",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "007",
-      "produto": "marmita",
+      "produto": "bubba",
+      "quantidade": 4,
+      "endereco_1": "Rua dos pereiras 747",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "seda",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:53 AM] Akita: 1 marmita",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua dos pereiras 747",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "piteira",
+      "quantidade": 1,
+      "endereco_1": "Rua dos pereiras 747",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "008",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:54 AM] Akita: 2 CNN",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "bruce",
+      "quantidade": 5,
+      "endereco_1": "Rua: João velasco de Andrade 407 santa Monica",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "009",
-      "produto": "orange",
-      "quantidade": 4,
-      "endereco_1": "[2025-12-31, 2:55:55 AM] Akita: 4g orange",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Rua Paris 80",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "ice nugg",
+      "quantidade": 1,
+      "endereco_1": "Rua Paris 80",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "seda",
+      "quantidade": 1,
+      "endereco_1": "Rua Paris 80",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "010",
-      "produto": "exporta",
+      "produto": "cogumelo",
       "quantidade": 2,
-      "endereco_1": "[2025-12-31, 2:55:56 AM] Akita: 2 exporta",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
-    },
-    {
-      "id_sale_delivery": "011",
-      "produto": "marmita",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:57 AM] Akita: Pensado 20g , avenida chadi fad",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "012",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:58 AM] Akita: Sower haze 4G",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "013",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:58 AM] Akita: Rua Renato de Oliveira grama 245",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua cometa 445",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "014",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:55:59 AM] Akita: 5g arizona",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua Adomervil Moreira Miranda 766",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "015",
-      "produto": "de prem no",
-      "quantidade": 40,
-      "endereco_1": "[2025-12-31, 2:56:00 AM] Akita: Os 40g de prem no 130",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "016",
-      "produto": "prensado",
-      "quantidade": 40,
-      "endereco_1": "[2025-12-31, 2:56:01 AM] Akita: Rua Pericles Vieira da Mota 374, casa dos fundos",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
-    },
-    {
-      "id_sale_delivery": "016",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:01 AM] Akita: me vê 4g de sower haze",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "Rua Rodolfo Correa, 463 - Cazeca",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "017",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:02 AM] Akita: São 4g de bubba kush",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Niteroi callink",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "018",
-      "produto": "escma",
-      "quantidade": 2,
-      "endereco_1": "[2025-12-31, 2:56:03 AM] Akita: Professor Joaquim Roberto 35",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "texas",
+      "quantidade": 10,
+      "endereco_1": "Avenida Terezina 2330",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "019",
-      "produto": "prem",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:03 AM] Akita: Rua dos angicos 530",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Se manda um peso de 20g aqui pro bairro Brasil, rua Bahia 1363",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "020",
-      "produto": "sower",
-      "quantidade": 4,
-      "endereco_1": "[2025-12-31, 2:56:04 AM] Akita: Professor pedro Bernardo 40",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "afeghan",
+      "quantidade": 1,
+      "endereco_1": "av. divino adão moura, 157",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "021",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:05 AM] Akita: 5g se sower",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua natal 1222",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "022",
-      "produto": "DESCONHECIDO",
+      "produto": "ice khalifa",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:06 AM] Akita: Manda um expor pra mim ?",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Rua nego Amancio 189",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "bruce",
+      "quantidade": 1,
+      "endereco_1": "Rua nego Amancio 189",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "meleca",
+      "quantidade": 1,
+      "endereco_1": "Rua nego Amancio 189",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "023",
-      "produto": "de dry",
+      "produto": "afeghan",
       "quantidade": 2,
-      "endereco_1": "[2025-12-31, 2:56:06 AM] Akita: marques povoa 374",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Avenida Para, 2200",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "024",
-      "produto": "de escama",
-      "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:07 AM] Akita: Vou querer uma escama",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Niteroi callink",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "025",
-      "produto": "dry ai com vc né",
+      "produto": "orange",
       "quantidade": 1,
-      "endereco_1": "[2025-12-31, 2:56:08 AM] Akita: Maria das dores dias 790",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "endereco_1": "Avenida Alexandre Ribeiro Guimarães 692 casa 1",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Avenida Alexandre Ribeiro Guimarães 692 casa 1",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "026",
-      "produto": "DESCONHECIDO",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "Av alexandrino Alves Vieira, 535, Santa Rosa",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "027",
+      "produto": "escama",
       "quantidade": 1,
       "endereco_1": "",
-      "driver": "ARTHUR",
-      "data_entrega": "30/12/2025"
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "027",
+      "produto": "arizona",
+      "quantidade": 10,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Correio",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Correio",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "afeghan",
+      "quantidade": 3,
+      "endereco_1": "Rua Santa Edwirges, 123",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "ice khalifa",
+      "quantidade": 1,
+      "endereco_1": "Rua Santa Edwirges, 123",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "cnn",
+      "quantidade": 2,
+      "endereco_1": "Rua Santa Edwirges, 123",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "029",
+      "produto": "md",
+      "quantidade": 1,
+      "endereco_1": "Rua Santa Edwirges, 123",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "030",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua João Justino Fernandes 562",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "030",
+      "produto": "abacaxi",
+      "quantidade": 1,
+      "endereco_1": "Rua João Justino Fernandes 562",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "031",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "av. profa juvenília dos santos 1373",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "031",
+      "produto": "canadian",
+      "quantidade": 1,
+      "endereco_1": "av. profa juvenília dos santos 1373",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "032",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua joao pereira da silva 138, Santa Mônica",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "033",
+      "produto": "orange",
+      "quantidade": 1,
+      "endereco_1": "Rua dos pereiras 691",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "034",
+      "produto": "arizona",
+      "quantidade": 15,
+      "endereco_1": "Rua Campeio 55 - Morumbi",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "035",
+      "produto": "orange",
+      "quantidade": 1,
+      "endereco_1": "Av indaia 1333, planalto",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "036",
+      "produto": "paki",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "036",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "037",
+      "produto": "flypig",
+      "quantidade": 1,
+      "endereco_1": "Rua Mário zara n 60",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "038",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "039",
+      "produto": "super lemon",
+      "quantidade": 3,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "040",
+      "produto": "ice nugg",
+      "quantidade": 3,
+      "endereco_1": "Rua Monte Carmelo 311 Osvaldo Rezende condomínio Spazio up town",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "041",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Timbiras",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "042",
+      "produto": "canadian",
+      "quantidade": 2,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "043",
+      "produto": "flypig",
+      "quantidade": 2,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "043",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "044",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua salvador 1106",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "045",
+      "produto": "elon musk",
+      "quantidade": 5,
+      "endereco_1": "rua antonio marciano de avila 1440",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "045",
+      "produto": "abacaxi",
+      "quantidade": 3,
+      "endereco_1": "rua antonio marciano de avila 1440",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "046",
+      "produto": "bubba",
+      "quantidade": 4,
+      "endereco_1": "Rua Manoel da Mata Gonçalves 557 Chácaras Tubalina",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "047",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Avenida João Naves de Ávila 2046",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "047",
+      "produto": "abacaxi",
+      "quantidade": 1,
+      "endereco_1": "Avenida João Naves de Ávila 2046",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "048",
+      "produto": "escama",
+      "quantidade": 3,
+      "endereco_1": "",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "049",
+      "produto": "elon musk",
+      "quantidade": 5,
+      "endereco_1": "rua antonio marciano de avila 1440",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "049",
+      "produto": "abacaxi",
+      "quantidade": 3,
+      "endereco_1": "rua antonio marciano de avila 1440",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "050",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "rua venus 460 jd brasilia",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
+    },
+    {
+      "id_sale_delivery": "051",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "rua mateus 94",
+      "driver": "RODRIGO",
+      "data_entrega": "31/12/2025"
     }
   ]
 }
