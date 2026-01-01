@@ -4,7 +4,7 @@
       "id_sale_delivery": "001",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:56 AM] Akita: Quero 1 g do ice melequento",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -12,7 +12,7 @@
       "id_sale_delivery": "002",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:56 AM] Akita: 2 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -20,7 +20,7 @@
       "id_sale_delivery": "003",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:57 AM] Akita: 10g de gold",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -28,47 +28,47 @@
       "id_sale_delivery": "004",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:58 AM] Akita: 2 exporta",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "005",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:58 AM] Akita: 1 escama",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "006",
-      "produto": "DESCONHECIDO",
+      "produto": "exporta",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:17:59 AM] Akita: 1 exporta",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "007",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "bubba",
+      "quantidade": 4,
+      "endereco_1": "[2026-01-01, 3:18:00 AM] Akita: 3bruce",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "008",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "texas flower e",
+      "quantidade": 5,
+      "endereco_1": "[2026-01-01, 3:18:00 AM] Akita: Rua: João velasco de Andrade 407 santa Monica",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "009",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "[2026-01-01, 3:18:01 AM] Akita: 5g texas",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -76,15 +76,15 @@
       "id_sale_delivery": "010",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:02 AM] Akita: 2g cogu",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "011",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "rua siao",
+      "quantidade": 20,
+      "endereco_1": "[2026-01-01, 3:18:02 AM] Akita: Man tá online ?",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -92,7 +92,7 @@
       "id_sale_delivery": "012",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:03 AM] Akita: 3g escama",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -100,7 +100,7 @@
       "id_sale_delivery": "013",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:03 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -108,7 +108,7 @@
       "id_sale_delivery": "014",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:04 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -116,7 +116,7 @@
       "id_sale_delivery": "015",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:05 AM] Akita: 5g arizona",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -124,7 +124,7 @@
       "id_sale_delivery": "016",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:05 AM] Akita: 3g escama",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -132,7 +132,7 @@
       "id_sale_delivery": "017",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:06 AM] Akita: Niteroi callink",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -140,7 +140,7 @@
       "id_sale_delivery": "018",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:07 AM] Akita: 10g Texas",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -148,7 +148,7 @@
       "id_sale_delivery": "019",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:07 AM] Akita: Se manda um peso de 20g aqui pro bairro Brasil, rua Bahia 1363",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -156,23 +156,23 @@
       "id_sale_delivery": "020",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:08 AM] Akita: vou querer 1g de afeghan",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "021",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:09 AM] Akita: Rua natal 1222",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "022",
-      "produto": "DESCONHECIDO",
+      "produto": "ice",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:09 AM] Akita: Rua nego Amancio 189",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -180,7 +180,7 @@
       "id_sale_delivery": "023",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:10 AM] Akita: 2g afeghan",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -188,15 +188,15 @@
       "id_sale_delivery": "024",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:10 AM] Akita: 5g texas",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "025",
-      "produto": "DESCONHECIDO",
+      "produto": "orange",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:11 AM] Akita: 1g orange",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -204,47 +204,47 @@
       "id_sale_delivery": "026",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:12 AM] Akita: 5g arizona",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "027",
-      "produto": "DESCONHECIDO",
+      "produto": "escama",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:13 AM] Akita: 1g escama",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "028",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:13 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "029",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "afeghan",
+      "quantidade": 3,
+      "endereco_1": "[2026-01-01, 3:18:14 AM] Akita: 3g Afeghan",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "030",
-      "produto": "DESCONHECIDO",
+      "produto": "exporta",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:15 AM] Akita: 1 exporta",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "031",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:16 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -252,7 +252,7 @@
       "id_sale_delivery": "032",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:16 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -260,7 +260,7 @@
       "id_sale_delivery": "033",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:17 AM] Akita: 1g orange",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -268,7 +268,7 @@
       "id_sale_delivery": "034",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:18 AM] Akita: 15g arizona",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -276,15 +276,15 @@
       "id_sale_delivery": "035",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:18 AM] Akita: 1g orange",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "036",
-      "produto": "DESCONHECIDO",
+      "produto": "paki",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:19 AM] Akita: 1 paki",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -292,7 +292,7 @@
       "id_sale_delivery": "037",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:20 AM] Akita: 1 flypig",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -300,7 +300,7 @@
       "id_sale_delivery": "038",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:20 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -308,7 +308,7 @@
       "id_sale_delivery": "039",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:21 AM] Akita: 3g lemon",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -316,7 +316,7 @@
       "id_sale_delivery": "040",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:22 AM] Akita: 3g nugg",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -324,7 +324,7 @@
       "id_sale_delivery": "041",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:22 AM] Akita: Rua Timbiras",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -332,7 +332,7 @@
       "id_sale_delivery": "042",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:23 AM] Akita: 2 canadian",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -340,7 +340,7 @@
       "id_sale_delivery": "043",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:24 AM] Akita: 2 flypig",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -348,15 +348,15 @@
       "id_sale_delivery": "044",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:25 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "045",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "elon musk",
+      "quantidade": 5,
+      "endereco_1": "[2026-01-01, 3:18:26 AM] Akita: 5 elon musk",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -364,15 +364,15 @@
       "id_sale_delivery": "046",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:27 AM] Akita: 4g bubba",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "047",
-      "produto": "DESCONHECIDO",
+      "produto": "marmita",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:27 AM] Akita: 1 marmita",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -380,15 +380,15 @@
       "id_sale_delivery": "048",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:28 AM] Akita: B&B Hotels Brasil (Praça Tubal Vilela, 192 - Centro, Uberlândia, 38400-186, MG, BR): https://www.hotel-bb.com/pt/hotel/uberlandia",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
     {
       "id_sale_delivery": "049",
-      "produto": "DESCONHECIDO",
-      "quantidade": 1,
-      "endereco_1": "",
+      "produto": "elon musk",
+      "quantidade": 5,
+      "endereco_1": "[2026-01-01, 3:18:28 AM] Akita: 5 elon musk",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -396,7 +396,7 @@
       "id_sale_delivery": "050",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:29 AM] Akita: 5g Texas",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
@@ -404,7 +404,7 @@
       "id_sale_delivery": "051",
       "produto": "DESCONHECIDO",
       "quantidade": 1,
-      "endereco_1": "",
+      "endereco_1": "[2026-01-01, 3:18:30 AM] Akita: 5g arizona",
       "driver": "RODRIGO",
       "data_entrega": "31/12/2025"
     },
