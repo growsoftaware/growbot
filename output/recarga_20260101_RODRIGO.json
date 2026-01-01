@@ -1,0 +1,27 @@
+{
+  "tipo": "recarga",
+  "data_import": "2026-01-01",
+  "items": [
+    {
+      "driver": "RODRIGO",
+      "produto": "marmita",
+      "quantidade": 20,
+      "data_recarga": "01/01/2026",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "md",
+      "quantidade": 19,
+      "data_recarga": "01/01/2026",
+      "observacao": null
+    }
+  ],
+  "resumo": {
+    "total_recargas": 2,
+    "total_unidades": 39,
+    "por_driver": {
+      "RODRIGO": 39
+    }
+  }
+}
