@@ -50,8 +50,9 @@ def extrair_timestamp(linha: str) -> Optional[datetime]:
     if match:
         try:
             return datetime.strptime(f"{match.group(1)} {match.group(2)}", "%d/%m/%y %H:%M:%S")
-        except:
-            pass
+        except ValueError:
+            # Formato de data/hora inválido - silenciosamente retorna None
+            return None
     return None
 
 
@@ -66,7 +67,10 @@ def detectar_driver(texto: str) -> Optional[str]:
 
 
 def calcular_data_por_dia_semana(dia_semana: str, data_base: datetime) -> str:
-    """Calcula a data mais próxima no passado/futuro para um dia da semana."""
+    """Calcula a data do dia da semana mencionado, sempre no passado relativo ao timestamp.
+
+    Ex: Se timestamp é sábado 27/12 e texto diz "sexta", retorna 26/12 (sexta passada).
+    """
     dia_semana = dia_semana.lower()
     if dia_semana not in DIAS_SEMANA:
         return None
@@ -74,12 +78,11 @@ def calcular_data_por_dia_semana(dia_semana: str, data_base: datetime) -> str:
     target_weekday = DIAS_SEMANA[dia_semana]
     current_weekday = data_base.weekday()
 
-    # Calcula dias até o próximo dia da semana (pode ser passado ou futuro próximo)
+    # Sempre busca no passado: se o dia ainda não chegou esta semana, pega da semana passada
     diff = target_weekday - current_weekday
-    if diff > 3:  # Se for mais de 3 dias no futuro, assume semana passada
+    if diff > 0:  # Dia ainda não chegou esta semana, pega semana passada
         diff -= 7
-    elif diff < -3:  # Se for mais de 3 dias no passado, assume próxima semana
-        diff += 7
+    # Se diff <= 0: é hoje ou já passou esta semana (correto)
 
     data_alvo = data_base + timedelta(days=diff)
     return data_alvo.strftime("%d/%m/%Y")
