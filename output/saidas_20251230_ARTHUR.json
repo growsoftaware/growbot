@@ -1,0 +1,284 @@
+{
+  "items": [
+    {
+      "id_sale_delivery": "001",
+      "produto": "elon musk",
+      "quantidade": 1,
+      "endereco_1": "av Alexandre Ribeiro Guimarães 280 saraiva",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "002",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua do estudante 236",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "003",
+      "produto": "colombia gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Rio Grande do Sul, 22",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "004",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "Rua Luiz Fuad abib 105 shopping park",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "rua corcovado 174",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Na imbaubas 1400",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua João Pereira da Silva 138",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Rua Brás sátiro de Souza, número 235",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Rua Brás sátiro de Souza, número 235",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "pretin uva",
+      "quantidade": 1,
+      "endereco_1": "Rua Brás sátiro de Souza, número 235",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "bala cnn",
+      "quantidade": 2,
+      "endereco_1": "Rua Marco Aurélio Resende dos Santos, 230",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "orange",
+      "quantidade": 4,
+      "endereco_1": "Rua Manoel ascenco Batista 1880",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "packi",
+      "quantidade": 2,
+      "endereco_1": "Rua Manoel ascenco Batista 1880",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "Rua transição 860",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "bala canadian",
+      "quantidade": 2,
+      "endereco_1": "Rua transição 860",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "avenida chadi fad 1651",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "avenida chadi fad 1651",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "013",
+      "produto": "sower",
+      "quantidade": 4,
+      "endereco_1": "Rua Luiz Fuad Abib, 105",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "",
+      "quantidade": 0,
+      "endereco_1": "Rua Renato de Oliveira grama 245",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "015",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "rua senador salgado filha 254",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "prensado",
+      "quantidade": 2,
+      "endereco_1": "Rua dos cravos 385",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "prensado",
+      "quantidade": 2,
+      "endereco_1": "Rua Pericles Vieira da Mota 374, casa dos fundos",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "017",
+      "produto": "sower",
+      "quantidade": 4,
+      "endereco_1": "rua eduardo marquzes 350",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "018",
+      "produto": "bubba",
+      "quantidade": 4,
+      "endereco_1": "Av Lazara Alves Ferreira, 89",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "019",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "Professor Joaquim Roberto 35",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "020",
+      "produto": "prensado",
+      "quantidade": 1,
+      "endereco_1": "Rua dos angicos 530, Bairro Jaraguá",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "021",
+      "produto": "sower",
+      "quantidade": 4,
+      "endereco_1": "Professor pedro Bernardo 40",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "sower",
+      "quantidade": 5,
+      "endereco_1": "Antônio Salviano de Rezende 559",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "023",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua das Seringueiras 931",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "024",
+      "produto": "dry",
+      "quantidade": 2,
+      "endereco_1": "marques povoa 374",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "024",
+      "produto": "bubba",
+      "quantidade": 8,
+      "endereco_1": "marques povoa 374",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Quintino Bocaiuva 563",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "025",
+      "produto": "escama",
+      "quantidade": 1,
+      "endereco_1": "Quintino Bocaiuva 563",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "026",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Maria das dores dias 790",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "028",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "",
+      "driver": "ARTHUR",
+      "data_entrega": "30/12/2025"
+    }
+  ]
+}
