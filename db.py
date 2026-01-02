@@ -38,9 +38,20 @@ class GrowBotDB:
                 endereco VARCHAR,
                 observacao VARCHAR,
                 arquivo_origem VARCHAR,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                review_severity VARCHAR,
+                review_category VARCHAR,
+                review_status VARCHAR,
+                review_issue TEXT,
+                review_ai_notes TEXT,
+                review_human_notes TEXT,
+                review_decision TEXT,
+                reviewed_at TIMESTAMP
             )
         """)
+
+        # Migração: Adiciona colunas de review se não existirem (para bancos antigos)
+        self._migrate_review_columns()
 
         # Tabela de aliases
         self.conn.execute("""
@@ -63,6 +74,30 @@ class GrowBotDB:
 
         # Views para relatórios
         self._create_views()
+
+    def _migrate_review_columns(self):
+        """Adiciona colunas de review em bancos existentes (migração)"""
+        review_columns = [
+            ("review_severity", "VARCHAR"),
+            ("review_category", "VARCHAR"),
+            ("review_status", "VARCHAR"),
+            ("review_issue", "TEXT"),
+            ("review_ai_notes", "TEXT"),
+            ("review_human_notes", "TEXT"),
+            ("review_decision", "TEXT"),
+            ("reviewed_at", "TIMESTAMP"),
+        ]
+
+        # Verifica colunas existentes
+        existing = self.conn.execute(
+            "SELECT column_name FROM information_schema.columns WHERE table_name = 'movimentos'"
+        ).fetchall()
+        existing_names = {row[0] for row in existing}
+
+        # Adiciona colunas faltantes
+        for col_name, col_type in review_columns:
+            if col_name not in existing_names:
+                self.conn.execute(f"ALTER TABLE movimentos ADD COLUMN {col_name} {col_type}")
 
     def _create_views(self):
         """Cria views para relatórios"""
@@ -137,6 +172,49 @@ class GrowBotDB:
             FROM movimentos
             GROUP BY data_movimento, tipo, driver
             ORDER BY data_movimento DESC, driver
+        """)
+
+        # View: Itens pendentes de revisão (ordenados por severidade)
+        self.conn.execute("""
+            CREATE OR REPLACE VIEW v_review_pendentes AS
+            SELECT
+                id,
+                tipo,
+                driver,
+                produto,
+                quantidade,
+                data_movimento,
+                endereco,
+                review_severity,
+                review_category,
+                review_issue,
+                review_ai_notes,
+                reviewed_at,
+                arquivo_origem
+            FROM movimentos
+            WHERE review_status = 'pendente'
+            ORDER BY
+                CASE review_severity
+                    WHEN 'critico' THEN 1
+                    WHEN 'atencao' THEN 2
+                    WHEN 'info' THEN 3
+                    ELSE 4
+                END,
+                reviewed_at DESC
+        """)
+
+        # View: Estatísticas de revisão
+        self.conn.execute("""
+            CREATE OR REPLACE VIEW v_review_stats AS
+            SELECT
+                review_status,
+                review_severity,
+                review_category,
+                COUNT(*) as total,
+                ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) as percentual
+            FROM movimentos
+            GROUP BY review_status, review_severity, review_category
+            ORDER BY total DESC
         """)
 
     def _parse_date(self, date_str: str) -> str:
@@ -420,6 +498,24 @@ class GrowBotDB:
             )
         return self._fetchall_dict("SELECT * FROM v_movimentos_dia")
 
+    def review_pendentes(self, driver: str = None, severity: str = None) -> list:
+        """Retorna itens pendentes de revisão"""
+        query = "SELECT * FROM v_review_pendentes WHERE 1=1"
+        params = []
+
+        if driver:
+            query += " AND driver = ?"
+            params.append(driver)
+        if severity:
+            query += " AND review_severity = ?"
+            params.append(severity)
+
+        return self._fetchall_dict(query, params)
+
+    def review_stats(self) -> list:
+        """Retorna estatísticas de revisão"""
+        return self._fetchall_dict("SELECT * FROM v_review_stats")
+
     def query(self, sql: str) -> list:
         """Executa query SQL arbitrária"""
         return self._fetchall_dict(sql)
@@ -492,15 +588,44 @@ if __name__ == "__main__":
             for row in result:
                 print(row)
 
+        elif cmd == "review-pendentes":
+            driver = sys.argv[2] if len(sys.argv) > 2 else None
+            pendentes = db.review_pendentes(driver=driver)
+            if pendentes:
+                print(f"Itens pendentes de revisão ({len(pendentes)}):")
+                for row in pendentes:
+                    sev = row.get('review_severity', '-')
+                    cat = row.get('review_category', '-')
+                    issue = row.get('review_issue', '-')
+                    print(f"  [{sev}|{cat}] {row['driver']} - {row['produto']} x{row['quantidade']}")
+                    if issue:
+                        print(f"           Issue: {issue}")
+            else:
+                print("Nenhum item pendente de revisão!")
+
+        elif cmd == "review-stats":
+            stats = db.review_stats()
+            if stats:
+                print("Estatísticas de revisão:")
+                for row in stats:
+                    status = row.get('review_status') or 'NULL'
+                    severity = row.get('review_severity') or '-'
+                    category = row.get('review_category') or '-'
+                    print(f"  {status:12} | {severity:8} | {category:8} | {row['total']:5} ({row['percentual']}%)")
+            else:
+                print("Nenhuma estatística de revisão disponível")
+
         else:
-            print("Comandos: sync [--force], saldo [DRIVER], negativos, stats, query <SQL>")
+            print("Comandos: sync [--force], saldo [DRIVER], negativos, stats, review-pendentes, review-stats, query <SQL>")
 
     else:
         print("GrowBot DB - Comandos disponíveis:")
-        print("  python db.py sync [--force]  - Sincroniza JSONs")
-        print("  python db.py saldo [DRIVER]  - Mostra saldo")
-        print("  python db.py negativos       - Mostra alertas")
-        print("  python db.py stats           - Estatísticas")
-        print("  python db.py query <SQL>     - Query livre")
+        print("  python db.py sync [--force]     - Sincroniza JSONs")
+        print("  python db.py saldo [DRIVER]     - Mostra saldo")
+        print("  python db.py negativos          - Mostra alertas")
+        print("  python db.py stats              - Estatísticas")
+        print("  python db.py review-pendentes   - Itens pendentes de revisão")
+        print("  python db.py review-stats       - Estatísticas de revisão")
+        print("  python db.py query <SQL>        - Query livre")
 
     db.close()
