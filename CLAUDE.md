@@ -293,9 +293,71 @@ Campos: driver_origem, driver_destino, produto, quantidade, data_resgate, motivo
 
 Ver schemas completos em `.claude/schemas/`
 
+## Sistema de Revisão
+
+O sistema de revisão captura problemas detectados durante `/validar`, `/auditar` e `/importar`.
+Substitui o conceito de "dúvidas" por uma estrutura mais rica.
+
+### Campos de Revisão (na tabela movimentos)
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `review_severity` | VARCHAR | Gravidade: `critico`, `atencao`, `info` |
+| `review_category` | VARCHAR | Categoria: `tecnico` (sistema errou), `negocio` (humano errou) |
+| `review_status` | VARCHAR | Status: `ok`, `pendente`, `resolvido`, `ignorado` |
+| `review_issue` | TEXT | O QUÊ aconteceu (curto, buscável) |
+| `review_ai_notes` | TEXT | CONTEXTO do AI (detalhado) |
+| `review_human_notes` | TEXT | Comentários do operador |
+| `review_decision` | TEXT | Decisão final tomada |
+| `reviewed_at` | TIMESTAMP | Última atualização |
+
+### Workflow de Status
+
+```
+NULL → ok (passou de primeira, sem problemas)
+NULL → pendente (problema detectado)
+pendente → resolvido (problema corrigido)
+pendente → ignorado (problema não requer ação)
+```
+
+### Consultas CLI
+
+```bash
+python db.py review-pendentes          # Itens pendentes de revisão
+python db.py review-pendentes RODRIGO  # Filtrar por driver
+python db.py review-stats              # Estatísticas de revisão
+```
+
+### Views Disponíveis
+
+- `v_review_pendentes` - Itens pendentes ordenados por severidade
+- `v_review_stats` - Estatísticas por status/severidade/categoria
+
+### Queries Úteis
+
+```sql
+-- Itens que passaram de primeira
+SELECT * FROM movimentos WHERE review_status = 'ok';
+
+-- Itens críticos pendentes
+SELECT * FROM v_review_pendentes WHERE review_severity = 'critico';
+
+-- Taxa de sucesso por driver
+SELECT
+    driver,
+    COUNT(*) as total,
+    COUNT(CASE WHEN review_status = 'ok' THEN 1 END) as passou_primeira,
+    ROUND(COUNT(CASE WHEN review_status = 'ok' THEN 1 END) * 100.0 / COUNT(*), 2) as taxa_pct
+FROM movimentos
+WHERE review_status IS NOT NULL
+GROUP BY driver;
+```
+
 ## Próximos passos sugeridos
 1. [ ] UI web (FastAPI + React/shadcn) para comparar outputs
 2. [ ] Detecção de endereços no parser (antes do LLM)
 3. [ ] Batch processing para arquivos grandes
 4. [ ] Exportar relatórios do TUI para PDF/Excel
 5. [ ] Gráficos de tendência no Dashboard
+6. [ ] Integrar sistema de revisão com /validar, /auditar, /importar
+7. [ ] TUI para gerenciar itens pendentes de revisão
