@@ -1,0 +1,132 @@
+{
+  "items": [
+    {
+      "id_sale_delivery": "001",
+      "produto": "marmita comercial",
+      "quantidade": 1,
+      "endereco_1": "Avenida joao naves de avila 6747",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "002",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Avenida Doutor Laerte Vieira Gonçalves, 1980",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "003",
+      "produto": "exporta",
+      "quantidade": 3,
+      "endereco_1": "Las vegas 150 novo mundo",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "004",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Uberbrau",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "rua paulo maia 760",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "005",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "rua paulo maia 760",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "006",
+      "produto": "marmita",
+      "quantidade": 1,
+      "endereco_1": "Avenida belarmino Cotta Pacheco 302",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "007",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Rio Grande do Sul, 22",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "008",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "av Alexandre Ribeiro Guimarães 280 saraiva",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "009",
+      "produto": "gold",
+      "quantidade": 5,
+      "endereco_1": "Rua Cristina 43",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "md",
+      "quantidade": 1,
+      "endereco_1": "johen carneiro 1638",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "010",
+      "produto": "arizona",
+      "quantidade": 5,
+      "endereco_1": "johen carneiro 1638",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "dry",
+      "quantidade": 1,
+      "endereco_1": "Rua Lourival Borges de Oliveira 145",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "011",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua Lourival Borges de Oliveira 145",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "012",
+      "produto": "texas",
+      "quantidade": 5,
+      "endereco_1": "Rua Professor Leônidas Castro Serra, 122 - Roosevelt",
+      "driver": "KAROL",
+      "data_entrega": "30/12/2025"
+    }
+  ],
+  "observacoes": {
+    "blocos_processados": 12,
+    "bloco_013": "VAZIO - sem produto, ignorado",
+    "duvidas": [
+      "Bloco 013 está vazio/incompleto",
+      "Produto 'pren comercial' = 'marmita comercial' (50g, distinto de prensado 20g)"
+    ]
+  }
+}

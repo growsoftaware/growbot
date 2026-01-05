@@ -10,8 +10,9 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Optional
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 app = FastAPI(
     title="GrowBot API",
@@ -32,6 +33,12 @@ DB_PATH = Path(__file__).parent / "growbot.duckdb"
 def get_db():
     """Cria conexão read-only fresh para cada request"""
     return duckdb.connect(str(DB_PATH), read_only=True)
+
+
+def get_db_write():
+    """Cria conexão write para operações de escrita"""
+    return duckdb.connect(str(DB_PATH), read_only=False)
+
 
 # Drivers válidos
 DRIVERS = ["RAFA", "FRANCIS", "RODRIGO", "KAROL", "ARTHUR"]
@@ -73,8 +80,8 @@ def normalizar_tipo(tipo: str) -> str:
     mapa = {
         "estoque": "estoque",
         "recarga": "recarga",
-        "entrega": "saida",
-        "resgate_saida": "saida",
+        "entrega": "entrega",
+        "resgate_saida": "entrega",
         "resgate_entrada": "recarga"
     }
     return mapa.get(tipo, tipo)
@@ -297,7 +304,7 @@ def get_movimentos(
             if k.endswith("_estoque") or k.endswith("_recarga")
         ) - sum(
             v for k, v in valores_driver.items()
-            if k.endswith("_saida")
+            if k.endswith("_entrega")
         )
 
         # Monta produtos do driver
@@ -310,7 +317,7 @@ def get_movimentos(
                     if k.endswith("_estoque") or k.endswith("_recarga")
                 ) - sum(
                     v for k, v in valores_prod.items()
-                    if k.endswith("_saida")
+                    if k.endswith("_entrega")
                 )
 
                 produtos_list.append({
@@ -562,6 +569,370 @@ def get_saldo(driver: str = Query(None, description="Filtrar por driver")):
     return {"saldos": saldos}
 
 
+# ============ NOVOS ENDPOINTS PARA SYNC ============
+
+@app.get("/api/movimentos/export")
+def export_movimentos(
+    data_inicio: str = Query(None, description="Data início DD/MM/YYYY"),
+    data_fim: str = Query(None, description="Data fim DD/MM/YYYY"),
+    driver: str = Query(None, description="Filtrar por driver"),
+    tipo: str = Query(None, description="Filtrar por tipo (entrega, recarga, estoque)"),
+    include_reviews: bool = Query(True, description="Incluir campos de review")
+):
+    """
+    Exporta movimentos com todos os campos para sync com Grow.
+    Retorna lista completa de movimentos com filtros opcionais.
+    """
+    data_ini_iso = parse_date_br(data_inicio) if data_inicio else None
+    data_fim_iso = parse_date_br(data_fim) if data_fim else None
+
+    where_clauses = []
+    params = []
+
+    if data_ini_iso:
+        where_clauses.append("data_movimento >= ?")
+        params.append(data_ini_iso)
+    if data_fim_iso:
+        where_clauses.append("data_movimento <= ?")
+        params.append(data_fim_iso)
+    if driver and driver != "TODOS":
+        where_clauses.append("driver = ?")
+        params.append(driver)
+    if tipo:
+        where_clauses.append("tipo = ?")
+        params.append(tipo)
+
+    where_sql = " AND ".join(where_clauses) if where_clauses else "1=1"
+
+    # Campos base (com alias m. para movimentos, b. para blocos_raw)
+    campos = [
+        "m.id", "m.tipo", "m.driver", "m.driver_destino", "m.produto", "m.quantidade",
+        "CAST(m.data_movimento AS VARCHAR) as data_movimento",
+        "m.endereco", "m.observacao",
+        # Campos de rastreabilidade vêm de blocos_raw
+        "b.arquivo_origem", "b.linha_origem", "b.texto_raw",
+        "CAST(m.created_at AS VARCHAR) as created_at",
+        "m.id_sale_delivery"
+    ]
+
+    # Campos de review opcionais (agora vêm de blocos_raw)
+    if include_reviews:
+        campos.extend([
+            "b.review_status", "b.review_severity", "b.review_category",
+            "b.review_issue", "b.review_ai_notes"
+        ])
+
+    # Prefixar where_sql com m.
+    where_sql_prefixed = where_sql.replace("data_movimento", "m.data_movimento").replace("driver =", "m.driver =").replace("tipo =", "m.tipo =")
+
+    query = f"""
+        SELECT {', '.join(campos)}
+        FROM movimentos m
+        LEFT JOIN blocos_raw b
+            ON m.id_sale_delivery = b.id_sale_delivery
+            AND b.data_entrega = m.data_movimento
+            AND b.driver = m.driver
+        WHERE {where_sql_prefixed}
+        ORDER BY m.data_movimento DESC, m.driver, m.id
+    """
+
+    conn = get_db()
+    result = conn.execute(query, params)
+    columns = [desc[0] for desc in result.description]
+    rows = result.fetchall()
+    conn.close()
+
+    movimentos = [dict(zip(columns, row)) for row in rows]
+
+    return {
+        "total": len(movimentos),
+        "movimentos": movimentos
+    }
+
+
+@app.get("/api/matriz")
+def get_matriz(
+    data_inicio: str = Query(None, description="Data início DD/MM/YYYY"),
+    data_fim: str = Query(None, description="Data fim DD/MM/YYYY"),
+    driver: str = Query(None, description="Filtrar por driver")
+):
+    """
+    Retorna matriz drivers x datas com totais por tipo.
+    Formato: {drivers: [...], datas: [...], matriz: {driver: {data: {tipo: total}}}}
+    """
+    data_ini_iso = parse_date_br(data_inicio) if data_inicio else None
+    data_fim_iso = parse_date_br(data_fim) if data_fim else None
+
+    where_clauses = []
+    params = []
+
+    if data_ini_iso:
+        where_clauses.append("data_movimento >= ?")
+        params.append(data_ini_iso)
+    if data_fim_iso:
+        where_clauses.append("data_movimento <= ?")
+        params.append(data_fim_iso)
+    if driver and driver != "TODOS":
+        where_clauses.append("driver = ?")
+        params.append(driver)
+
+    where_sql = " AND ".join(where_clauses) if where_clauses else "1=1"
+
+    query = f"""
+        SELECT
+            driver,
+            CAST(data_movimento AS VARCHAR) as data,
+            tipo,
+            SUM(quantidade) as total
+        FROM movimentos
+        WHERE {where_sql}
+        GROUP BY driver, data_movimento, tipo
+        ORDER BY driver, data_movimento
+    """
+
+    conn = get_db()
+    rows = conn.execute(query, params).fetchall()
+    conn.close()
+
+    # Coleta drivers e datas únicos
+    drivers_set = set()
+    datas_set = set()
+    matriz = {}
+
+    for drv, data, tipo, total in rows:
+        drivers_set.add(drv)
+        datas_set.add(data)
+
+        if drv not in matriz:
+            matriz[drv] = {}
+        if data not in matriz[drv]:
+            matriz[drv][data] = {}
+
+        tipo_norm = normalizar_tipo(tipo)
+        if tipo_norm not in matriz[drv][data]:
+            matriz[drv][data][tipo_norm] = 0
+        matriz[drv][data][tipo_norm] += total
+
+    # Ordena
+    drivers_list = sorted(drivers_set)
+    datas_list = sorted(datas_set)
+
+    return {
+        "drivers": drivers_list,
+        "datas": [iso_to_br(d) for d in datas_list],
+        "datas_iso": datas_list,
+        "matriz": matriz
+    }
+
+
+# ============ ENDPOINTS DE EXPORTS (arquivos raw) ============
+
+EXPORTS_PATH = Path(__file__).parent / "exports"
+
+
+@app.get("/api/exports")
+def list_exports():
+    """
+    Lista todos os arquivos de export disponíveis.
+    Retorna nome, tamanho e número de linhas de cada arquivo.
+    """
+    exports = []
+
+    # Lista arquivos .txt na pasta exports (não recursivo para subpastas)
+    for txt_file in sorted(EXPORTS_PATH.glob("*.txt")):
+        try:
+            stat = txt_file.stat()
+            with open(txt_file, "r", encoding="utf-8") as f:
+                line_count = sum(1 for _ in f)
+
+            exports.append({
+                "filename": txt_file.name,
+                "size_bytes": stat.st_size,
+                "size_kb": round(stat.st_size / 1024, 2),
+                "total_lines": line_count,
+                "modified": datetime.fromtimestamp(stat.st_mtime).isoformat()
+            })
+        except Exception as e:
+            exports.append({
+                "filename": txt_file.name,
+                "error": str(e)
+            })
+
+    # Lista subpastas com arquivos
+    subfolders = []
+    for folder in EXPORTS_PATH.iterdir():
+        if folder.is_dir():
+            txt_files = list(folder.glob("*.txt"))
+            if txt_files:
+                subfolders.append({
+                    "folder": folder.name,
+                    "file_count": len(txt_files)
+                })
+
+    return {
+        "exports": exports,
+        "subfolders": subfolders,
+        "total_files": len(exports)
+    }
+
+
+@app.get("/api/exports/{filename}")
+def get_export_lines(
+    filename: str,
+    linha_inicial: int = Query(1, ge=1, description="Linha inicial (1-indexed)"),
+    linha_final: int = Query(None, description="Linha final (inclusive). Se não informado, retorna até o fim do arquivo"),
+    max_lines: int = Query(500, ge=1, le=5000, description="Máximo de linhas por request (segurança)")
+):
+    """
+    Retorna linhas de um arquivo de export.
+
+    Parâmetros:
+    - filename: Nome do arquivo (ex: _chat.txt)
+    - linha_inicial: Primeira linha a retornar (1 = primeira linha do arquivo)
+    - linha_final: Última linha a retornar (inclusive)
+    - max_lines: Limite de segurança (padrão 500, máximo 5000)
+
+    Retorna:
+    - lines: Array de objetos {line_number, content}
+    - metadata: Informações sobre o arquivo e range retornado
+    """
+    # Sanitiza filename (evita path traversal)
+    safe_filename = Path(filename).name
+    file_path = EXPORTS_PATH / safe_filename
+
+    # Tenta também em subpastas conhecidas
+    if not file_path.exists():
+        for subfolder in ["missing", "backup_20260102"]:
+            alt_path = EXPORTS_PATH / subfolder / safe_filename
+            if alt_path.exists():
+                file_path = alt_path
+                break
+
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail=f"Arquivo '{filename}' não encontrado")
+
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            all_lines = f.readlines()
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao ler arquivo: {str(e)}")
+
+    total_lines = len(all_lines)
+
+    # Ajusta linha_final se não informado
+    if linha_final is None:
+        linha_final = min(linha_inicial + max_lines - 1, total_lines)
+
+    # Valida range
+    if linha_inicial > total_lines:
+        raise HTTPException(
+            status_code=400,
+            detail=f"linha_inicial ({linha_inicial}) maior que total de linhas ({total_lines})"
+        )
+
+    # Limita quantidade de linhas
+    requested_lines = linha_final - linha_inicial + 1
+    if requested_lines > max_lines:
+        linha_final = linha_inicial + max_lines - 1
+        requested_lines = max_lines
+
+    # Ajusta para não ultrapassar arquivo
+    linha_final = min(linha_final, total_lines)
+
+    # Extrai linhas (converte para 0-indexed)
+    lines = []
+    for i in range(linha_inicial - 1, linha_final):
+        lines.append({
+            "line_number": i + 1,
+            "content": all_lines[i].rstrip('\n\r')
+        })
+
+    return {
+        "filename": safe_filename,
+        "lines": lines,
+        "metadata": {
+            "total_lines_file": total_lines,
+            "linha_inicial": linha_inicial,
+            "linha_final": linha_final,
+            "lines_returned": len(lines),
+            "has_more": linha_final < total_lines
+        }
+    }
+
+
+@app.get("/api/exports/{filename}/search")
+def search_export(
+    filename: str,
+    query: str = Query(..., min_length=1, description="Texto a buscar"),
+    context_lines: int = Query(2, ge=0, le=10, description="Linhas de contexto antes/depois"),
+    max_results: int = Query(50, ge=1, le=200, description="Máximo de resultados")
+):
+    """
+    Busca texto em um arquivo de export e retorna matches com contexto.
+
+    Parâmetros:
+    - filename: Nome do arquivo
+    - query: Texto a buscar (case-insensitive)
+    - context_lines: Quantas linhas mostrar antes e depois do match
+    - max_results: Limite de resultados
+
+    Retorna:
+    - matches: Array de {line_number, content, context_before, context_after}
+    """
+    # Sanitiza filename
+    safe_filename = Path(filename).name
+    file_path = EXPORTS_PATH / safe_filename
+
+    if not file_path.exists():
+        for subfolder in ["missing", "backup_20260102"]:
+            alt_path = EXPORTS_PATH / subfolder / safe_filename
+            if alt_path.exists():
+                file_path = alt_path
+                break
+
+    if not file_path.exists():
+        raise HTTPException(status_code=404, detail=f"Arquivo '{filename}' não encontrado")
+
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            all_lines = [line.rstrip('\n\r') for line in f.readlines()]
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Erro ao ler arquivo: {str(e)}")
+
+    query_lower = query.lower()
+    matches = []
+
+    for i, line in enumerate(all_lines):
+        if query_lower in line.lower():
+            # Pega contexto
+            start = max(0, i - context_lines)
+            end = min(len(all_lines), i + context_lines + 1)
+
+            matches.append({
+                "line_number": i + 1,
+                "content": line,
+                "context_before": [
+                    {"line_number": j + 1, "content": all_lines[j]}
+                    for j in range(start, i)
+                ],
+                "context_after": [
+                    {"line_number": j + 1, "content": all_lines[j]}
+                    for j in range(i + 1, end)
+                ]
+            })
+
+            if len(matches) >= max_results:
+                break
+
+    return {
+        "filename": safe_filename,
+        "query": query,
+        "total_matches": len(matches),
+        "truncated": len(matches) >= max_results,
+        "matches": matches
+    }
+
+
 # ============ ENDPOINTS LEGADOS (compatibilidade) ============
 
 def get_latest_output(provider: str) -> dict:
@@ -602,4 +973,4 @@ def get_items(provider: str):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8001)

@@ -1,0 +1,252 @@
+{
+  "tipo": "estoque",
+  "data_import": "2026-01-03",
+  "items": [
+    {
+      "produto": "seda",
+      "quantidade": 42,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_001"
+    },
+    {
+      "produto": "piteira",
+      "quantidade": 3,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_002"
+    },
+    {
+      "produto": "afghan",
+      "quantidade": 28,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_003"
+    },
+    {
+      "produto": "arizona",
+      "quantidade": 12,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_004"
+    },
+    {
+      "produto": "tabaco organico",
+      "quantidade": 5,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_005"
+    },
+    {
+      "produto": "piteira vidro",
+      "quantidade": 17,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_006"
+    },
+    {
+      "produto": "oleo thc",
+      "quantidade": 1,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_007"
+    },
+    {
+      "produto": "cogumelo",
+      "quantidade": 12,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_008"
+    },
+    {
+      "produto": "gold",
+      "quantidade": 6,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_009"
+    },
+    {
+      "produto": "bruce",
+      "quantidade": 21,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_010"
+    },
+    {
+      "produto": "marmita comercial",
+      "quantidade": 6,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_011"
+    },
+    {
+      "produto": "prensado",
+      "quantidade": 19,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_012"
+    },
+    {
+      "produto": "sower",
+      "quantidade": 6,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_013"
+    },
+    {
+      "produto": "bubba",
+      "quantidade": 17,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_014"
+    },
+    {
+      "produto": "texas",
+      "quantidade": 21,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_015"
+    },
+    {
+      "produto": "orange",
+      "quantidade": 31,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_016"
+    },
+    {
+      "produto": "super lemon",
+      "quantidade": 6,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_017"
+    },
+    {
+      "produto": "semente",
+      "quantidade": 2,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_018"
+    },
+    {
+      "produto": "youtube",
+      "quantidade": 4,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_019"
+    },
+    {
+      "produto": "microponto",
+      "quantidade": 40,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_020"
+    },
+    {
+      "produto": "paki",
+      "quantidade": 23,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_021"
+    },
+    {
+      "produto": "escama",
+      "quantidade": 17,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_022"
+    },
+    {
+      "produto": "ice khalifa",
+      "quantidade": 31,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_023"
+    },
+    {
+      "produto": "exporta",
+      "quantidade": 13,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_024"
+    },
+    {
+      "produto": "dry",
+      "quantidade": 53,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_025"
+    },
+    {
+      "produto": "canadian",
+      "quantidade": 13,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_026"
+    },
+    {
+      "produto": "elon musk",
+      "quantidade": 3,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_027"
+    },
+    {
+      "produto": "coca cola",
+      "quantidade": 8,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_028"
+    },
+    {
+      "produto": "pizza hut",
+      "quantidade": 50,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_029"
+    },
+    {
+      "produto": "meleca",
+      "quantidade": 5,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_030"
+    },
+    {
+      "produto": "ice nugg",
+      "quantidade": 6,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_031"
+    },
+    {
+      "produto": "kieef",
+      "quantidade": 5,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_032"
+    },
+    {
+      "produto": "abacaxi",
+      "quantidade": 18,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_033"
+    },
+    {
+      "produto": "flypig",
+      "quantidade": 19,
+      "driver": "RODRIGO",
+      "data_registro": "30/12/2025",
+      "id_sale_delivery": "EST_034"
+    }
+  ],
+  "resumo": {
+    "total_produtos": 34,
+    "total_unidades": 563,
+    "por_driver": {
+      "RODRIGO": 563
+    }
+  },
+  "import_id": "estoque_20251230_RODRIGO"
+}

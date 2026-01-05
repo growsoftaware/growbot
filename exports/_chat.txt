@@ -1,5 +1,5 @@
-[2025-12-07, 7:25:04 PM] Entregas / Saídas diárias: ‎You created the group: Entregas / Saídas diárias
-[2025-12-07, 7:25:04 PM] Entregas / Saídas diárias: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
+[2025-12-07, 7:25:05 PM] Entregas / Saídas diárias: ‎You created the group: Entregas / Saídas diárias
+[2025-12-07, 7:25:05 PM] Entregas / Saídas diárias: ‎Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them.
 [2025-12-19, 4:40:19 PM] Joao Neto: ‎Joao Neto joined from the community
 ‎[2025-12-19, 4:41:18 PM] Joao Neto: Saída Diária Att18-12-25.xlsx ‎document omitted
 ‎[2025-12-20, 12:37:18 PM] Joao Neto: Saída Diária 19-12-25.xlsx • ‎13 sheets ‎document omitted
@@ -675,12 +675,12 @@ to fazendo o da Karol de Sabado
 ‎[2025-12-23, 11:11:20 PM] Joao Neto: 3 App Saídas Quinta 18-12.docx ‎document omitted
 ‎[2025-12-24, 7:05:55 AM] Joao Neto: 8 App Saídas Terça 23-12.docx ‎document omitted
 ‎[2025-12-24, 7:05:55 AM] Joao Neto: 7 App Saídas Segunda 22-12.docx ‎document omitted
-[2025-12-25, 6:32:06 PM] Entregas / Saídas diárias: ‎You changed the group name to “Entregas/Saidas diárias”
-[2025-12-25, 6:32:14 PM] Leandro Padrin: ‎You added Leandro Padrin
-[2025-12-25, 9:01:51 PM] Entregas / Saídas diárias: ‎You changed the group name to “Entregas / Saídas diárias”
-[2025-12-25, 9:03:37 PM] Andre Maciel: @⁨Joao Neto⁩ quando puder encaminhar as saídas de quarta, pode ser as mensagens do jeito q o Padrin te mandou, encaminha elas pq eu preciso testar o módulo de IA do aplicativo
-[2025-12-25, 9:03:59 PM] Andre Maciel: @⁨Leandro Padrin⁩ quando for mandar as saídas de hoje pode mandar aqui
-[2025-12-26, 12:40:48 AM] Akita: ‎You added Akita
+[2025-12-25, 6:32:07 PM] Entregas / Saídas diárias: ‎You changed the group name to “Entregas/Saidas diárias”
+[2025-12-25, 6:32:15 PM] Leandro Padrin: ‎You added Leandro Padrin
+[2025-12-25, 9:01:52 PM] Entregas / Saídas diárias: ‎You changed the group name to “Entregas / Saídas diárias”
+[2025-12-25, 9:03:38 PM] Andre Maciel: @⁨Joao Neto⁩ quando puder encaminhar as saídas de quarta, pode ser as mensagens do jeito q o Padrin te mandou, encaminha elas pq eu preciso testar o módulo de IA do aplicativo
+[2025-12-25, 9:04:00 PM] Andre Maciel: @⁨Leandro Padrin⁩ quando for mandar as saídas de hoje pode mandar aqui
+[2025-12-26, 12:40:49 AM] Akita: ‎You added Akita
 [2025-12-26, 12:43:17 AM] Akita: Opa
 [2025-12-26, 12:50:03 AM] Akita: Salve salve
 [2025-12-26, 12:50:56 AM] Akita: manda 20g de pren pra mim por favorrr
@@ -1283,7 +1283,7 @@ E 1 export
 [2025-12-27, 3:06:40 PM] Andre Maciel: aqui tem dois 21
 [2025-12-27, 3:06:53 PM] Andre Maciel: será q sao duas entregas ou pode agrupar, a outra 21 ta encima
 ‎[2025-12-27, 3:10:17 PM] Akita: ‎audio omitted
-[2025-12-27, 3:10:53 PM] Andre Maciel: Boa fechou
+[2025-12-27, 3:10:54 PM] Andre Maciel: Boa fechou
 [2025-12-27, 3:13:39 PM] Andre Maciel: esse aqui sem produto
 [2025-12-27, 3:13:50 PM] Andre Maciel: Rua Salerno 111
 [2025-12-28, 2:17:02 AM] Akita: Queria duas da 99
@@ -1601,7 +1601,7 @@ Guarani
 [2025-12-28, 2:43:57 AM] Akita: Rua Santa Edwirges, 123
 [2025-12-28, 2:43:58 AM] Akita: 2g de ice
 [2025-12-28, 2:43:58 AM] Akita: 🏎️9
-[2025-12-28, 2:45:01 AM] ~ Akita Inu: ‎~ Akita Inu joined from the community
+[2025-12-28, 2:45:01 AM] Akita Inu: ‎Akita Inu joined from the community
 [2025-12-28, 2:43:58 AM] Akita: ‎Location: https://maps.google.com/?q=-18.893339,-48.307056
 [2025-12-28, 2:43:58 AM] Akita: Referência jb
 [2025-12-28, 2:43:58 AM] Akita: 10g de arizona
@@ -2750,7 +2750,7 @@ Rua amore 180 - Jardim Karaiba  (Deixar no correio pfv)
 [2025-12-30, 2:47:43 AM] Akita: Rodrigo 22/12
 36 corridas
 ‎[2025-12-30, 2:47:43 AM] Akita: ‎sticker omitted
-[2025-12-30, 2:51:38 AM] Akita: Rua do Dólar 592.
+[2025-12-30, 2:51:38 AM] Akita: É bairro São Jorge. Rua do Dólar 592.
 [2025-12-30, 2:51:38 AM] Akita: 5 marmita
 [2025-12-30, 2:51:39 AM] Akita: 🏎️1
 [2025-12-30, 2:51:39 AM] Akita: Av Getúlio Vargas 2380
@@ -2760,10 +2760,15 @@ Rua amore 180 - Jardim Karaiba  (Deixar no correio pfv)
 [2025-12-30, 2:51:40 AM] Akita: 375
 [2025-12-30, 2:51:40 AM] Akita: 15 g de Orange
 [2025-12-30, 2:51:41 AM] Akita: 🏎️3
-[2025-12-30, 2:51:41 AM] Akita: 2 EXPORTA 
-Rua Professor Eudóxio Cassassanta Pereira 551
+[2025-12-30, 2:51:41 AM] Akita: Tudo certo???
 
-Carajás....
+Estão funcionando???
+
+2 Raio 
+
+EXPORTA 
+
+Rua Professor Eudóxio Cassassanta Pereira 551
 
 Carajás....
 [2025-12-30, 2:51:42 AM] Akita: 2g de exporta
@@ -2957,37 +2962,37 @@ jardim inconfidência
 [2025-12-30, 2:58:27 AM] Akita: 5g gold
 [2025-12-30, 2:58:27 AM] Akita: Q dry
 [2025-12-30, 2:58:27 AM] Akita: 🏎️28
-[2025-12-30, 2:58:36 AM] ~ Akita Inu: 4g Orange 
+[2025-12-30, 2:58:36 AM] Akita Inu: 4g Orange 
 1 marmita
-[2025-12-30, 2:58:36 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:37 AM] ~ Akita Inu: 🏎️ 1
-[2025-12-30, 2:58:37 AM] ~ Akita Inu: R. Maximiliano Carneiro, 15 - Luizote
-[2025-12-30, 2:58:37 AM] ~ Akita Inu: 1 seda
+[2025-12-30, 2:58:36 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:37 AM] Akita Inu: 🏎️ 1
+[2025-12-30, 2:58:37 AM] Akita Inu: R. Maximiliano Carneiro, 15 - Luizote
+[2025-12-30, 2:58:37 AM] Akita Inu: 1 seda
 1 elon musk 
 1 dry suíço
-[2025-12-30, 2:58:38 AM] ~ Akita Inu: av. landscape 3125, gávea
-[2025-12-30, 2:58:38 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:38 AM] ~ Akita Inu: 🏎️ 2
-[2025-12-30, 2:58:39 AM] ~ Akita Inu: 4g bubba 
+[2025-12-30, 2:58:38 AM] Akita Inu: av. landscape 3125, gávea
+[2025-12-30, 2:58:38 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:38 AM] Akita Inu: 🏎️ 2
+[2025-12-30, 2:58:39 AM] Akita Inu: 4g bubba 
 1 ice
-[2025-12-30, 2:58:39 AM] ~ Akita Inu: Rua Rita Fonseca Marquez 97
-[2025-12-30, 2:58:40 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:40 AM] ~ Akita Inu: 🏎️4
-[2025-12-30, 2:58:40 AM] ~ Akita Inu: Deixar moeda
-[2025-12-30, 2:58:41 AM] ~ Akita Inu: 🏎️6
-[2025-12-30, 2:58:41 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:42 AM] ~ Akita Inu: Manda 1g do dry suiço e 1g de super Lenon haze
-[2025-12-30, 2:58:42 AM] ~ Akita Inu: Rua Maria dias Diniz 14
-[2025-12-30, 2:58:42 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:43 AM] ~ Akita Inu: 🏎️ 9
-[2025-12-30, 2:58:43 AM] ~ Akita Inu: 1 marmita
-[2025-12-30, 2:58:43 AM] ~ Akita Inu: João Ângelo Schiavinato, 2282, santa mônica
-[2025-12-30, 2:58:44 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:44 AM] ~ Akita Inu: 🏎️ 15
-[2025-12-30, 2:58:45 AM] ~ Akita Inu: Rua maria da Conceição de Andrade 247 morada da colina
-[2025-12-30, 2:58:45 AM] ~ Akita Inu: 5g de manga
-[2025-12-30, 2:58:45 AM] ~ Akita Inu: Telefone 2
-[2025-12-30, 2:58:46 AM] ~ Akita Inu: 🏎️29
+[2025-12-30, 2:58:39 AM] Akita Inu: Rua Rita Fonseca Marquez 97
+[2025-12-30, 2:58:40 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:40 AM] Akita Inu: 🏎️4
+[2025-12-30, 2:58:40 AM] Akita Inu: Deixar moeda
+[2025-12-30, 2:58:41 AM] Akita Inu: 🏎️6
+[2025-12-30, 2:58:41 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:42 AM] Akita Inu: Manda 1g do dry suiço e 1g de super Lenon haze
+[2025-12-30, 2:58:42 AM] Akita Inu: Rua Maria dias Diniz 14
+[2025-12-30, 2:58:42 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:43 AM] Akita Inu: 🏎️ 9
+[2025-12-30, 2:58:43 AM] Akita Inu: 1 marmita
+[2025-12-30, 2:58:43 AM] Akita Inu: João Ângelo Schiavinato, 2282, santa mônica
+[2025-12-30, 2:58:44 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:44 AM] Akita Inu: 🏎️ 15
+[2025-12-30, 2:58:45 AM] Akita Inu: Rua maria da Conceição de Andrade 247 morada da colina
+[2025-12-30, 2:58:45 AM] Akita Inu: 5g de manga
+[2025-12-30, 2:58:45 AM] Akita Inu: Telefone 2
+[2025-12-30, 2:58:46 AM] Akita Inu: 🏎️29
 ‎[2025-12-30, 3:00:17 AM] Akita: ‎sticker omitted
 [2025-12-30, 3:00:22 AM] Akita: Rodrigo
 [2025-12-30, 3:00:34 AM] Akita: 24 do 12
@@ -2995,3 +3000,1441 @@ Quarta feira
 ‎[2025-12-30, 3:00:36 AM] Akita: ‎sticker omitted
 [2025-12-30, 12:03:01 PM] Andre Maciel: esse aqui foi de quem?
 [2025-12-30, 12:11:48 PM] Andre Maciel: salvo!
+‎[2025-12-30, 12:34:11 PM] Andre Maciel: ‎image omitted
+[2025-12-30, 12:37:39 PM] Akita: Do Rodrigo
+[2025-12-30, 12:37:52 PM] Akita: Boa
+[2025-12-30, 12:39:53 PM] Andre Maciel: To lançando o do dia 24, ta meio fora de ordem mas acho q vai dar certo aqui
+[2025-12-30, 12:40:09 PM] Akita: Sim,acho q vc pegou a ideia
+[2025-12-30, 12:40:22 PM] Akita: Tava mandando pelos dois número
+[2025-12-30, 12:43:16 PM] Andre Maciel: esse aqui veio nada
+[2025-12-30, 12:43:40 PM] Andre Maciel: o 6 do dia 24, ta bem perto do final aqui
+[2025-12-30, 12:43:48 PM] Brian Italian: Qnd lança assim deixar moeda é deixar moeda aqui pro Leandro
+‎[2025-12-30, 12:44:29 PM] Andre Maciel: ‎image omitted
+[2025-12-30, 12:44:34 PM] Andre Maciel: os cara inventa moda kkkkk
+[2025-12-30, 12:44:42 PM] Andre Maciel: super john lenon haze
+[2025-12-30, 12:45:00 PM] Akita: Kkkkkkkk
+[2025-12-30, 12:45:07 PM] Akita: A braba
+[2025-12-30, 1:01:56 PM] Andre Maciel: tenho o update do RODRIGO aqui
+[2025-12-30, 1:04:08 PM] Andre Maciel: ‎You deleted this message.
+[2025-12-30, 1:10:55 PM] Andre Maciel: - 17  e 18 
+- FRANCIS
+- 29/12
+- *SEM PRODUTO* ‎<This message was edited>
+[2025-12-30, 1:13:52 PM] Andre Maciel: 2 para o zenaide, uma de 3g e outra de 4g, 19 e 20? ou é a mesma?
+[2025-12-30, 1:27:50 PM] Andre Maciel: esse da KAROL ta zoado, ele ta repetindo do 6-14...
+[2025-12-31, 2:52:04 AM] Akita: 1 marmita
+[2025-12-31, 2:52:04 AM] Akita: Rua do Jardineiro, 769, Planalto
+[2025-12-31, 2:52:05 AM] Akita: 🏎️1
+[2025-12-31, 2:52:05 AM] Akita: 1 abacaxi
+[2025-12-31, 2:52:05 AM] Akita: av estrela do sul 655
+[2025-12-31, 2:52:05 AM] Akita: 🏎️2
+[2025-12-31, 2:52:06 AM] Akita: ‎Location: https://maps.google.com/?q=-18.922945,-48.294266
+[2025-12-31, 2:52:06 AM] Akita: 4g sower
+[2025-12-31, 2:52:06 AM] Akita: 🏎️3
+[2025-12-31, 2:52:06 AM] Akita: 4g Sower Haze
+1g Dry Suíço
+[2025-12-31, 2:52:07 AM] Akita: Rua Gabão 40
+[2025-12-31, 2:52:07 AM] Akita: 🏎️4
+[2025-12-31, 2:52:07 AM] Akita: 2g exporta
+[2025-12-31, 2:52:07 AM] Akita: João José Silva 293
+[2025-12-31, 2:52:08 AM] Akita: 🏎️5
+[2025-12-31, 2:52:08 AM] Akita: 2 exporta
+[2025-12-31, 2:52:08 AM] Akita: Landscape 2195
+[2025-12-31, 2:52:08 AM] Akita: 🏎️6
+[2025-12-31, 2:52:09 AM] Akita: https://maps.app.goo.gl/J13bqUuFqV32uk3E6?g_st=aw
+[2025-12-31, 2:52:09 AM] Akita: 10g arizona
+[2025-12-31, 2:52:09 AM] Akita: 🏎️7
+[2025-12-31, 2:52:10 AM] Akita: 3 CNN
+[2025-12-31, 2:52:10 AM] Akita: Pericles Vieira da Mota 1112
+[2025-12-31, 2:52:10 AM] Akita: 🏎️8
+[2025-12-31, 2:52:10 AM] Akita: 1 exporta
+[2025-12-31, 2:52:11 AM] Akita: R rio de janeiro bairro brasil 1755
+[2025-12-31, 2:52:11 AM] Akita: 🏎️9
+[2025-12-31, 2:52:11 AM] Akita: 5g Texas
+[2025-12-31, 2:52:11 AM] Akita: Rua camargos 672
+[2025-12-31, 2:52:11 AM] Akita: 🏎️10
+[2025-12-31, 2:52:12 AM] Akita: 2g cogu
+2g superlemon
+[2025-12-31, 2:52:12 AM] Akita: Rua dos miosótis, 180, cidade jardim
+[2025-12-31, 2:52:12 AM] Akita: 🏎️11
+[2025-12-31, 2:52:13 AM] Akita: rua Regina moraes 409
+[2025-12-31, 2:52:13 AM] Akita: 1 marmita
+[2025-12-31, 2:52:13 AM] Akita: 🏎️12
+[2025-12-31, 2:52:13 AM] Akita: 50g comercial
+[2025-12-31, 2:52:14 AM] Akita: Benjamin Alves dos Santos 1815
+[2025-12-31, 2:52:14 AM] Akita: 🏎️13
+[2025-12-31, 2:52:14 AM] Akita: 3 un de papel abacaxi
+[2025-12-31, 2:52:14 AM] Akita: Av Rio Branco, 1704
+[2025-12-31, 2:52:15 AM] Akita: 🏎️14
+[2025-12-31, 2:52:15 AM] Akita: R. João Balbino, 1941, Santa Mônica, Uberlândia - MG, 38408-262
+[2025-12-31, 2:52:15 AM] Akita: 3 pren
+[2025-12-31, 2:52:15 AM] Akita: 🏎️15
+[2025-12-31, 2:52:16 AM] Akita: Amigo, traz uma escama pra mim?
+[2025-12-31, 2:52:16 AM] Akita: Av Cesário Alvim 157
+[2025-12-31, 2:52:16 AM] Akita: 🏎️16
+[2025-12-31, 2:52:16 AM] Akita: Quero encomendar 20g de prensado
+[2025-12-31, 2:52:17 AM] Akita: Rua delmira candida rodrigues da cunha 1178
+[2025-12-31, 2:52:17 AM] Akita: 🏎️17
+[2025-12-31, 2:52:17 AM] Akita: 5g de Colombian
+[2025-12-31, 2:52:17 AM] Akita: Rua Hildebrando oliva 596
+[2025-12-31, 2:52:17 AM] Akita: 🏎️18
+[2025-12-31, 2:52:18 AM] Akita: 1g superlemon
+[2025-12-31, 2:52:18 AM] Akita: Rua José Leoni Segalla 387, São Jorge.
+[2025-12-31, 2:52:18 AM] Akita: 🏎️19
+[2025-12-31, 2:52:18 AM] Akita: 20g gold
+[2025-12-31, 2:52:19 AM] Akita: 4g ice
+[2025-12-31, 2:52:19 AM] Akita: ‎Location: https://maps.google.com/?q=-18.912960,-48.240433
+[2025-12-31, 2:52:19 AM] Akita: 🏎️20
+[2025-12-31, 2:52:19 AM] Akita: 1 marmita
+[2025-12-31, 2:52:20 AM] Akita: felipe joao 64 martins
+[2025-12-31, 2:52:20 AM] Akita: 🏎️21
+[2025-12-31, 2:52:20 AM] Akita: Rua silex 830
+[2025-12-31, 2:52:20 AM] Akita: 1 flypig e 1 prensado?
+[2025-12-31, 2:52:21 AM] Akita: 🏎️22
+[2025-12-31, 2:52:21 AM] Akita: Av Floriano Peixoto, 5322 
+Condomínio Buritis
+[2025-12-31, 2:52:21 AM] Akita: 5g afghan 5 sower
+[2025-12-31, 2:52:21 AM] Akita: 🏎️23
+[2025-12-31, 2:52:22 AM] Akita: Eu gostaria de 20g de prensado e 2 unidades de seda por favor
+[2025-12-31, 2:52:22 AM] Akita: Rua Maria das Dores Dias, 850, Condomínio Rossi Piazza Bl 11 Apto 501
+[2025-12-31, 2:52:22 AM] Akita: 🏎️24
+[2025-12-31, 2:52:22 AM] Akita: 2 afeghan
+2 bubba
+[2025-12-31, 2:52:23 AM] Akita: Alameda city campo, 386
+[2025-12-31, 2:52:23 AM] Akita: 🏎️25
+[2025-12-31, 2:52:23 AM] Akita: 3g sower
+[2025-12-31, 2:52:23 AM] Akita: Avenida indaia 1393
+[2025-12-31, 2:52:24 AM] Akita: 🏎️26
+[2025-12-31, 2:52:24 AM] Akita: 2g dry
+[2025-12-31, 2:52:24 AM] Akita: rua real grandeza 872
+[2025-12-31, 2:52:24 AM] Akita: 🏎️27
+[2025-12-31, 2:52:25 AM] Akita: 5g gold
+[2025-12-31, 2:52:25 AM] Akita: Rua Coronel Antônio Alves Pereira 1325
+[2025-12-31, 2:52:25 AM] Akita: 🏎️28
+[2025-12-31, 2:52:25 AM] Akita: Me manda um
+Av maranhao 1073, no pix
+[2025-12-31, 2:52:26 AM] Akita: 1 prensado
+[2025-12-31, 2:52:26 AM] Akita: 🏎️29
+[2025-12-31, 2:52:26 AM] Akita: 1g escama
+[2025-12-31, 2:52:26 AM] Akita: Afonso Pena 1205
+[2025-12-31, 2:52:27 AM] Akita: 🏎️30
+[2025-12-31, 2:52:27 AM] Akita: 2 CNN 
+5g Texas
+[2025-12-31, 2:52:27 AM] Akita: av. landscape 3125, gávea
+[2025-12-31, 2:52:27 AM] Akita: 🏎️31
+[2025-12-31, 2:52:28 AM] Akita: 10g gold
+[2025-12-31, 2:52:28 AM] Akita: Rua jorge amado 112
+[2025-12-31, 2:52:28 AM] Akita: 🏎️32
+[2025-12-31, 2:52:28 AM] Akita: 3 ice nugg
+[2025-12-31, 2:52:29 AM] Akita: avenida dps jardins 250
+[2025-12-31, 2:52:29 AM] Akita: 🏎️33
+[2025-12-31, 2:52:29 AM] Akita: 5g gold
+[2025-12-31, 2:52:29 AM] Akita: Av dr Laerte 109 
+Santa Monica 
+National burguer
+[2025-12-31, 2:52:30 AM] Akita: 🏎️34
+[2025-12-31, 2:52:30 AM] Akita: 1 escama
+1 flypig
+5g texas
+[2025-12-31, 2:52:30 AM] Akita: Francisco Vicente Ferreira 416, santa monica
+[2025-12-31, 2:52:30 AM] Akita: 🏎️35
+[2025-12-31, 2:52:30 AM] Akita: 2g exporta
+[2025-12-31, 2:52:31 AM] Akita: Rua João Justino Fernandes 562
+[2025-12-31, 2:52:31 AM] Akita: 🏎️36
+[2025-12-31, 2:52:31 AM] Akita: 5g texas
+1 flypig
+[2025-12-31, 2:52:31 AM] Akita: Av. Cesar Finotti, 795
+[2025-12-31, 2:52:32 AM] Akita: 🏎️37
+[2025-12-31, 2:52:32 AM] Akita: 10 elon
+[2025-12-31, 2:52:32 AM] Akita: Nordau goncalvez de melo 810
+[2025-12-31, 2:52:32 AM] Akita: 🏎️38
+[2025-12-31, 2:52:33 AM] Akita: 5g arizona
+[2025-12-31, 2:52:33 AM] Akita: Rua Bernardo Vasconcelos, 780
+[2025-12-31, 2:52:33 AM] Akita: 🏎️39
+[2025-12-31, 2:52:33 AM] Akita: 1 marmita
+[2025-12-31, 2:52:34 AM] Akita: Av maranhao 1073, no pix
+[2025-12-31, 2:52:34 AM] Akita: 🏎️40
+[2025-12-31, 2:52:34 AM] Akita: 10g Orange
+[2025-12-31, 2:52:34 AM] Akita: Rua Professora Maria Alves Castilho 1567
+Santa Mônica
+[2025-12-31, 2:52:35 AM] Akita: 🏎️41
+[2025-12-31, 2:52:35 AM] Akita: 1 escama
+[2025-12-31, 2:52:35 AM] Akita: Rua Albatroz 336
+[2025-12-31, 2:52:35 AM] Akita: 🏎️42
+[2025-12-31, 2:52:36 AM] Akita: 10g sower 
+3g superlemo
+[2025-12-31, 2:52:36 AM] Akita: Rua José Lelis França 1453
+[2025-12-31, 2:52:36 AM] Akita: 🏎️43
+[2025-12-31, 2:52:36 AM] Akita: 3 flypig
+[2025-12-31, 2:52:37 AM] Akita: Avenida Castela 24 Laranjeiras
+[2025-12-31, 2:52:37 AM] Akita: 🏎️44
+[2025-12-31, 2:52:37 AM] Akita: 4g sower 
+1 seda
+1 meleca
+1 isqueiro
+[2025-12-31, 2:52:37 AM] Akita: 1560 rua mercurio bairro maravilha
+[2025-12-31, 2:52:37 AM] Akita: 🏎️45
+[2025-12-31, 2:52:38 AM] Akita: 3marmita
+[2025-12-31, 2:52:38 AM] Akita: Av Carmo Gifoni, 1500 Martins
+[2025-12-31, 2:52:38 AM] Akita: 🏎️46
+[2025-12-31, 2:52:38 AM] Akita: 5g Texas 
+1 superlemon
+[2025-12-31, 2:52:39 AM] Akita: Rua nilton augusto Alves 172 CS 2 novo mundo
+[2025-12-31, 2:52:39 AM] Akita: 🏎️47
+[2025-12-31, 2:52:39 AM] Akita: Prensado 50g
+Bala elon musk
+Papel abacaxi
+[2025-12-31, 2:52:39 AM] Akita: Tabaco 1-un.
+[2025-12-31, 2:52:40 AM] Akita: Deboche pub
+[2025-12-31, 2:52:40 AM] Akita: 🏎️48
+[2025-12-31, 2:52:40 AM] Akita: Joao Pereira da silva,98
+[2025-12-31, 2:52:40 AM] Akita: 5g nugg
+[2025-12-31, 2:52:41 AM] Akita: 🏎️49
+‎[2025-12-31, 2:52:41 AM] Akita: ‎sticker omitted
+[2025-12-31, 2:52:41 AM] Akita: Rodrigo
+[2025-12-31, 2:52:47 AM] Akita: 50 corridas 
+30 do 12
+Terca feira
+‎[2025-12-31, 2:52:49 AM] Akita: ‎sticker omitted
+[2025-12-31, 2:55:49 AM] Akita: 1 elon
+[2025-12-31, 2:55:49 AM] Akita: av Alexandre Ribeiro Guimarães 280 saraiva
+[2025-12-31, 2:55:50 AM] Akita: 🏎️1
+[2025-12-31, 2:55:50 AM] Akita: 1 marmita
+[2025-12-31, 2:55:50 AM] Akita: Rua do estudante 236
+[2025-12-31, 2:55:50 AM] Akita: 🏎️2
+[2025-12-31, 2:55:51 AM] Akita: 1 marmita
+5g gold
+[2025-12-31, 2:55:51 AM] Akita: Rua Rio Grande do Sul, 22
+[2025-12-31, 2:55:51 AM] Akita: 🏎️3
+[2025-12-31, 2:55:51 AM] Akita: 2 escama
+[2025-12-31, 2:55:52 AM] Akita: Pro endereço da rua Luiz Fuad abib 105 shopping park
+[2025-12-31, 2:55:52 AM] Akita: 🏎️4
+[2025-12-31, 2:55:52 AM] Akita: 1 marmita
+[2025-12-31, 2:55:52 AM] Akita: rua corcovado 174
+[2025-12-31, 2:55:53 AM] Akita: 🏎️5
+[2025-12-31, 2:55:53 AM] Akita: 1g dry suíço
+[2025-12-31, 2:55:53 AM] Akita: Na imbaubas 1400
+[2025-12-31, 2:55:53 AM] Akita: 🏎️6
+[2025-12-31, 2:55:54 AM] Akita: 1 marmita
+[2025-12-31, 2:55:54 AM] Akita: Rua João Pereira da Silva 138
+[2025-12-31, 2:55:54 AM] Akita: 🏎️7
+[2025-12-31, 2:55:54 AM] Akita: 1 marmita
+2 exporta
+1 pretin uva
+[2025-12-31, 2:55:55 AM] Akita: Rua Brás sátiro de Souza, número 235
+[2025-12-31, 2:55:55 AM] Akita: 🏎️8
+[2025-12-31, 2:55:55 AM] Akita: 2 CNN
+[2025-12-31, 2:55:55 AM] Akita: Rua Marco Aurélio Resende dos Santos, 230
+[2025-12-31, 2:55:56 AM] Akita: 🏎️9
+[2025-12-31, 2:55:56 AM] Akita: 4g orange
+2g paki
+[2025-12-31, 2:55:56 AM] Akita: Rua Manoel ascenco Batista 1880
+[2025-12-31, 2:55:56 AM] Akita: 🏎️10
+[2025-12-31, 2:55:57 AM] Akita: 2 exporta
+2 canadian
+[2025-12-31, 2:55:57 AM] Akita: Rua transição 860
+[2025-12-31, 2:55:57 AM] Akita: 🏎️11
+[2025-12-31, 2:55:58 AM] Akita: Pensado 20g , avenida chadi fad
+[2025-12-31, 2:55:58 AM] Akita: 1651
+[2025-12-31, 2:55:58 AM] Akita: 1 marmita
+[2025-12-31, 2:55:58 AM] Akita: 🏎️12
+[2025-12-31, 2:55:59 AM] Akita: Sower haze 4G
+[2025-12-31, 2:55:59 AM] Akita: Rua Luiz Fuad Abib, 105
+[2025-12-31, 2:55:59 AM] Akita: 13🏎️
+[2025-12-31, 2:55:59 AM] Akita: Opa gostaria de pedir 4g de orange
+[2025-12-31, 2:55:59 AM] Akita: Rua Renato de Oliveira grama 245
+[2025-12-31, 2:56:00 AM] Akita: 14🏎️
+[2025-12-31, 2:56:00 AM] Akita: 5g arizona
+[2025-12-31, 2:56:00 AM] Akita: rua senador salgado filha 254
+[2025-12-31, 2:56:00 AM] Akita: 15🏎️
+[2025-12-31, 2:56:01 AM] Akita: Os 40g de prem no 130
+[2025-12-31, 2:56:01 AM] Akita: Rua dos cravos 385
+[2025-12-31, 2:56:01 AM] Akita: 16🏎️
+[2025-12-31, 2:56:02 AM] Akita: Rua Pericles Vieira da Mota 374, casa dos fundos
+[2025-12-31, 2:56:02 AM] Akita: 40g prensado
+[2025-12-31, 2:56:02 AM] Akita: 16🏎️
+[2025-12-31, 2:56:02 AM] Akita: me vê 4g de sower haze
+[2025-12-31, 2:56:02 AM] Akita: rua eduardo marquzes 350
+[2025-12-31, 2:56:03 AM] Akita: 17🏎️
+[2025-12-31, 2:56:03 AM] Akita: São 4g de bubba kush
+[2025-12-31, 2:56:03 AM] Akita: Av Lazara Alves Ferreira, 89
+[2025-12-31, 2:56:03 AM] Akita: 18🏎️
+[2025-12-31, 2:56:04 AM] Akita: Professor Joaquim Roberto 35
+[2025-12-31, 2:56:04 AM] Akita: 2 escMa
+[2025-12-31, 2:56:04 AM] Akita: 19🏎️
+[2025-12-31, 2:56:04 AM] Akita: Rua dos angicos 530
+Bairro Jaraguá
+[2025-12-31, 2:56:05 AM] Akita: 1 prem
+[2025-12-31, 2:56:05 AM] Akita: 20🏎️
+[2025-12-31, 2:56:05 AM] Akita: Professor pedro Bernardo 40
+[2025-12-31, 2:56:05 AM] Akita: 4g sower
+[2025-12-31, 2:56:06 AM] Akita: 21🏎️
+[2025-12-31, 2:56:06 AM] Akita: 5g se sower
+[2025-12-31, 2:56:06 AM] Akita: Antônio Salviano de Rezende 559
+[2025-12-31, 2:56:06 AM] Akita: 22🏎️
+[2025-12-31, 2:56:07 AM] Akita: Manda um expor pra mim ? 
+Rua das Seringueiras 931
+[2025-12-31, 2:56:07 AM] Akita: 23🏎️
+[2025-12-31, 2:56:07 AM] Akita: marques povoa 374
+[2025-12-31, 2:56:07 AM] Akita: 2g de dry 8g bubba
+[2025-12-31, 2:56:08 AM] Akita: 24🏎️
+[2025-12-31, 2:56:08 AM] Akita: Vou querer uma escama
+[2025-12-31, 2:56:08 AM] Akita: Quintino Bocaiuva 563
+[2025-12-31, 2:56:08 AM] Akita: 1g de escama
+[2025-12-31, 2:56:09 AM] Akita: 🏎️25
+[2025-12-31, 2:56:09 AM] Akita: Maria das dores dias 790
+[2025-12-31, 2:56:09 AM] Akita: Vc naum vai ter 1 dry ai com vc né
+[2025-12-31, 2:56:09 AM] Akita: 🏎️26
+‎[2025-12-31, 2:56:10 AM] Akita: ‎sticker omitted
+[2025-12-31, 2:56:18 AM] Akita: 30/12 
+Arthur 
+26 corridas
+‎[2025-12-31, 2:56:22 AM] Akita: ‎sticker omitted
+[2025-12-31, 3:03:16 AM] Akita: Rua nego Amancio 189
+1g ice
+1g bruce
+1g meleca
+1 seda
+[2025-12-31, 3:03:16 AM] Akita: 🏎️1
+[2025-12-31, 3:03:16 AM] Akita: Rua Antônio Bernardes da Silva, 128, Daniel Fonseca
+[2025-12-31, 3:03:17 AM] Akita: 10g de gold
+[2025-12-31, 3:03:17 AM] Akita: 🏎️2
+[2025-12-31, 3:03:17 AM] Akita: Av Afonso pena 155- centro
+[2025-12-31, 3:03:17 AM] Akita: 1 marmita
+[2025-12-31, 3:03:18 AM] Akita: 🏎️3
+[2025-12-31, 3:03:18 AM] Akita: Avenida César finotti 796
+[2025-12-31, 3:03:18 AM] Akita: 1 g de ice
+[2025-12-31, 3:03:18 AM] Akita: 🏎️4
+[2025-12-31, 3:03:19 AM] Akita: rua su1, 100
+[2025-12-31, 3:03:19 AM] Akita: salve, papai
+[2025-12-31, 3:03:19 AM] Akita: 1 marmita
+[2025-12-31, 3:03:19 AM] Akita: 🏎️5
+[2025-12-31, 3:03:20 AM] Akita: Rua Silva Jardim 785, Fundinho
+[2025-12-31, 3:03:20 AM] Akita: 1 marmita
+[2025-12-31, 3:03:20 AM] Akita: 🏎️6
+[2025-12-31, 3:03:20 AM] Akita: Av Geraldo Abrao 611, Condominio Royal park
+[2025-12-31, 3:03:21 AM] Akita: 1 g de ice nug
+[2025-12-31, 3:03:21 AM] Akita: 🏎️7
+[2025-12-31, 3:03:21 AM] Akita: Boa tarde, 20g de pren porfavor
+[2025-12-31, 3:03:21 AM] Akita: Rua Pedro José Samora 1731
+[2025-12-31, 3:03:22 AM] Akita: 1 marmitw
+[2025-12-31, 3:03:22 AM] Akita: 🏎️8
+[2025-12-31, 3:03:22 AM] Akita: e essa piteira da bem bolado tb
+[2025-12-31, 3:03:22 AM] Akita: rua su1 número 100 condomínio spazio unico
+[2025-12-31, 3:03:23 AM] Akita: 1 seda
+[2025-12-31, 3:03:23 AM] Akita: 1 piteira
+[2025-12-31, 3:03:23 AM] Akita: 8g de afeghan
+[2025-12-31, 3:03:23 AM] Akita: 🏎️9
+[2025-12-31, 3:03:24 AM] Akita: Opa entrega pra mim um prensa
+[2025-12-31, 3:03:24 AM] Akita: Av João Pinheiro 175
+[2025-12-31, 3:03:24 AM] Akita: 1 marmita
+[2025-12-31, 3:03:24 AM] Akita: 🏎️10
+[2025-12-31, 3:03:25 AM] Akita: 5g Arizona 
+rua Finlândia 163
+[2025-12-31, 3:03:25 AM] Akita: 🏎️11
+[2025-12-31, 3:03:25 AM] Akita: vou querer 1g de md brabo
+[2025-12-31, 3:03:25 AM] Akita: rola entregar aqui no hotel mercure?
+[2025-12-31, 3:03:26 AM] Akita: o hotel do shopping
+[2025-12-31, 3:03:26 AM] Akita: 🏎️12
+[2025-12-31, 3:03:26 AM] Akita: avenida dps jardins 250
+[2025-12-31, 3:03:26 AM] Akita: 3g de ice nugg
+[2025-12-31, 3:03:27 AM] Akita: 🏎️13
+[2025-12-31, 3:03:27 AM] Akita: Manda 5g da colombia e 2 pacote de fumo pra fechar nos 200
+[2025-12-31, 3:03:27 AM] Akita: 5g de gold
+[2025-12-31, 3:03:27 AM] Akita: 2 tabaco
+[2025-12-31, 3:03:28 AM] Akita: 🏎️14
+[2025-12-31, 3:03:28 AM] Akita: Vou querer prensado 20g
+[2025-12-31, 3:03:28 AM] Akita: Rua alameda Paulo Cezar Santana 885
+[2025-12-31, 3:03:28 AM] Akita: 1 marmita
+[2025-12-31, 3:03:29 AM] Akita: 🏎️15
+[2025-12-31, 3:03:29 AM] Akita: R. Adhemar de Freitas Macedo, 27 - Alto Umuarama, Uberlândia - MG, 38405-378
+[2025-12-31, 3:03:29 AM] Akita: 4g de orange
+[2025-12-31, 3:03:29 AM] Akita: 1 marmita
+[2025-12-31, 3:03:30 AM] Akita: 🏎️16
+[2025-12-31, 3:03:30 AM] Akita: Boa tarde amigo 
+
+2 Raio 
+
+EXPORTA 
+
+Rua Professor Eudóxio Cassassanta Pereira 551
+
+Carajás....
+[2025-12-31, 3:03:30 AM] Akita: 2g de exporta
+[2025-12-31, 3:03:30 AM] Akita: 🏎️17
+[2025-12-31, 3:03:31 AM] Akita: Vou querer 1 Canadian e 2g md europeu
+Rua Washington Bernardes, 390 - morada da colina
+[2025-12-31, 3:03:31 AM] Akita: 1 bala
+[2025-12-31, 3:03:31 AM] Akita: 2 g de md
+[2025-12-31, 3:03:31 AM] Akita: 🏎️18
+[2025-12-31, 3:03:32 AM] Akita: Avenida dos jardins,  250,  condominio jardins. Barcelona, bairro nova uberlandia
+[2025-12-31, 3:03:32 AM] Akita: 10g de gold
+[2025-12-31, 3:03:32 AM] Akita: 🏎️19
+[2025-12-31, 3:03:32 AM] Akita: Pericles Vieira da Motta 1468
+Mas só vou estar depois das 13:30
+[2025-12-31, 3:03:33 AM] Akita: 1g de bruce
+[2025-12-31, 3:03:33 AM] Akita: 1g de super lemon
+[2025-12-31, 3:03:33 AM] Akita: 1 piteira de vidro
+[2025-12-31, 3:03:33 AM] Akita: 🏎️20
+[2025-12-31, 3:03:34 AM] Akita: Vou querer 4g da orange blossom
+[2025-12-31, 3:03:34 AM] Akita: Rua Sao Joao, numero 8, Bairro Pacaembu
+[2025-12-31, 3:03:34 AM] Akita: 4g de orange
+[2025-12-31, 3:03:34 AM] Akita: 🏎️21
+[2025-12-31, 3:03:34 AM] Akita: Sebastião Rodrigues Oliveira 277 canaa
+[2025-12-31, 3:03:35 AM] Akita: 2g bruce
+1 piteira super large
+[2025-12-31, 3:03:35 AM] Akita: 🏎️22
+[2025-12-31, 3:03:35 AM] Akita: 5g Gold
+[2025-12-31, 3:03:35 AM] Akita: Rua Professor Euler Lannes Bernardes 841
+[2025-12-31, 3:03:36 AM] Akita: 🏎️23
+[2025-12-31, 3:03:36 AM] Akita: 5g Arizona
+[2025-12-31, 3:03:36 AM] Akita: Avenida João Leão, 5595
+[2025-12-31, 3:03:37 AM] Akita: 🏎️24
+[2025-12-31, 3:03:37 AM] Akita: 5g arizona
+[2025-12-31, 3:03:37 AM] Akita: Rua João Rodrigues de Castro, 105 - Jardim Patrícia
+[2025-12-31, 3:03:37 AM] Akita: 🏎️25
+[2025-12-31, 3:03:37 AM] Akita: 2g exporta
+[2025-12-31, 3:03:38 AM] Akita: av landscape 2195
+[2025-12-31, 3:03:38 AM] Akita: 🏎️26
+[2025-12-31, 3:03:38 AM] Akita: 2 escamas 
+Neilton cobo Victor 301
+[2025-12-31, 3:03:39 AM] Akita: 🏎️27
+[2025-12-31, 3:03:39 AM] Akita: 1 g de ice o mais molin q tiver
+[2025-12-31, 3:03:39 AM] Akita: Rua clemente Pereira 892
+[2025-12-31, 3:03:39 AM] Akita: 29🏎️
+[2025-12-31, 3:03:40 AM] Akita: Manda pra mim 1g do suíço
+[2025-12-31, 3:03:40 AM] Akita: Avenida salomao abraao 12
+[2025-12-31, 3:03:40 AM] Akita: Santa monica
+[2025-12-31, 3:03:40 AM] Akita: 30🏎️
+[2025-12-31, 3:03:41 AM] Akita: johen carneiro 1638
+[2025-12-31, 3:03:41 AM] Akita: 1md
+[2025-12-31, 3:03:41 AM] Akita: E pegar ice la tmb é uma troca
+[2025-12-31, 3:03:41 AM] Akita: 31🏎️
+[2025-12-31, 3:03:42 AM] Akita: Manda pra mim 20g de pren
+[2025-12-31, 3:03:42 AM] Akita: Rua molibdenio 320, dona Zulmira
+[2025-12-31, 3:03:42 AM] Akita: 32🏎️
+[2025-12-31, 3:03:42 AM] Akita: E 1g desse ice pistachio
+[2025-12-31, 3:03:42 AM] Akita: Rua Sao joao numero 829
+[2025-12-31, 3:03:43 AM] Akita: Bairro pacaembu
+[2025-12-31, 3:03:43 AM] Akita: 33🏎️
+[2025-12-31, 3:03:43 AM] Akita: Vc tem quantos md
+[2025-12-31, 3:03:43 AM] Akita: Queria 10g de Arizona
+[2025-12-31, 3:03:44 AM] Akita: Rua sudepe 1415
+[2025-12-31, 3:03:44 AM] Akita: 33🏎️
+[2025-12-31, 3:03:44 AM] Akita: 1g de dry suíço
+1g de ice kalifa
+1g exportação
+1g escama
+3g afegan kush
+[2025-12-31, 3:03:44 AM] Akita: Joao Balbino 1833
+[2025-12-31, 3:03:45 AM] Akita: 34🏎️
+[2025-12-31, 3:03:45 AM] Akita: 2 g md europeu
+[2025-12-31, 3:03:45 AM] Akita: Rua Praga 110
+[2025-12-31, 3:03:45 AM] Akita: 35🏎️
+[2025-12-31, 3:03:46 AM] Akita: Rua professor João Luiz 18
+[2025-12-31, 3:03:46 AM] Akita: 1 bala cnn ou a q tiver
+[2025-12-31, 3:03:46 AM] Akita: 36
+[2025-12-31, 3:03:46 AM] Akita: 50g prensado comercial
+5g manga rosa
+1 papel abacaxi
+[2025-12-31, 3:03:47 AM] Akita: Rua: Atílio Valentini, 625, Santa Monica. Apto 303
+[2025-12-31, 3:03:47 AM] Akita: 37🏎️
+[2025-12-31, 3:03:47 AM] Akita: 1g de ice então
+[2025-12-31, 3:03:47 AM] Akita: Dimas moreira de sa 2444
+[2025-12-31, 3:03:48 AM] Akita: 38🏎️
+[2025-12-31, 3:03:48 AM] Akita: Era
+25g da afeghan
+10g do dry milano
+60g de pren
+[2025-12-31, 3:03:48 AM] Akita: Rua da Cereja, 50 - Pacaembu
+[2025-12-31, 3:03:48 AM] Akita: 39🏎️
+‎[2025-12-31, 3:03:49 AM] Akita: ‎sticker omitted
+[2025-12-31, 3:03:49 AM] Akita: Karol
+[2025-12-31, 3:04:11 AM] Akita: 39 corridas
+30 do 12
+Terca feira
+‎[2025-12-31, 3:04:13 AM] Akita: ‎sticker omitted
+[2025-12-31, 3:07:04 AM] Akita: 50g pren comercial
+[2025-12-31, 3:07:05 AM] Akita: Avenida joao naves de avila 6747
+[2025-12-31, 3:07:05 AM] Akita: 🏎️1
+[2025-12-31, 3:07:05 AM] Akita: 5g Texas
+[2025-12-31, 3:07:05 AM] Akita: Avenida Doutor Laerte Vieira Gonçalves, 1980
+[2025-12-31, 3:07:06 AM] Akita: 🏎️2
+[2025-12-31, 3:07:06 AM] Akita: 3 exporta
+[2025-12-31, 3:07:06 AM] Akita: Las vegas 150 novo mundo
+[2025-12-31, 3:07:07 AM] Akita: 🏎️3
+[2025-12-31, 3:07:07 AM] Akita: ‎Location: https://maps.google.com/?q=-18.918030,-48.281841
+[2025-12-31, 3:07:07 AM] Akita: Uberbrau
+[2025-12-31, 3:07:07 AM] Akita: 1 exporta
+[2025-12-31, 3:07:08 AM] Akita: 🏎️4
+[2025-12-31, 3:07:08 AM] Akita: 1 marmita
+[2025-12-31, 3:07:08 AM] Akita: Rua Su1, 100
+[2025-12-31, 3:07:08 AM] Akita: 🏎️5
+[2025-12-31, 3:07:09 AM] Akita: 5g Texas 
+1 marmita
+[2025-12-31, 3:07:09 AM] Akita: rua paulo maia 760
+[2025-12-31, 3:07:09 AM] Akita: 🏎️6
+[2025-12-31, 3:07:09 AM] Akita: 1 marmita
+[2025-12-31, 3:07:10 AM] Akita: Avenida belarmino Cotta Pacheco 302
+[2025-12-31, 3:07:10 AM] Akita: 🏎️7
+[2025-12-31, 3:07:10 AM] Akita: 5g gold
+[2025-12-31, 3:07:10 AM] Akita: Rua Rio Grande do Sul, 22
+[2025-12-31, 3:07:11 AM] Akita: 🏎️8
+[2025-12-31, 3:07:11 AM] Akita: 5g gold
+[2025-12-31, 3:07:11 AM] Akita: av Alexandre Ribeiro Guimarães 280 saraiva
+[2025-12-31, 3:07:11 AM] Akita: 🏎️9
+[2025-12-31, 3:07:12 AM] Akita: 5g gold
+[2025-12-31, 3:07:12 AM] Akita: Rua Cristina 43
+[2025-12-31, 3:07:12 AM] Akita: 🏎️10
+[2025-12-31, 3:07:12 AM] Akita: 1md 
+5g arizona
+[2025-12-31, 3:07:13 AM] Akita: johen carneiro 1638
+[2025-12-31, 3:07:13 AM] Akita: 🏎️11
+[2025-12-31, 3:07:13 AM] Akita: 1 dry 
+1 exporta
+[2025-12-31, 3:07:13 AM] Akita: Rua Lourival Borges de Oliveira 145
+[2025-12-31, 3:07:14 AM] Akita: 🏎️12
+[2025-12-31, 3:07:14 AM] Akita: 5g texas
+[2025-12-31, 3:07:14 AM] Akita: Rua Professor Leônidas Castro Serra, 122 - Roosevelt
+[2025-12-31, 3:07:14 AM] Akita: 🏎️13
+[2025-12-31, 3:07:14 AM] Akita: Trás 5 g pra min dessa Texas fazendo favor
+[2025-12-31, 3:07:15 AM] Akita: Rua ocidental 1054
+[2025-12-31, 3:07:15 AM] Akita: Bairro Ipanema
+[2025-12-31, 3:07:15 AM] Akita: 14🏎️
+[2025-12-31, 3:07:15 AM] Akita: Maria das Dores Dias 345
+[2025-12-31, 3:07:16 AM] Akita: 5g Colômbia 4g da flor q vc me indicou
+[2025-12-31, 3:07:16 AM] Akita: 15🏎️
+[2025-12-31, 3:07:16 AM] Akita: Consegue manda uma exporta ?
+[2025-12-31, 3:07:16 AM] Akita: Risde atiie 60
+[2025-12-31, 3:07:17 AM] Akita: Jardim Europa
+[2025-12-31, 3:07:17 AM] Akita: Condomínio quaresmeiras
+[2025-12-31, 3:07:17 AM] Akita: 16🏎️
+[2025-12-31, 3:07:17 AM] Akita: Rua Piauí 2945 custodio Pereira
+[2025-12-31, 3:07:18 AM] Akita: 1 papel 1 bala
+[2025-12-31, 3:07:18 AM] Akita: 17🏎️
+[2025-12-31, 3:07:18 AM] Akita: mano preciso de 2 exportação
+[2025-12-31, 3:07:18 AM] Akita: rua Santos Dumont 803.
+[2025-12-31, 3:07:19 AM] Akita: 18🏎️
+[2025-12-31, 3:07:19 AM] Akita: Av. Oscarina Cunha Chaves, 510 - Patrimônio https://share.google/fvfhUpT2KoYI2xhQH
+[2025-12-31, 3:07:19 AM] Akita: 19🏎️
+[2025-12-31, 3:07:19 AM] Akita: Rua austin 96
+[2025-12-31, 3:07:20 AM] Akita: Hj 2 exporta
+[2025-12-31, 3:07:20 AM] Akita: 20🏎️
+[2025-12-31, 3:07:20 AM] Akita: 1g
+[2025-12-31, 3:07:20 AM] Akita: Rua urucania 477 vigilato pereira
+[2025-12-31, 3:07:21 AM] Akita: Ice
+[2025-12-31, 3:07:21 AM] Akita: 21🏎️
+[2025-12-31, 3:07:21 AM] Akita: Joao Balbino 1833
+[2025-12-31, 3:07:21 AM] Akita: 2escamas
+[2025-12-31, 3:07:22 AM] Akita: 22🏎️
+[2025-12-31, 3:07:22 AM] Akita: Pode ser 15g
+[2025-12-31, 3:07:22 AM] Akita: Rua Paris 1100
+[2025-12-31, 3:07:22 AM] Akita: Tibery
+[2025-12-31, 3:07:23 AM] Akita: Mais essa última pods ser
+[2025-12-31, 3:07:23 AM] Akita: 23🏎️
+[2025-12-31, 3:07:23 AM] Akita: 1g escama
+[2025-12-31, 3:07:23 AM] Akita: Jamile Calil Attiê 191
+[2025-12-31, 3:07:24 AM] Akita: Troco pra 100
+[2025-12-31, 3:07:24 AM] Akita: 24🏎️
+[2025-12-31, 3:07:24 AM] Akita: Manda uma exportação por favor
+[2025-12-31, 3:07:24 AM] Akita: Rua Hercio Martins Gomide 25. Jardim Patrícia
+[2025-12-31, 3:07:24 AM] Akita: 25🏎️
+[2025-12-31, 3:07:25 AM] Akita: rua do advogado 654
+[2025-12-31, 3:07:25 AM] Akita: 1 bala
+[2025-12-31, 3:07:25 AM] Akita: 🏎️26
+‎[2025-12-31, 3:07:25 AM] Akita: ‎sticker omitted
+[2025-12-31, 3:07:56 AM] Akita: 30/12 terça feira 
+Francys 
+26 corridas
+‎[2025-12-31, 3:07:59 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:17:56 AM] Akita: ‎Location: https://maps.google.com/?q=-18.872875,-48.253117
+[2026-01-01, 3:17:56 AM] Akita: Passou algar vira esquerda na rotatória subindo pro alphaville 2
+[2026-01-01, 3:17:56 AM] Akita: 10g gold
+[2026-01-01, 3:17:56 AM] Akita: 🏎️1
+[2026-01-01, 3:17:57 AM] Akita: Quero 1 g do ice melequento
+[2026-01-01, 3:17:57 AM] Akita: Av uirapuru 940
+[2026-01-01, 3:17:57 AM] Akita: 🏎️2
+[2026-01-01, 3:17:57 AM] Akita: 2 marmita
+[2026-01-01, 3:17:57 AM] Akita: rua noraldino ferreira 57 bairro segismundo pereira
+[2026-01-01, 3:17:58 AM] Akita: 🏎️3
+[2026-01-01, 3:17:58 AM] Akita: 10g de gold
+[2026-01-01, 3:17:58 AM] Akita: Rua Salerno 111
+[2026-01-01, 3:17:58 AM] Akita: 🏎️4
+[2026-01-01, 3:17:59 AM] Akita: 2 exporta
+[2026-01-01, 3:17:59 AM] Akita: Las vegas 150
+[2026-01-01, 3:17:59 AM] Akita: 🏎️5
+[2026-01-01, 3:17:59 AM] Akita: 1 escama
+1 CNN
+[2026-01-01, 3:17:59 AM] Akita: Rua Antônio Rufino Borges 8 luizote
+[2026-01-01, 3:18:00 AM] Akita: 🏎️6
+[2026-01-01, 3:18:00 AM] Akita: 1 exporta
+1gold
+1 seda
+[2026-01-01, 3:18:00 AM] Akita: Opa boa tarde 
+Consegue 1 exp 
+1 Colômbia 
+Ravena 157 jd Europa
+[2026-01-01, 3:18:00 AM] Akita: 🏎️7
+[2026-01-01, 3:18:01 AM] Akita: 3bruce
+4g bubba
+1 seda 
+1 piteira
+[2026-01-01, 3:18:01 AM] Akita: Rua dos pereiras 747
+[2026-01-01, 3:18:01 AM] Akita: 🏎️8
+[2026-01-01, 3:18:01 AM] Akita: Rua: João velasco de Andrade 407 santa Monica
+[2026-01-01, 3:18:01 AM] Akita: 5g texas flower e 1g bruce banner
+[2026-01-01, 3:18:02 AM] Akita: 🏎️9
+[2026-01-01, 3:18:02 AM] Akita: 5g texas
+1 nugg
+1 seda
+[2026-01-01, 3:18:02 AM] Akita: Rua Paris 80
+[2026-01-01, 3:18:02 AM] Akita: 🏎️10
+[2026-01-01, 3:18:03 AM] Akita: 2g cogu
+[2026-01-01, 3:18:03 AM] Akita: Ana godoy de sousa 263
+[2026-01-01, 3:18:03 AM] Akita: 🏎️11
+[2026-01-01, 3:18:03 AM] Akita: Man tá online ? 
+
+manda 20 g rua siao 363 Canaa
+[2026-01-01, 3:18:03 AM] Akita: 🏎️12
+[2026-01-01, 3:18:04 AM] Akita: 3g escama
+[2026-01-01, 3:18:04 AM] Akita: R da bandeira 400
+[2026-01-01, 3:18:04 AM] Akita: 🏎️13
+[2026-01-01, 3:18:04 AM] Akita: 1 marmita
+[2026-01-01, 3:18:05 AM] Akita: Rua cometa 445
+Jardim Brasília
+[2026-01-01, 3:18:05 AM] Akita: 🏎️14
+[2026-01-01, 3:18:05 AM] Akita: 1 marmita
+[2026-01-01, 3:18:05 AM] Akita: Rua Adomervil Moreira Miranda 766
+[2026-01-01, 3:18:05 AM] Akita: 🏎️15
+[2026-01-01, 3:18:06 AM] Akita: 5g arizona
+[2026-01-01, 3:18:06 AM] Akita: endereço romeno simão 10
+[2026-01-01, 3:18:06 AM] Akita: 🏎️16
+[2026-01-01, 3:18:06 AM] Akita: 3g escama
+[2026-01-01, 3:18:06 AM] Akita: Rua Rodolfo Correa, 463 - Cazeca
+[2026-01-01, 3:18:07 AM] Akita: 🏎️17
+[2026-01-01, 3:18:07 AM] Akita: Niteroi callink
+[2026-01-01, 3:18:07 AM] Akita: 5g arizona
+[2026-01-01, 3:18:07 AM] Akita: 🏎️18
+[2026-01-01, 3:18:08 AM] Akita: 10g Texas
+[2026-01-01, 3:18:08 AM] Akita: Avenida Terezina 2330
+[2026-01-01, 3:18:08 AM] Akita: 🏎️19
+[2026-01-01, 3:18:08 AM] Akita: Se manda um peso de 20g aqui pro bairro Brasil, rua Bahia 1363
+[2026-01-01, 3:18:08 AM] Akita: 1 marmita
+[2026-01-01, 3:18:09 AM] Akita: 🏎️20
+[2026-01-01, 3:18:09 AM] Akita: vou querer 1g de afeghan
+[2026-01-01, 3:18:09 AM] Akita: av. divino adão moura, 157
+[2026-01-01, 3:18:09 AM] Akita: 1g de afeghan
+[2026-01-01, 3:18:09 AM] Akita: 🏎️21
+[2026-01-01, 3:18:10 AM] Akita: Rua natal 1222
+[2026-01-01, 3:18:10 AM] Akita: 1 marmita
+🏎️22
+[2026-01-01, 3:18:10 AM] Akita: Rua nego Amancio 189
+1g ice
+1g bruce
+1g meleca
+[2026-01-01, 3:18:11 AM] Akita: 🏎️23
+[2026-01-01, 3:18:11 AM] Akita: 2g afeghan
+[2026-01-01, 3:18:11 AM] Akita: Avenida Para, 2200
+[2026-01-01, 3:18:11 AM] Akita: 🏎️24
+[2026-01-01, 3:18:11 AM] Akita: 5g texas
+[2026-01-01, 3:18:12 AM] Akita: Niteroi callink
+[2026-01-01, 3:18:12 AM] Akita: 🏎️25
+[2026-01-01, 3:18:12 AM] Akita: 1g orange 
+1 marmita
+[2026-01-01, 3:18:12 AM] Akita: Avenida Alexandre Ribeiro Guimarães 692 casa 1
+[2026-01-01, 3:18:13 AM] Akita: 🏎️26
+[2026-01-01, 3:18:13 AM] Akita: 5g arizona
+[2026-01-01, 3:18:13 AM] Akita: Av alexandrino Alves Vieira, 535, Santa Rosa
+[2026-01-01, 3:18:13 AM] Akita: 🏎️27
+[2026-01-01, 3:18:14 AM] Akita: 1g escama
+10g arizona
+[2026-01-01, 3:18:14 AM] Akita: Tibery Londres 913
+[2026-01-01, 3:18:14 AM] Akita: 🏎️28
+[2026-01-01, 3:18:14 AM] Akita: 1 marmita 
+5g Texas
+[2026-01-01, 3:18:15 AM] Akita: Correio
+[2026-01-01, 3:18:15 AM] Akita: Rua caule 231, Granada
+[2026-01-01, 3:18:15 AM] Akita: 🏎️29
+[2026-01-01, 3:18:15 AM] Akita: 3g Afeghan 
+1g ice 
+2 balas CNN
+1g MD
+[2026-01-01, 3:18:16 AM] Akita: Rua Santa Edwirges, 123
+[2026-01-01, 3:18:16 AM] Akita: 🏎️30
+[2026-01-01, 3:18:16 AM] Akita: 1 exporta
+1 abacaxi
+[2026-01-01, 3:18:16 AM] Akita: Rua João Justino Fernandes 562
+[2026-01-01, 3:18:16 AM] Akita: 🏎️31
+[2026-01-01, 3:18:17 AM] Akita: 1 marmita 
+1 canadian
+[2026-01-01, 3:18:17 AM] Akita: av. profa juvenília dos santos 1373
+[2026-01-01, 3:18:17 AM] Akita: 🏎️32
+[2026-01-01, 3:18:17 AM] Akita: 1 marmita
+[2026-01-01, 3:18:17 AM] Akita: Rua joao pereira da silva 138, Santa Mônica
+[2026-01-01, 3:18:18 AM] Akita: 🏎️33
+[2026-01-01, 3:18:18 AM] Akita: 1g orange
+[2026-01-01, 3:18:18 AM] Akita: Rua dos pereiras 691 
+Nossa Senhora Aparecida
+[2026-01-01, 3:18:18 AM] Akita: 🏎️34
+[2026-01-01, 3:18:19 AM] Akita: 15g arizona
+[2026-01-01, 3:18:19 AM] Akita: Rua Campeio 55 - Morumbi
+[2026-01-01, 3:18:19 AM] Akita: 🏎️35
+[2026-01-01, 3:18:19 AM] Akita: 1g orange
+[2026-01-01, 3:18:19 AM] Akita: Av indaia 1333, planalto
+[2026-01-01, 3:18:20 AM] Akita: 🏎️36
+[2026-01-01, 3:18:20 AM] Akita: 1 paki 
+5g gold
+[2026-01-01, 3:18:20 AM] Akita: João Rodrigues de Castro 355
+[2026-01-01, 3:18:20 AM] Akita: 🏎️37
+[2026-01-01, 3:18:21 AM] Akita: 1 flypig
+[2026-01-01, 3:18:21 AM] Akita: Rua Mário zara n 60
+[2026-01-01, 3:18:21 AM] Akita: 🏎️38
+[2026-01-01, 3:18:21 AM] Akita: 1 marmita
+[2026-01-01, 3:18:22 AM] Akita: dr Laerte Vieira Gonçalves 1849
+[2026-01-01, 3:18:22 AM] Akita: 🏎️39
+[2026-01-01, 3:18:22 AM] Akita: 3g lemon
+[2026-01-01, 3:18:22 AM] Akita: Duque de Caxias 1901
+[2026-01-01, 3:18:23 AM] Akita: 🏎️40
+[2026-01-01, 3:18:23 AM] Akita: 3g nugg
+[2026-01-01, 3:18:23 AM] Akita: Rua Monte Carmelo 311 Osvaldo Rezende condomínio Spazio up town
+[2026-01-01, 3:18:23 AM] Akita: 🏎️41
+[2026-01-01, 3:18:23 AM] Akita: Rua Timbiras
+[2026-01-01, 3:18:24 AM] Akita: 551
+[2026-01-01, 3:18:24 AM] Akita: 5g gold
+[2026-01-01, 3:18:24 AM] Akita: 🏎️42
+[2026-01-01, 3:18:24 AM] Akita: 2 canadian
+[2026-01-01, 3:18:25 AM] Akita: Maria das Dores Dias 345 
+Stm
+[2026-01-01, 3:18:25 AM] Akita: 🏎️43
+[2026-01-01, 3:18:25 AM] Akita: 2 flypig
+[2026-01-01, 3:18:25 AM] Akita: 5g gold
+[2026-01-01, 3:18:26 AM] Akita: João Velasco de Andrade 67
+[2026-01-01, 3:18:26 AM] Akita: 🏎️44
+[2026-01-01, 3:18:26 AM] Akita: 1 marmita
+[2026-01-01, 3:18:26 AM] Akita: Rua salvador 1106
+[2026-01-01, 3:18:26 AM] Akita: 🏎️45
+[2026-01-01, 3:18:27 AM] Akita: 5 elon musk 
+3 abacaxi
+[2026-01-01, 3:18:27 AM] Akita: rua antonio marciano de avila 1440
+[2026-01-01, 3:18:27 AM] Akita: 🏎️46
+[2026-01-01, 3:18:28 AM] Akita: 4g bubba
+[2026-01-01, 3:18:28 AM] Akita: Rua Manoel da Mata Gonçalves 557 Chácaras Tubalina
+[2026-01-01, 3:18:28 AM] Akita: 🏎️47
+[2026-01-01, 3:18:28 AM] Akita: 1 marmita 
+1 abacaxi
+[2026-01-01, 3:18:28 AM] Akita: Avenida João Naves de Ávila 2046
+[2026-01-01, 3:18:29 AM] Akita: 🏎️48
+[2026-01-01, 3:18:29 AM] Akita: B&B Hotels Brasil (Praça Tubal Vilela, 192 - Centro, Uberlândia, 38400-186, MG, BR): https://www.hotel-bb.com/pt/hotel/uberlandia
+[2026-01-01, 3:18:29 AM] Akita: 3g escama
+[2026-01-01, 3:18:29 AM] Akita: 🏎️49
+[2026-01-01, 3:18:29 AM] Akita: 5 elon musk 
+3 abacaxi
+[2026-01-01, 3:18:30 AM] Akita: rua antonio marciano de avila 1440
+[2026-01-01, 3:18:30 AM] Akita: 🏎️50
+[2026-01-01, 3:18:30 AM] Akita: 5g Texas
+[2026-01-01, 3:18:30 AM] Akita: rua venus 460 jd brasilia
+[2026-01-01, 3:18:30 AM] Akita: 🏎️51
+[2026-01-01, 3:18:31 AM] Akita: 5g arizona
+[2026-01-01, 3:18:31 AM] Akita: rua mateus 94
+[2026-01-01, 3:18:31 AM] Akita: 🏎️52
+[2026-01-01, 3:18:31 AM] Akita: Maravilha
+‎[2026-01-01, 3:18:32 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:18:32 AM] Akita: 31/12 quarta feira 
+Rodrigo 
+52 corridas
+‎[2026-01-01, 3:18:32 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:21:13 AM] Akita: Rua silex 830
+[2026-01-01, 3:21:13 AM] Akita: 1 marmita
+[2026-01-01, 3:21:14 AM] Akita: Bom dia cunhada
+[2026-01-01, 3:21:14 AM] Akita: 🏎️1
+[2026-01-01, 3:21:14 AM] Akita: oii bom dia, quanto que ta o abacaxi
+[2026-01-01, 3:21:14 AM] Akita: rua dos flamingos 1000
+[2026-01-01, 3:21:15 AM] Akita: 1 papel
+[2026-01-01, 3:21:15 AM] Akita: 🏎️2
+[2026-01-01, 3:21:15 AM] Akita: 4g orange
+[2026-01-01, 3:21:15 AM] Akita: Rua Renato de Oliveira grama 245
+[2026-01-01, 3:21:15 AM] Akita: 4g de orange
+[2026-01-01, 3:21:16 AM] Akita: 🏎️3
+[2026-01-01, 3:21:16 AM] Akita: Avenida dos Jardins, 250, Condomínio Jardins Barcelona
+[2026-01-01, 3:21:16 AM] Akita: 10g de Colômbia Gold
+[2026-01-01, 3:21:16 AM] Akita: 10g de gold
+[2026-01-01, 3:21:17 AM] Akita: 🏎️4
+[2026-01-01, 3:21:17 AM] Akita: 5g texas flower
+[2026-01-01, 3:21:17 AM] Akita: R. João Rodrigues de Castro, 105 - Jardim Patricia, Uberlândia - MG, 38414-122
+[2026-01-01, 3:21:17 AM] Akita: 5g de texas
+[2026-01-01, 3:21:18 AM] Akita: 🏎️5
+[2026-01-01, 3:21:18 AM] Akita: Manda 1g de melca e 4g de orange
+[2026-01-01, 3:21:18 AM] Akita: Rua subtenente stulzer, numero 45, casa 02, shopping park
+[2026-01-01, 3:21:18 AM] Akita: 1g de meleca
+[2026-01-01, 3:21:19 AM] Akita: 4g de orange
+[2026-01-01, 3:21:19 AM] Akita: 🏎️6
+[2026-01-01, 3:21:19 AM] Akita: Rua Adomervil Moreira Miranda 766
+[2026-01-01, 3:21:19 AM] Akita: 1 marmita
+[2026-01-01, 3:21:20 AM] Akita: 🏎️7
+[2026-01-01, 3:21:20 AM] Akita: Dr miron de Menezes 
+100
+[2026-01-01, 3:21:20 AM] Akita: Luizote
+[2026-01-01, 3:21:21 AM] Akita: 🏎️8
+[2026-01-01, 3:21:21 AM] Akita: 2g desse MD europeu
+[2026-01-01, 3:21:21 AM] Akita: Rua Emília Fernandes de brito 400
+[2026-01-01, 3:21:21 AM] Akita: Santa rosa
+[2026-01-01, 3:21:21 AM] Akita: 🏎️9
+[2026-01-01, 3:21:22 AM] Akita: 5g de exporta  no dr miron
+[2026-01-01, 3:21:22 AM] Akita: 🏎️🏎️
+[2026-01-01, 3:21:22 AM] Akita: 1g de paki pf
+[2026-01-01, 3:21:22 AM] Akita: Rua das tulipas 289 cidade jardim
+[2026-01-01, 3:21:23 AM] Akita: 🏎️10
+[2026-01-01, 3:21:23 AM] Akita: 1 G meleca
+[2026-01-01, 3:21:23 AM] Akita: Rua mateus 190
+[2026-01-01, 3:21:23 AM] Akita: 🏎️11
+[2026-01-01, 3:21:24 AM] Akita: 1g flor
+[2026-01-01, 3:21:24 AM] Akita: av joao pinheiro n320
+[2026-01-01, 3:21:24 AM] Akita: 1g de orange
+[2026-01-01, 3:21:24 AM] Akita: 🏎️12
+[2026-01-01, 3:21:24 AM] Akita: Spazio unico
+[2026-01-01, 3:21:25 AM] Akita: 5g de texas
+[2026-01-01, 3:21:25 AM] Akita: 1g de super lemon
+[2026-01-01, 3:21:25 AM] Akita: 🏎️13
+[2026-01-01, 3:21:25 AM] Akita: Quero duas canadian
+[2026-01-01, 3:21:26 AM] Akita: Ronan manoel pereira 373
+[2026-01-01, 3:21:26 AM] Akita: 2 bala
+[2026-01-01, 3:21:26 AM] Akita: 🏎️14
+[2026-01-01, 3:21:26 AM] Akita: Queria pedir uma escama de 60
+[2026-01-01, 3:21:27 AM] Akita: E uma flor
+[2026-01-01, 3:21:27 AM] Akita: Orange
+[2026-01-01, 3:21:27 AM] Akita: Rua Maria da Conceição de Andrade 240
+[2026-01-01, 3:21:27 AM] Akita: 1g de escama
+[2026-01-01, 3:21:27 AM] Akita: 1 g de sower
+[2026-01-01, 3:21:28 AM] Akita: 🏎️15
+[2026-01-01, 3:21:28 AM] Akita: quero uma g de ice kaliffa
+[2026-01-01, 3:21:28 AM] Akita: rua do advogado 654 jardim das palmeiras
+[2026-01-01, 3:21:28 AM] Akita: 1g de ice
+[2026-01-01, 3:21:28 AM] Akita: 🏎️16
+[2026-01-01, 3:21:29 AM] Akita: Manda 1g da exp por favor
+[2026-01-01, 3:21:29 AM] Akita: av belo horizonte 1685
+[2026-01-01, 3:21:29 AM] Akita: 1g de exportação
+[2026-01-01, 3:21:29 AM] Akita: 🏎️17
+[2026-01-01, 3:21:30 AM] Akita: Av. Cesário Alvim, 265 - Centro, Uberlândia - 
+CEP 38400-096
+[2026-01-01, 3:21:30 AM] Akita: 1g de exporta
+[2026-01-01, 3:21:30 AM] Akita: 🏎️18
+[2026-01-01, 3:21:30 AM] Akita: rua Thais Rodrigues 33
+[2026-01-01, 3:21:30 AM] Akita: 2g de md
+[2026-01-01, 3:21:31 AM] Akita: 🏎️19
+[2026-01-01, 3:21:31 AM] Akita: 5g de arizona pf
+[2026-01-01, 3:21:31 AM] Akita: Av professora juvenilia dos Santos 1234
+[2026-01-01, 3:21:31 AM] Akita: 🏎️20
+[2026-01-01, 3:21:32 AM] Akita: padre pio 214 bala canadian
+[2026-01-01, 3:21:32 AM] Akita: 1 bala
+[2026-01-01, 3:21:32 AM] Akita: 🏎️21
+[2026-01-01, 3:21:32 AM] Akita: joao pereira da silva, 334
+[2026-01-01, 3:21:33 AM] Akita: santa monica
+[2026-01-01, 3:21:33 AM] Akita: 5g de arizona
+[2026-01-01, 3:21:33 AM] Akita: 🏎️22
+[2026-01-01, 3:21:33 AM] Akita: Queria 1g de md
+[2026-01-01, 3:21:34 AM] Akita: Rua José Alencar, 53 
+Bairro Minas Gerais
+[2026-01-01, 3:21:34 AM] Akita: 🏎️23
+[2026-01-01, 3:21:34 AM] Akita: Rua coronel ernesto rodrigues da cunha, 239
+Jd karaiba
+[2026-01-01, 3:21:34 AM] Akita: 4g de bubba
+[2026-01-01, 3:21:35 AM] Akita: 🏎️24
+‎[2026-01-01, 3:21:35 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:21:35 AM] Akita: 31/12 
+Karol 24 corridas
+‎[2026-01-01, 3:21:35 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:25:21 AM] Akita: 2g de Orange
+[2026-01-01, 3:25:21 AM] Akita: Av José Maria Ribeiro 1170
+[2026-01-01, 3:25:21 AM] Akita: 🏎️1
+[2026-01-01, 3:25:21 AM] Akita: Prédio marrom
+[2026-01-01, 3:25:22 AM] Akita: Referência marrom
+[2026-01-01, 3:25:22 AM] Akita: 1 marmita
+[2026-01-01, 3:25:22 AM] Akita: 🏎️2
+[2026-01-01, 3:25:22 AM] Akita: Rua Nigéria 103 laranjeiras
+[2026-01-01, 3:25:23 AM] Akita: 2g de escama
+[2026-01-01, 3:25:23 AM] Akita: 🏎️3
+[2026-01-01, 3:25:23 AM] Akita: Rua adomervil Moreira Miranda 766 Luizote
+[2026-01-01, 3:25:23 AM] Akita: 1 marmita
+[2026-01-01, 3:25:23 AM] Akita: 🏎️4
+[2026-01-01, 3:25:24 AM] Akita: Pode ser 5g da arizona
+[2026-01-01, 3:25:24 AM] Akita: Rua Bento Gonçalves 671
+[2026-01-01, 3:25:24 AM] Akita: 5g de arizona
+[2026-01-01, 3:25:24 AM] Akita: 🏎️5
+[2026-01-01, 3:25:25 AM] Akita: Pega 5G dessa texas e 1 G de pistachio
+[2026-01-01, 3:25:25 AM] Akita: Rua franscisco sales 1662
+[2026-01-01, 3:25:25 AM] Akita: 5g de texas
+[2026-01-01, 3:25:25 AM] Akita: 1g de ice nugg
+[2026-01-01, 3:25:25 AM] Akita: 🏎️6
+[2026-01-01, 3:25:26 AM] Akita: Rua dos bambuzais, 225
+[2026-01-01, 3:25:26 AM] Akita: Pode deixar no correio
+[2026-01-01, 3:25:26 AM] Akita: 5g de gold
+[2026-01-01, 3:25:26 AM] Akita: 🏎️7
+[2026-01-01, 3:25:27 AM] Akita: Rua Su1 n100
+Gávea 
+Sapazio único
+[2026-01-01, 3:25:27 AM] Akita: 4g de orange
+[2026-01-01, 3:25:27 AM] Akita: 🏎️8
+[2026-01-01, 3:25:27 AM] Akita: Rua ilse ferreira Bastos, 79 - São Jorge
+[2026-01-01, 3:25:27 AM] Akita: 2 g de afeghan
+[2026-01-01, 3:25:28 AM] Akita: 1g de ice nugg
+[2026-01-01, 3:25:28 AM] Akita: 🏎️9
+[2026-01-01, 3:25:28 AM] Akita: Tá av serra da bodoquena 768
+[2026-01-01, 3:25:28 AM] Akita: 3 bala
+[2026-01-01, 3:25:29 AM] Akita: 🏎️10
+[2026-01-01, 3:25:29 AM] Akita: Rua itabira 1362
+[2026-01-01, 3:25:29 AM] Akita: 2 bala
+[2026-01-01, 3:25:29 AM] Akita: 🏎️11
+[2026-01-01, 3:25:30 AM] Akita: Salve, man vai ser 
+Prensado 20g
+5g Arizona
+[2026-01-01, 3:25:30 AM] Akita: Rua Bahia 1118
+[2026-01-01, 3:25:30 AM] Akita: 5g de arizona
+[2026-01-01, 3:25:30 AM] Akita: 1 marmita
+[2026-01-01, 3:25:30 AM] Akita: 🏎️12
+[2026-01-01, 3:25:31 AM] Akita: Rua Alfredo Tormin, 59
+[2026-01-01, 3:25:31 AM] Akita: finotti
+[2026-01-01, 3:25:31 AM] Akita: 4g de bubba
+[2026-01-01, 3:25:31 AM] Akita: 🏎️13
+[2026-01-01, 3:25:32 AM] Akita: 1 escama 
+Neilton cobo Victor 301 
+Caixinha de correio
+[2026-01-01, 3:25:32 AM] Akita: 1g de escama
+[2026-01-01, 3:25:32 AM] Akita: 🏎️14
+[2026-01-01, 3:25:32 AM] Akita: 4g bubba
+[2026-01-01, 3:25:33 AM] Akita: Orozimbo Ribeiro 607 Santa Monica
+[2026-01-01, 3:25:33 AM] Akita: 🏎️15
+[2026-01-01, 3:25:33 AM] Akita: Pode entregar pra mim 2g de escama?
+[2026-01-01, 3:25:33 AM] Akita: Rua Caule, 921
+Jardim botânico
+[2026-01-01, 3:25:33 AM] Akita: 2g de escama
+[2026-01-01, 3:25:34 AM] Akita: 🏎️16
+[2026-01-01, 3:25:34 AM] Akita: Alameda jardim holanda 841
+[2026-01-01, 3:25:34 AM] Akita: Condomínio
+[2026-01-01, 3:25:34 AM] Akita: 1 g de exporta
+[2026-01-01, 3:25:35 AM] Akita: 🏎️17
+[2026-01-01, 3:25:35 AM] Akita: Rua Jaime Agostinho 37. 1 fly pig e 1 abacaxi por cabei
+[2026-01-01, 3:25:35 AM] Akita: 2.papel
+[2026-01-01, 3:25:35 AM] Akita: 🏎️18
+[2026-01-01, 3:25:36 AM] Akita: Rua Maria Marques da Silva 931
+[2026-01-01, 3:25:36 AM] Akita: 10g de gold
+[2026-01-01, 3:25:36 AM] Akita: 🏎️19
+[2026-01-01, 3:25:36 AM] Akita: Juvelina Mota Leite 70
+[2026-01-01, 3:25:36 AM] Akita: 2 bala
+[2026-01-01, 3:25:37 AM] Akita: 1 g de super.lemon
+[2026-01-01, 3:25:37 AM] Akita: 🏎️20
+[2026-01-01, 3:25:37 AM] Akita: 1g flor
+[2026-01-01, 3:25:37 AM] Akita: av joao pinheiro n320
+[2026-01-01, 3:25:38 AM] Akita: 1g de orange
+[2026-01-01, 3:25:38 AM] Akita: 🏎️21
+[2026-01-01, 3:25:38 AM] Akita: Spazio unico
+[2026-01-01, 3:25:38 AM] Akita: 5g de texas
+[2026-01-01, 3:25:38 AM] Akita: 1g de super lemon
+[2026-01-01, 3:25:39 AM] Akita: 🏎️13
+[2026-01-01, 3:25:39 AM] Akita: Ronan manoel pereira 373
+[2026-01-01, 3:25:39 AM] Akita: 2 bala
+[2026-01-01, 3:25:39 AM] Akita: 🏎️14
+[2026-01-01, 3:25:40 AM] Akita: Queria pedir uma escama de 60
+[2026-01-01, 3:25:40 AM] Akita: E uma flor
+[2026-01-01, 3:25:40 AM] Akita: Orange
+[2026-01-01, 3:25:40 AM] Akita: Rua Maria da Conceição de Andrade 240
+[2026-01-01, 3:25:40 AM] Akita: 1g de escama
+[2026-01-01, 3:25:41 AM] Akita: 1 g de sower
+[2026-01-01, 3:25:41 AM] Akita: 🏎️15
+[2026-01-01, 3:25:41 AM] Akita: quero uma g de ice kaliffa
+[2026-01-01, 3:25:41 AM] Akita: rua do advogado 654 jardim das palmeiras
+[2026-01-01, 3:25:42 AM] Akita: 1g de ice
+[2026-01-01, 3:25:42 AM] Akita: 🏎️16
+[2026-01-01, 3:25:42 AM] Akita: rua Thais Rodrigues 33
+[2026-01-01, 3:25:42 AM] Akita: 2g de md
+[2026-01-01, 3:25:42 AM] Akita: 🏎️19
+[2026-01-01, 3:25:43 AM] Akita: 5g de arizona pf
+[2026-01-01, 3:25:43 AM] Akita: Av professora juvenilia dos Santos 1234
+[2026-01-01, 3:25:43 AM] Akita: 🏎️20
+[2026-01-01, 3:25:43 AM] Akita: padre pio 214 bala canadian
+[2026-01-01, 3:25:44 AM] Akita: 1 bala
+[2026-01-01, 3:25:44 AM] Akita: 🏎️21
+[2026-01-01, 3:25:44 AM] Akita: joao pereira da silva, 334
+[2026-01-01, 3:25:44 AM] Akita: santa monica
+[2026-01-01, 3:25:44 AM] Akita: 5g de arizona
+[2026-01-01, 3:25:45 AM] Akita: 🏎️22
+[2026-01-01, 3:25:45 AM] Akita: Queria 1g de md
+[2026-01-01, 3:25:45 AM] Akita: Rua José Alencar, 53 
+Bairro Minas Gerais
+[2026-01-01, 3:25:45 AM] Akita: 🏎️23
+[2026-01-01, 3:25:45 AM] Akita: Rua coronel ernesto rodrigues da cunha, 239
+Jd karaiba
+[2026-01-01, 3:25:46 AM] Akita: 4g de bubba
+[2026-01-01, 3:25:46 AM] Akita: 🏎️24
+[2026-01-01, 3:25:46 AM] Akita: Vou querer uma sower haze 1g e 1 abacaxi
+[2026-01-01, 3:25:46 AM] Akita: Lendárius lounge
+[2026-01-01, 3:25:47 AM] Akita: 🏎️25
+‎[2026-01-01, 3:25:47 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:26:05 AM] Akita: Francis 
+25 do 12
+25 corridas
+Quarta
+‎[2026-01-01, 3:26:07 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:30:53 AM] Akita: rua alfredo tormin, 59
+[2026-01-01, 3:30:53 AM] Akita: 4g de bubba
+[2026-01-01, 3:30:53 AM] Akita: 🏎️1
+[2026-01-01, 3:30:54 AM] Akita: Rua Maria das Dores Dias, 97
+[2026-01-01, 3:30:54 AM] Akita: Santa Monica
+[2026-01-01, 3:30:54 AM] Akita: 1 marmita
+[2026-01-01, 3:30:54 AM] Akita: 5g de arizona
+[2026-01-01, 3:30:55 AM] Akita: 1 papel
+[2026-01-01, 3:30:55 AM] Akita: 🏎️2
+[2026-01-01, 3:30:55 AM] Akita: Rua acre 1244
+[2026-01-01, 3:30:55 AM] Akita: 20g de prem
+[2026-01-01, 3:30:55 AM] Akita: 1 flor
+[2026-01-01, 3:30:56 AM] Akita: 1 marmita
+[2026-01-01, 3:30:56 AM] Akita: 1g de bubba
+[2026-01-01, 3:30:56 AM] Akita: 🏎️3
+[2026-01-01, 3:30:56 AM] Akita: Rua mutum 345
+[2026-01-01, 3:30:57 AM] Akita: 1 marmita
+[2026-01-01, 3:30:57 AM] Akita: 🏎️4
+[2026-01-01, 3:30:57 AM] Akita: Rua transição 860
+[2026-01-01, 3:30:57 AM] Akita: Laranjeiras
+[2026-01-01, 3:30:58 AM] Akita: 2 bala
+[2026-01-01, 3:30:58 AM] Akita: 2g de exporta
+[2026-01-01, 3:30:58 AM] Akita: 🏎️5
+[2026-01-01, 3:30:58 AM] Akita: Se puder pedir pra parar próximo ao posto que tem na rua por favor
+[2026-01-01, 3:30:58 AM] Akita: 1 bala
+[2026-01-01, 3:30:59 AM] Akita: 🏎️6
+[2026-01-01, 3:30:59 AM] Akita: R rio de janeiro 1755
+[2026-01-01, 3:30:59 AM] Akita: Bairro brasil
+[2026-01-01, 3:30:59 AM] Akita: 1g de exporta
+[2026-01-01, 3:31:00 AM] Akita: Correio
+[2026-01-01, 3:31:00 AM] Akita: 🏎️7
+[2026-01-01, 3:31:00 AM] Akita: Cesário Alvim 157
+[2026-01-01, 3:31:00 AM] Akita: 1 marmita
+[2026-01-01, 3:31:00 AM] Akita: 1g de dry
+[2026-01-01, 3:31:01 AM] Akita: 🏎️8
+[2026-01-01, 3:31:01 AM] Akita: Alto Umuarama
+[2026-01-01, 3:31:01 AM] Akita: 4g de escama
+[2026-01-01, 3:31:01 AM] Akita: 🏎️9
+[2026-01-01, 3:31:02 AM] Akita: 20 g presado
+Rua Ruth Rocha 143 Minas
+[2026-01-01, 3:31:02 AM] Akita: 1 marmita
+[2026-01-01, 3:31:02 AM] Akita: 🏎️10
+[2026-01-01, 3:31:02 AM] Akita: 1g de ice
+[2026-01-01, 3:31:03 AM] Akita: 2g de sry
+[2026-01-01, 3:31:03 AM] Akita: Avenida João Pessoa 864
+[2026-01-01, 3:31:03 AM] Akita: 2 g de dry
+[2026-01-01, 3:31:03 AM] Akita: 1g de ice
+[2026-01-01, 3:31:03 AM] Akita: 🏎️11
+[2026-01-01, 3:31:04 AM] Akita: Faz um fly pig e uma g de MD na Ana Godoy de Sousa, 263
+[2026-01-01, 3:31:04 AM] Akita: 1 papel 
+1 md
+[2026-01-01, 3:31:04 AM] Akita: 🏎️12
+[2026-01-01, 3:31:05 AM] Akita: Rua Professora Maria Célia Cence, 160
+[2026-01-01, 3:31:05 AM] Akita: 1 marmita
+[2026-01-01, 3:31:05 AM] Akita: 🏎️13
+[2026-01-01, 3:31:05 AM] Akita: 1 orangr
+[2026-01-01, 3:31:06 AM] Akita: 🏎️15
+[2026-01-01, 3:31:06 AM] Akita: 2g exportação
+[2026-01-01, 3:31:06 AM] Akita: Rua Gerson Braga 660 Segismundo Pereira
+[2026-01-01, 3:31:05 AM] Akita: Dr. Munir tannus abdala 201 shopping park unitead coast
+[2026-01-01, 3:31:06 AM] Akita: 🏎️15
+[2026-01-01, 3:31:07 AM] Akita: Rua Timbiras
+[2026-01-01, 3:31:07 AM] Akita: 551
+[2026-01-01, 3:31:07 AM] Akita: 🏎️16
+[2026-01-01, 3:31:07 AM] Akita: 5g gold
+[2026-01-01, 3:31:07 AM] Akita: Raulino Cotta 151 tô parando lá em 10min
+[2026-01-01, 3:31:08 AM] Akita: 🏎️17
+[2026-01-01, 3:31:08 AM] Akita: 5g texas
+1 elon
+[2026-01-01, 3:31:08 AM] Akita: Rua itubiara 794
+[2026-01-01, 3:31:08 AM] Akita: 🏎️18
+[2026-01-01, 3:31:09 AM] Akita: 5g texas
+[2026-01-01, 3:31:09 AM] Akita: Joao Pereira da Silva 321 
+Santa Monica
+[2026-01-01, 3:31:09 AM] Akita: 🏎️19
+[2026-01-01, 3:31:09 AM] Akita: 4g sower
+[2026-01-01, 3:31:10 AM] Akita: Rondon pacheco, 381
+Tabajaras
+[2026-01-01, 3:31:10 AM] Akita: 🏎️20
+[2026-01-01, 3:31:10 AM] Akita: 1g de ice khalifa
+1g de pistachio
+1g MD
+[2026-01-01, 3:31:10 AM] Akita: Referencia Haifa
+[2026-01-01, 3:31:11 AM] Akita: 🏎️21
+[2026-01-01, 3:31:11 AM] Akita: 5g arizona
+[2026-01-01, 3:31:11 AM] Akita: rua tabajaras 345
+[2026-01-01, 3:31:12 AM] Akita: 🏎️22
+[2026-01-01, 3:31:12 AM] Akita: 1 gelo
+[2026-01-01, 3:31:12 AM] Akita: 1 escama
+1 abacaxi
+[2026-01-01, 3:31:12 AM] Akita: Aqui é Rua do ensino,98, Santa Monica
+[2026-01-01, 3:31:13 AM] Akita: 🏎️23
+[2026-01-01, 3:31:13 AM] Akita: 1 marmita
+[2026-01-01, 3:31:13 AM] Akita: Manoel Machado filho 50
+[2026-01-01, 3:31:13 AM] Akita: 🏎️24
+[2026-01-01, 3:31:14 AM] Akita: 3 escama
+[2026-01-01, 3:31:14 AM] Akita: Rua Armando Tucci, 1689
+[2026-01-01, 3:31:14 AM] Akita: 🏎️25
+[2026-01-01, 3:31:14 AM] Akita: 1 escama
+[2026-01-01, 3:31:15 AM] Akita: Rua Maria hambrisina de jesus 72
+[2026-01-01, 3:31:15 AM] Akita: 🏎️26
+[2026-01-01, 3:31:15 AM] Akita: Fechou
+[2026-01-01, 3:31:15 AM] Akita: 1 MD
+[2026-01-01, 3:31:15 AM] Akita: Rio tibre 496 mansour
+[2026-01-01, 3:31:16 AM] Akita: 🏎️27
+[2026-01-01, 3:31:16 AM] Akita: 5g texas
+1 marmita
+[2026-01-01, 3:31:16 AM] Akita: 🏎️28
+[2026-01-01, 3:31:16 AM] Akita: 1 MD
+[2026-01-01, 3:31:17 AM] Akita: Rua Santa Edwirges, 123
+[2026-01-01, 3:31:17 AM] Akita: 🏎️29
+[2026-01-01, 3:31:17 AM] Akita: 5G Flor Arizona 
+1G Ice piatachio
+40G prensado
+[2026-01-01, 3:31:17 AM] Akita: 🏎️30
+[2026-01-01, 3:31:18 AM] Akita: 1 marmits
+[2026-01-01, 3:31:18 AM] Akita: Rua luiza de Jesus 32
+[2026-01-01, 3:31:18 AM] Akita: 🏎️31
+[2026-01-01, 3:31:18 AM] Akita: 1 flypig
+[2026-01-01, 3:31:18 AM] Akita: 1 abacaxi
+[2026-01-01, 3:31:19 AM] Akita: 🏎️32
+[2026-01-01, 3:31:19 AM] Akita: 1 canadian
+[2026-01-01, 3:31:19 AM] Akita: padre pio 214
+[2026-01-01, 3:31:19 AM] Akita: 🏎️33
+[2026-01-01, 3:31:20 AM] Akita: 1 marmita
+[2026-01-01, 3:31:20 AM] Akita: Afranio Rodrigues da Cunha portão azul  825
+[2026-01-01, 3:31:20 AM] Akita: Ok
+[2026-01-01, 3:31:20 AM] Akita: Acrescenta 2 exporta
+[2026-01-01, 3:31:20 AM] Akita: 1 marmita 
+1 bala
+[2026-01-01, 3:31:21 AM] Akita: Jardim Europa
+[2026-01-01, 3:31:21 AM] Akita: Rua alexandria 65
+[2026-01-01, 3:31:21 AM] Akita: 🏎️34
+[2026-01-01, 3:31:21 AM] Akita: Coração vermelho
+[2026-01-01, 3:31:22 AM] Akita: 1 exporta
+[2026-01-01, 3:31:22 AM] Akita: 🏎️35
+[2026-01-01, 3:31:22 AM] Akita: 2 marmita
+[2026-01-01, 3:31:22 AM] Akita: Rua dos flamboyant, 125, cidade jardim
+[2026-01-01, 3:31:22 AM] Akita: 🏎️36
+[2026-01-01, 3:31:23 AM] Akita: 2 marmita
+[2026-01-01, 3:31:23 AM] Akita: Rua Marginal 300
+[2026-01-01, 3:31:23 AM] Akita: 🏎️37
+[2026-01-01, 3:31:23 AM] Akita: 1md
+[2026-01-01, 3:31:24 AM] Akita: Licydio paes 950
+[2026-01-01, 3:31:24 AM] Akita: 🏎️38
+[2026-01-01, 3:31:24 AM] Akita: 1g de ice
+[2026-01-01, 3:31:24 AM] Akita: 1g de md
+[2026-01-01, 3:31:25 AM] Akita: Av Brasil 5001
+[2026-01-01, 3:31:25 AM] Akita: Umuarama
+[2026-01-01, 3:31:25 AM] Akita: 🏎️39
+‎[2026-01-01, 3:31:25 AM] Akita: ‎sticker omitted
+[2026-01-01, 3:31:49 AM] Akita: Arthur 
+39 corridas
+31 do 12
+Quarta feira
+‎[2026-01-01, 3:31:52 AM] Akita: ‎sticker omitted
+[2026-01-01, 4:38:07 PM] Andre Maciel: essa data aqui ta certa?
+[2026-01-01, 4:38:33 PM] Andre Maciel: ou é 31 do 12?
+[2026-01-01, 4:42:21 PM] Andre Maciel: to considerando q foi um erro de digitaçao mesmo
+[2026-01-01, 4:51:19 PM] Akita: Nn
+[2026-01-01, 4:51:32 PM] Akita: ‎This message was deleted.
+[2026-01-01, 4:52:07 PM] Akita: É isso msm
+[2026-01-01, 4:52:11 PM] Akita: 31/12
+‎[2026-01-01, 4:52:25 PM] Akita: ‎audio omitted
+‎[2026-01-01, 4:52:51 PM] Akita: ‎audio omitted
+[2026-01-01, 4:55:20 PM] Akita: 12,13,14,15,16,19,20,21,22,23,24
+[2026-01-01, 4:55:33 PM] Akita: Numero das corridas q era da karol e mandamos pro francys
+[2026-01-01, 8:48:55 PM] Andre Maciel: qual foi a flor q vc indicou gente?
+[2026-01-01, 8:50:37 PM] Andre Maciel: entendi
+[2026-01-01, 8:54:21 PM] Andre Maciel: 15g de que?
+[2026-01-01, 9:22:23 PM] Akita: Texas
+[2026-01-01, 9:22:34 PM] Akita: Ou foi bubba ou orange nessa
+[2026-01-02, 12:08:46 AM] Andre Maciel: esse aqui nao tem info de nada
+[2026-01-02, 12:08:52 AM] Andre Maciel: ta só "deixar moeda"
+[2026-01-02, 12:12:42 AM] Akita: rua manto 182
+[2026-01-02, 12:12:42 AM] Akita: 1g de orange
+[2026-01-02, 12:12:42 AM] Akita: 🏎️1
+[2026-01-02, 12:12:42 AM] Akita: 1 exporta
+[2026-01-02, 12:12:43 AM] Akita: Rua Rio de Janeiro n 1755 Bairro Brasil
+[2026-01-02, 12:12:43 AM] Akita: 🏎️2
+[2026-01-02, 12:12:43 AM] Akita: 10g arizona
+[2026-01-02, 12:12:44 AM] Akita: Av quarto de milha 711
+[2026-01-02, 12:12:44 AM] Akita: 🏎️3
+[2026-01-02, 12:12:44 AM] Akita: Rua Alfredo Tormin, 59
+[2026-01-02, 12:12:44 AM] Akita: Bubba kush, 4g
+[2026-01-02, 12:12:45 AM] Akita: 🏎️4
+[2026-01-02, 12:12:45 AM] Akita: Pegar MD
+[2026-01-02, 12:12:45 AM] Akita: 5g Texas
+[2026-01-02, 12:12:45 AM] Akita: Amazonas 2350
+[2026-01-02, 12:12:46 AM] Akita: Correio
+[2026-01-02, 12:12:46 AM] Akita: 🏎️5
+[2026-01-02, 12:12:46 AM] Akita: 1 marmita
+[2026-01-02, 12:12:46 AM] Akita: Rua Pedro José Samora 1731
+[2026-01-02, 12:12:46 AM] Akita: 🏎️6
+[2026-01-02, 12:12:47 AM] Akita: 50G  Prensado comercial 
+
+- 1 Und. Seda 
+- - ⁠1 Und Piteira Bem bolado Super large
+[2026-01-02, 12:12:47 AM] Akita: Endereço : Romenos Simão 10
+[2026-01-02, 12:12:47 AM] Akita: 🏎️7
+[2026-01-02, 12:12:47 AM] Akita: 1g meleca
+[2026-01-02, 12:12:48 AM] Akita: Rua mateus, 190, maravilha
+[2026-01-02, 12:12:48 AM] Akita: 🏎️8
+[2026-01-02, 12:12:48 AM] Akita: na rua da carioca 1429
+[2026-01-02, 12:12:48 AM] Akita: 10g de arizona
+[2026-01-02, 12:12:49 AM] Akita: 🏎️9
+[2026-01-02, 12:12:49 AM] Akita: 1 exporta
+[2026-01-02, 12:12:49 AM] Akita: Av. Oscarina Cunha Chaves, 510 - Patrimônio https://share.google/fvfhUpT2KoYI2xhQH
+[2026-01-02, 12:12:49 AM] Akita: 🏎️10
+[2026-01-02, 12:12:50 AM] Akita: 1 marmita
+[2026-01-02, 12:12:50 AM] Akita: Rua Avelino Jorge do Nascimento 181
+[2026-01-02, 12:12:50 AM] Akita: 🏎️11
+[2026-01-02, 12:12:50 AM] Akita: 4g sower
+[2026-01-02, 12:12:51 AM] Akita: Rua Duque de Caxias 495
+[2026-01-02, 12:12:51 AM] Akita: 🏎️13
+[2026-01-02, 12:12:51 AM] Akita: 1 marmita
+[2026-01-02, 12:12:51 AM] Akita: rua joão Furlaneto n35
+[2026-01-02, 12:12:52 AM] Akita: 🏎️14
+[2026-01-02, 12:12:52 AM] Akita: 3 escama
+[2026-01-02, 12:12:52 AM] Akita: José carrijo 161
+[2026-01-02, 12:12:53 AM] Akita: 🏎️15
+[2026-01-02, 12:12:53 AM] Akita: 1 meleca
+[2026-01-02, 12:12:53 AM] Akita: Rua nego Amancio 189
+[2026-01-02, 12:12:53 AM] Akita: 🏎️16
+[2026-01-02, 12:12:54 AM] Akita: 1g do ice pistachio
+[2026-01-02, 12:12:54 AM] Akita: Na rua antonio rezende chaves 779
+[2026-01-02, 12:12:54 AM] Akita: 🏎️17
+[2026-01-02, 12:12:54 AM] Akita: +1 seda
+[2026-01-02, 12:12:55 AM] Akita: 4g escama
+[2026-01-02, 12:12:55 AM] Akita: José miguem Saramago 1497
+[2026-01-02, 12:12:55 AM] Akita: 🏎️18
+[2026-01-02, 12:12:55 AM] Akita: 1 md
+1 abacaxi
+[2026-01-02, 12:12:55 AM] Akita: Av Arnaldo conturci 1685
+[2026-01-02, 12:12:56 AM] Akita: 🏎️19
+[2026-01-02, 12:12:56 AM] Akita: 5g arizona
+[2026-01-02, 12:12:56 AM] Akita: Alameda um, 40 
+Aclimação
+[2026-01-02, 12:12:56 AM] Akita: 🏎️20
+[2026-01-02, 12:12:57 AM] Akita: 5g Texas
+[2026-01-02, 12:12:57 AM] Akita: Rua buriti alegre 573 Aparecida
+Correio pfvr
+[2026-01-02, 12:12:57 AM] Akita: 🏎️21
+[2026-01-02, 12:12:58 AM] Akita: 1 ice pistachio
+[2026-01-02, 12:12:58 AM] Akita: Rua rodrigo Pereira Júnior, 401
+[2026-01-02, 12:12:58 AM] Akita: 🏎️22
+[2026-01-02, 12:12:59 AM] Akita: 2 escama
+[2026-01-02, 12:12:59 AM] Akita: América Viana 565
+[2026-01-02, 12:12:59 AM] Akita: 🏎️23
+[2026-01-02, 12:12:59 AM] Akita: 3g orange
+[2026-01-02, 12:13:00 AM] Akita: Rua José Antônio Domingues 217 portão preto
+[2026-01-02, 12:13:00 AM] Akita: 🏎️24
+[2026-01-02, 12:13:00 AM] Akita: 1g ice
+[2026-01-02, 12:13:00 AM] Akita: Avenida Vereador Carlito Cordeiro, 1895,
+Laranjeiras - Uberlândia
+[2026-01-02, 12:13:01 AM] Akita: 🏎️25
+[2026-01-02, 12:13:01 AM] Akita: 3g sower
+[2026-01-02, 12:13:01 AM] Akita: Rua Cristovão Marra, 791, Tibery
+[2026-01-02, 12:13:02 AM] Akita: 🏎️26
+[2026-01-02, 12:13:02 AM] Akita: 1 marmita
+[2026-01-02, 12:13:02 AM] Akita: Avenida do Óleo, 361
+[2026-01-02, 12:13:03 AM] Akita: 🏎️27
+‎[2026-01-02, 12:13:03 AM] Akita: ‎sticker omitted
+[2026-01-02, 12:13:07 AM] Akita: Rodrigo 
+01 01 
+Quinta
+27 corridas
+‎[2026-01-02, 12:13:08 AM] Akita: ‎sticker omitted
+[2026-01-02, 12:16:55 AM] Akita: Rua Aniceto Pereira 276 Tubalina
+[2026-01-02, 12:16:55 AM] Akita: 20g  de pren
+[2026-01-02, 12:16:56 AM] Akita: 1 marmita
+[2026-01-02, 12:16:56 AM] Akita: 🏎️1
+[2026-01-02, 12:16:56 AM] Akita: Manda 3g da afeghan pra mim pfvo
+[2026-01-02, 12:16:56 AM] Akita: Rua Professor Ciro de Castro Almeida 3432
+[2026-01-02, 12:16:57 AM] Akita: 3 g de afeghan
+[2026-01-02, 12:16:57 AM] Akita: 🏎️2
+[2026-01-02, 12:16:57 AM] Akita: Rua João Justino Fernandes 562
+[2026-01-02, 12:16:58 AM] Akita: 2 g de exports
+[2026-01-02, 12:16:58 AM] Akita: 🏎️3
+[2026-01-02, 12:16:58 AM] Akita: Av belarmino 2229
+[2026-01-02, 12:16:58 AM] Akita: 1 g de ice nug
+[2026-01-02, 12:16:59 AM] Akita: 🏎️5
+[2026-01-02, 12:16:59 AM] Akita: 2g exportação
+[2026-01-02, 12:16:59 AM] Akita: Solar da Gavea, em frente o ponto de ônibus
+[2026-01-02, 12:16:59 AM] Akita: 🏎️6
+[2026-01-02, 12:17:00 AM] Akita: Prensado Só a partir de 20g?!
+[2026-01-02, 12:17:00 AM] Akita: 1g de paki
+[2026-01-02, 12:17:00 AM] Akita: 1 marmita
+[2026-01-02, 12:17:01 AM] Akita: 🏎️7
+[2026-01-02, 12:17:01 AM] Akita: rua orlando pinto guimarães 311
+[2026-01-02, 12:17:01 AM] Akita: laranjeiras mano
+[2026-01-02, 12:17:01 AM] Akita: 2 bala
+[2026-01-02, 12:17:01 AM] Akita: 🏎️8
+[2026-01-02, 12:17:02 AM] Akita: Dolorita Elias do Nascimento número 220
+[2026-01-02, 12:17:02 AM] Akita: Laranjeiras
+[2026-01-02, 12:17:02 AM] Akita: 5g de texas
+[2026-01-02, 12:17:03 AM] Akita: 🏎️9
+[2026-01-02, 12:17:03 AM] Akita: Rio tibre 496
+[2026-01-02, 12:17:03 AM] Akita: 1 marmita
+[2026-01-02, 12:17:03 AM] Akita: 🏎️10
+[2026-01-02, 12:17:04 AM] Akita: João naves de Ávila 2212
+[2026-01-02, 12:17:04 AM] Akita: 10g de gold
+[2026-01-02, 12:17:04 AM] Akita: 🏎️11
+[2026-01-02, 12:17:05 AM] Akita: Rua Ipanema 380
+[2026-01-02, 12:17:05 AM] Akita: 5g de texas
+[2026-01-02, 12:17:05 AM] Akita: 🏎️12
+[2026-01-02, 12:17:05 AM] Akita: rua da memoria 181
+[2026-01-02, 12:17:05 AM] Akita: integração
+[2026-01-02, 12:17:06 AM] Akita: 1 g de afeghan
+[2026-01-02, 12:17:06 AM] Akita: 🏎️13
+[2026-01-02, 12:17:06 AM] Akita: Rua nego Amancio 189
+1g ice
+1g bruce
+[2026-01-02, 12:17:06 AM] Akita: 🏎️14
+[2026-01-02, 12:17:07 AM] Akita: Av. Carlos Gomes 573 
+Tubalina
+[2026-01-02, 12:17:07 AM] Akita: 10g de gold
+[2026-01-02, 12:17:07 AM] Akita: 🏎️15
+[2026-01-02, 12:17:07 AM] Akita: 10g pretin uva
+[2026-01-02, 12:17:08 AM] Akita: R Angra dos Reis 262
+[2026-01-02, 12:17:08 AM] Akita: Correio
+[2026-01-02, 12:17:08 AM] Akita: 🏎️1
+[2026-01-02, 12:17:08 AM] Akita: 3 escama
+[2026-01-02, 12:17:09 AM] Akita: José carrijo 161
+[2026-01-02, 12:17:09 AM] Akita: 🏎️2
+[2026-01-02, 12:17:09 AM] Akita: Quero 1g escama
+[2026-01-02, 12:17:09 AM] Akita: Entregar aqui no zenaide bar
+[2026-01-02, 12:17:10 AM] Akita: 🏎️3
+[2026-01-02, 12:17:10 AM] Akita: 2g dry
+[2026-01-02, 12:17:10 AM] Akita: rua real grandeza 872
+[2026-01-02, 12:17:10 AM] Akita: Vou querer 2g md  e 5g de Colômbia
+[2026-01-02, 12:17:11 AM] Akita: Av Afonso pena 155- centro
+[2026-01-02, 12:17:11 AM] Akita: 🏎️5
+‎[2026-01-02, 12:17:11 AM] Akita: ‎sticker omitted
+[2026-01-02, 12:17:23 AM] Akita: Arthur
+20 corridas
+01 de janeiro 
+Quinta
+‎[2026-01-02, 12:17:25 AM] Akita: ‎sticker omitted
+[2026-01-02, 12:23:55 AM] Akita: 5g gold
+[2026-01-02, 12:23:56 AM] Akita: Rua Roosevelt de oliveira 632
+[2026-01-02, 12:23:56 AM] Akita: 🏎️2
+[2026-01-02, 12:23:56 AM] Akita: 4g orange
+[2026-01-02, 12:23:57 AM] Akita: Av dom pedro ii 700
+[2026-01-02, 12:23:57 AM] Akita: 🏎️3
+[2026-01-02, 12:23:57 AM] Akita: 5g afegan 
+1 pakki
+[2026-01-02, 12:23:58 AM] Akita: rua salto grande 191
+[2026-01-02, 12:23:58 AM] Akita: 🏎️4
+[2026-01-02, 12:23:58 AM] Akita: 2g dry
+[2026-01-02, 12:23:58 AM] Akita: Jose lelis França 900
+[2026-01-02, 12:23:58 AM] Akita: 🏎️5
+[2026-01-02, 12:23:59 AM] Akita: 10g gold
+[2026-01-02, 12:23:59 AM] Akita: Rua universal 890
+[2026-01-02, 12:23:59 AM] Akita: 🏎️6
+[2026-01-02, 12:24:00 AM] Akita: 1 marmita
+[2026-01-02, 12:24:00 AM] Akita: Ernesto Vicentini 296 Roosevelt
+[2026-01-02, 12:24:00 AM] Akita: 🏎️7
+[2026-01-02, 12:24:00 AM] Akita: 1 marmita
+[2026-01-02, 12:24:01 AM] Akita: Rua Santa Edvirges, 155
+[2026-01-02, 12:24:01 AM] Akita: 🏎️9
+[2026-01-02, 12:24:02 AM] Akita: Me vê 20g de prens
+[2026-01-02, 12:24:02 AM] Akita: Spazio Unigarden (Avenida Oscarina Cunha Chaves, 510, Uberlândia, 38411-102, MG, BR): https://maps.google.com/?q=-18.940382,-48.287235
+[2026-01-02, 12:24:03 AM] Akita: Spazio unigarden
+[2026-01-02, 12:24:03 AM] Akita: 🏎️10
+[2026-01-02, 12:24:04 AM] Akita: 1 sower 
+1 seda
+[2026-01-02, 12:24:04 AM] Akita: Fabio Andrade de Cunha, 386
+[2026-01-02, 12:24:05 AM] Akita: 🏎️11
+[2026-01-02, 12:24:06 AM] Akita: 5g dry
+[2026-01-02, 12:24:06 AM] Akita: Av José paes de almeida
+N 107
+St Monica
+[2026-01-02, 12:24:06 AM] Akita: 🏎️12
+[2026-01-02, 12:24:07 AM] Akita: 10g Arizona
+[2026-01-02, 12:24:07 AM] Akita: Rua Benjamin Alves Santos, 2520
+[2026-01-02, 12:24:07 AM] Akita: 🏎️13
+[2026-01-02, 12:24:07 AM] Akita: 1g paki
+[2026-01-02, 12:24:08 AM] Akita: Rua das Tulipas 289 cidade jardim
+[2026-01-02, 12:24:08 AM] Akita: Correio
+[2026-01-02, 12:24:08 AM] Akita: 🏎️14
+[2026-01-02, 12:24:08 AM] Akita: Av. nicomedes Alves dos Santos 6711
+[2026-01-02, 12:24:09 AM] Akita: Trilhas do Gavea
+[2026-01-02, 12:24:09 AM] Akita: 3 escama
+[2026-01-02, 12:24:09 AM] Akita: 🏎️15
+[2026-01-02, 12:24:10 AM] Akita: 2 superlemon
+[2026-01-02, 12:24:10 AM] Akita: Aguape 800
+[2026-01-02, 12:24:10 AM] Akita: 🏎️16
+[2026-01-02, 12:24:11 AM] Akita: 5g texas 
+1 seda
+[2026-01-02, 12:24:11 AM] Akita: rua espigão, 135 Morumbi
+[2026-01-02, 12:24:11 AM] Akita: 🏎️17
+[2026-01-02, 12:24:11 AM] Akita: 5g cogu
+[2026-01-02, 12:24:12 AM] Akita: Rua dos cravos 385
+[2026-01-02, 12:24:12 AM] Akita: 🏎️18
+[2026-01-02, 12:24:12 AM] Akita: Av José Maria Ribeiro 900
+[2026-01-02, 12:24:12 AM] Akita: 4g de sower haze ent
+[2026-01-02, 12:24:13 AM] Akita: 🏎️19
+[2026-01-02, 12:24:13 AM] Akita: 1 exporta
+[2026-01-02, 12:24:13 AM] Akita: Rua Pericles Vieira da mota 327 Santa Mônica
+[2026-01-02, 12:24:14 AM] Akita: 🏎️20
+[2026-01-02, 12:24:14 AM] Akita: 1 ice nugg
+[2026-01-02, 12:24:14 AM] Akita: Rua da Carioca, 1390
+[2026-01-02, 12:24:14 AM] Akita: 🏎️21
+[2026-01-02, 12:24:15 AM] Akita: 5g texas 
+1 dry milano
+[2026-01-02, 12:24:15 AM] Akita: Rua David Canabarro, 882, Umuarama
+[2026-01-02, 12:24:15 AM] Akita: 🏎️22
+[2026-01-02, 12:24:16 AM] Akita: R. Celeiro 382
+[2026-01-02, 12:24:16 AM] Akita: 3 exporta
+[2026-01-02, 12:24:16 AM] Akita: 🏎️23
+[2026-01-02, 12:24:17 AM] Akita: 1 marmita
+[2026-01-02, 12:24:17 AM] Akita: 1 escama
+[2026-01-02, 12:24:17 AM] Akita: 🏎️24
+[2026-01-02, 12:24:17 AM] Akita: Avenida Dimas Machado, 164. Condomínio Palace Planalto
+[2026-01-02, 12:24:18 AM] Akita: Consegui 20 g prendado pra mim
+[2026-01-02, 12:24:18 AM] Akita: 1 marmita
+[2026-01-02, 12:24:18 AM] Akita: 🏎️25
+[2026-01-02, 12:24:19 AM] Akita: rua joão pereira da silva 114
+[2026-01-02, 12:24:19 AM] Akita: 5g de arizona
+[2026-01-02, 12:24:19 AM] Akita: 🏎️26
+[2026-01-02, 12:24:19 AM] Akita: Rua rio de janeiro bairro brasil n 1755
+[2026-01-02, 12:24:20 AM] Akita: 1g de exportação
+[2026-01-02, 12:24:20 AM] Akita: 🏎️28
+[2026-01-02, 12:24:20 AM] Akita: Estão fazendo entrega???
+
+
+2 Raio
+
+
+EXPORTA 
+
+EXPORTA 
+
+Rua Professor Eudóxio Cassassanta Pereira 551
+
+Carajás
+[2026-01-02, 12:24:20 AM] Akita: 2g de exporta
+[2026-01-02, 12:24:21 AM] Akita: 🏎️29
+[2026-01-02, 12:24:21 AM] Akita: 3g de exporta
+[2026-01-02, 12:24:21 AM] Akita: 🏎️30
+[2026-01-02, 12:24:22 AM] Akita: Rua do radialista 1102
+Planalto
+[2026-01-02, 12:24:22 AM] Akita: 2g de paki
+[2026-01-02, 12:24:22 AM] Akita: 🏎️31
+[2026-01-02, 12:24:23 AM] Akita: a.v Landscape 2195
+[2026-01-02, 12:24:23 AM] Akita: 3 exporta
+[2026-01-02, 12:24:23 AM] Akita: 🏎️32
+[2026-01-02, 12:24:23 AM] Akita: 3 exporta
+[2026-01-02, 12:24:24 AM] Akita: José miguem Saramago 1497
+[2026-01-02, 12:24:24 AM] Akita: 🏎️33
+[2026-01-02, 12:24:24 AM] Akita: 1g de ice 
+1g de bruce
+1g de lemon
+1g de meleca
+[2026-01-02, 12:24:25 AM] Akita: Rua Manoel Serralha 485
+[2026-01-02, 12:24:25 AM] Akita: 485
+[2026-01-02, 12:24:25 AM] Akita: 🏎️34
+‎[2026-01-02, 12:25:03 AM] Akita: ‎sticker omitted
+[2026-01-02, 12:25:25 AM] Akita: Francis
+34 corridas
+01 de janeiro 
+Quinta feira
+‎[2026-01-02, 12:25:28 AM] Akita: ‎sticker omitted

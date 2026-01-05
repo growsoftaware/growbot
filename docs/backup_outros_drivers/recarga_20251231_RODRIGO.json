@@ -1,0 +1,118 @@
+{
+  "tipo": "recarga",
+  "data_import": "2026-01-01",
+  "items": [
+    {
+      "driver": "RODRIGO",
+      "produto": "texas",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "colombia gold",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "arizona",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bubba",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "exporta",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "micro ponto estrela",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bala piza hunt",
+      "quantidade": 10,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "orange",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "afeghan",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "ice nugg",
+      "quantidade": 15,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "marmita",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "super lemon",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bruce",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "sower",
+      "quantidade": 50,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "dry",
+      "quantidade": 10,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    }
+  ],
+  "resumo": {
+    "total_recargas": 15,
+    "total_unidades": 365,
+    "por_driver": {
+      "RODRIGO": 365
+    }
+  }
+}

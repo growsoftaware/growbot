@@ -288,5 +288,15 @@
     "alias": "afeghan kush",
     "canonical": "afeghan",
     "reason": "variante com sufixo kush - validado 30/12"
+  },
+  {
+    "alias": "papel",
+    "canonical": "papel",
+    "reason": "produto canônico - NÃO é seda - validado 31/12"
+  },
+  {
+    "alias": "seda",
+    "canonical": "seda",
+    "reason": "produto canônico - NÃO é papel - validado 31/12"
   }
 ]

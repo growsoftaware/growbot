@@ -36,7 +36,7 @@ def format_valor(valor: int, tipo: str = None, width: int = 8) -> Text:
 
     Cores:
     - estoque/recarga: verde (entrada = positivo)
-    - saida: coral/salmão (saída)
+    - entrega: coral/salmão (saída)
     - saldo: verde (+) ou amarelo bold com parênteses (-)
     """
     if not valor:
@@ -48,7 +48,7 @@ def format_valor(valor: int, tipo: str = None, width: int = 8) -> Text:
         return Text(valor_str, style="green")
     elif tipo == "recarga":
         return Text(valor_str, style="dark_sea_green4")
-    elif tipo == "saida":
+    elif tipo == "entrega":
         return Text(valor_str, style="light_coral")
     elif tipo == "saldo":
         if valor > 0:
@@ -368,14 +368,14 @@ class ComparisonPanel(VerticalScroll):
         for driver_data in dados.values():
             for produto, datas_dict in driver_data.items():
                 for data_str, tipos in datas_dict.items():
-                    produtos_total[produto] += tipos.get("saida", 0)
+                    produtos_total[produto] += tipos.get("entrega", 0)
 
         # Ordenar por total desc
         for produto, total in sorted(produtos_total.items(), key=lambda x: -x[1]):
             if total > 0:
                 table.add_row(
                     Text(produto, style="dim"),
-                    format_valor(total, "saida", width=6)
+                    format_valor(total, "entrega", width=6)
                 )
 
 
@@ -406,7 +406,7 @@ class AlertsPanel(VerticalScroll):
                 for data_str, tipos in datas_dict.items():
                     saldo += tipos.get("estoque", 0)
                     saldo += tipos.get("recarga", 0)
-                    saldo -= tipos.get("saida", 0)
+                    saldo -= tipos.get("entrega", 0)
                 if saldo < 0:
                     alertas.append((driver, produto, saldo))
 
@@ -701,7 +701,7 @@ class GrowBotTUI(App):
         self.view_mode = "TUDO"  # TUDO ou RECARGAS
         self.show_estoque = True
         self.show_recarga = True
-        self.show_saidas = True
+        self.show_entregas = True
         # Cache de dados expandidos
         self.expanded_drivers = set()
         self.expanded_products = set()  # Set de tuples (driver, produto)
@@ -977,8 +977,8 @@ class GrowBotTUI(App):
 
         # Organizar dados: driver -> produto -> data -> tipo -> total
         # E também agregado: driver -> data -> tipo -> total
-        self._dados_produto = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {"estoque": 0, "recarga": 0, "saida": 0})))
-        self._dados_driver = defaultdict(lambda: defaultdict(lambda: {"estoque": 0, "recarga": 0, "saida": 0}))
+        self._dados_produto = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {"estoque": 0, "recarga": 0, "entrega": 0})))
+        self._dados_driver = defaultdict(lambda: defaultdict(lambda: {"estoque": 0, "recarga": 0, "entrega": 0}))
         todas_datas = set()
         colunas_com_dados = set()  # (data, tipo) que têm algum valor
 
@@ -1001,7 +1001,7 @@ class GrowBotTUI(App):
                 if tipo_norm == "recarga":
                     kpi_total_recarga += total
                     kpi_datas_recarga.add(data_str)
-                elif tipo_norm == "saida":
+                elif tipo_norm == "entrega":
                     kpi_total_entrega += total
 
         # Ordenar datas
@@ -1018,8 +1018,8 @@ class GrowBotTUI(App):
                 colunas_visiveis.append((data, "estoque"))
             if self.show_recarga and (data, "recarga") in colunas_com_dados:
                 colunas_visiveis.append((data, "recarga"))
-            if self.show_saidas and (data, "saida") in colunas_com_dados:
-                colunas_visiveis.append((data, "saida"))
+            if self.show_entregas and (data, "entrega") in colunas_com_dados:
+                colunas_visiveis.append((data, "entrega"))
 
         # Salvar colunas visíveis para ordenação
         self._colunas_visiveis = colunas_visiveis
@@ -1051,7 +1051,7 @@ class GrowBotTUI(App):
                 col_text = f"{ICON_ESTOQUE}\n{dd} {dia_semana}"
             elif tipo == "recarga":
                 col_text = f"{ICON_RECARGA}\n{dd} {dia_semana}"
-            else:  # saida
+            else:  # entrega
                 col_text = f"{ICON_SAIDA}\n{dd} {dia_semana}"
 
             if self.sort_column == col_key:
@@ -1074,7 +1074,7 @@ class GrowBotTUI(App):
             valores = {}
 
             for data, tipo in colunas_visiveis:
-                d = self._dados_driver[driver].get(data, {"estoque": 0, "recarga": 0, "saida": 0})
+                d = self._dados_driver[driver].get(data, {"estoque": 0, "recarga": 0, "entrega": 0})
                 valor = d.get(tipo, 0)
                 col_key = f"{data}_{tipo}"
                 valores[col_key] = valor
@@ -1083,7 +1083,7 @@ class GrowBotTUI(App):
                     saldo_total += valor
                 elif tipo == "recarga" and self.show_recarga:
                     saldo_total += valor
-                elif tipo == "saida" and self.show_saidas:
+                elif tipo == "entrega" and self.show_entregas:
                     saldo_total -= valor
 
             valores["total"] = saldo_total
@@ -1117,7 +1117,7 @@ class GrowBotTUI(App):
             saldo_total = self._table_data[driver]["total"]
 
             for data, tipo in colunas_visiveis:
-                d = self._dados_driver[driver].get(data, {"estoque": 0, "recarga": 0, "saida": 0})
+                d = self._dados_driver[driver].get(data, {"estoque": 0, "recarga": 0, "entrega": 0})
                 valor = d.get(tipo, 0)
                 row.append(format_valor(valor, tipo))
 
@@ -1134,7 +1134,7 @@ class GrowBotTUI(App):
                     tem_dados = False  # Flag para verificar se tem algum valor
 
                     for data, tipo in colunas_visiveis:
-                        d = self._dados_produto[driver][produto].get(data, {"estoque": 0, "recarga": 0, "saida": 0})
+                        d = self._dados_produto[driver][produto].get(data, {"estoque": 0, "recarga": 0, "entrega": 0})
                         valor = d.get(tipo, 0)
                         col_key = f"{data}_{tipo}"
                         valores_prod[col_key] = valor
@@ -1146,7 +1146,7 @@ class GrowBotTUI(App):
                             saldo_prod += valor
                         elif tipo == "recarga" and self.show_recarga:
                             saldo_prod += valor
-                        elif tipo == "saida" and self.show_saidas:
+                        elif tipo == "entrega" and self.show_entregas:
                             saldo_prod -= valor
 
                     # Só incluir produto se tiver dados nas colunas visíveis
@@ -1181,7 +1181,7 @@ class GrowBotTUI(App):
                     row_prod = [prod_cell]
 
                     for data, tipo in colunas_visiveis:
-                        d = self._dados_produto[driver][produto].get(data, {"estoque": 0, "recarga": 0, "saida": 0})
+                        d = self._dados_produto[driver][produto].get(data, {"estoque": 0, "recarga": 0, "entrega": 0})
                         valor = d.get(tipo, 0)
                         row_prod.append(format_valor(valor, tipo))
 
@@ -1229,7 +1229,7 @@ class GrowBotTUI(App):
                     d = self._dados_produto[driver][produto].get(data_str, {})
                     saldo += d.get("estoque", 0)
                     saldo += d.get("recarga", 0)
-                    saldo -= d.get("saida", 0)
+                    saldo -= d.get("entrega", 0)
                     kpi_total_estoque += d.get("estoque", 0)
                 if saldo < 0:
                     kpi_negativos += 1
@@ -1298,7 +1298,7 @@ class GrowBotTUI(App):
             return
 
         # Separar por tipo
-        estoques, recargas, saidas = [], [], []
+        estoques, recargas, entregas = [], [], []
         for tipo, data, total in movimentos:
             data_iso = str(data)
             data_br = self._iso_to_br(data_iso)
@@ -1307,7 +1307,7 @@ class GrowBotTUI(App):
             elif tipo == "recarga":
                 recargas.append((data_br, total))
             elif tipo == "entrega":
-                saidas.append((data_br, data_iso, total))  # Guarda ISO para key
+                entregas.append((data_br, data_iso, total))  # Guarda ISO para key
 
         acum = 0
 
@@ -1332,17 +1332,17 @@ class GrowBotTUI(App):
         table.add_row("─" * 25, "─" * 6, "─" * 6)
 
         # Saidas
-        acum_saidas = 0
-        for data_br, data_iso, total in saidas:
-            acum_saidas += total
+        acum_entregas = 0
+        for data_br, data_iso, total in entregas:
+            acum_entregas += total
             # Indicador de expansão
             expanded = data_iso in self.expanded_rodrigo_dates
             indicator = "▾" if expanded else "▸"
             table.add_row(
                 f"{indicator} 🏎️ Saída {data_br[:5]}",
                 str(total),
-                str(acum_saidas),
-                key=f"saida_{data_iso}"
+                str(acum_entregas),
+                key=f"entrega_{data_iso}"
             )
 
             # Se expandido, mostrar entregas daquela data
@@ -1366,11 +1366,11 @@ class GrowBotTUI(App):
 
         # Total Saidas
         table.add_row("─" * 25, "─" * 6, "─" * 6)
-        table.add_row("❌ TOTAL SAÍDAS", str(acum_saidas), "")
+        table.add_row("❌ TOTAL SAÍDAS", str(acum_entregas), "")
         table.add_row("─" * 25, "─" * 6, "─" * 6)
 
         # Saldo
-        saldo = total_entradas - acum_saidas
+        saldo = total_entradas - acum_entregas
         table.add_row("💰 SALDO", str(saldo), "")
 
     def _normalizar_tipo(self, tipo: str) -> str:
@@ -1380,9 +1380,9 @@ class GrowBotTUI(App):
         elif tipo == "recarga":
             return "recarga"
         elif tipo == "entrega":
-            return "saida"
-        elif tipo == "resgate_saida":
-            return "saida"
+            return "entrega"
+        elif tipo == "resgate_entrega":
+            return "entrega"
         elif tipo == "resgate_entrada":
             return "recarga"
         return None
@@ -1528,9 +1528,9 @@ class GrowBotTUI(App):
                 # Também mostrar no DetailPanel lateral
                 self._show_product_details(driver, produto)
 
-        elif row_key and row_key.startswith("saida_"):
+        elif row_key and row_key.startswith("entrega_"):
             # Toggle expansão de saída na aba RODRIGO
-            data_iso = row_key.replace("saida_", "")
+            data_iso = row_key.replace("entrega_", "")
             if data_iso in self.expanded_rodrigo_dates:
                 self.expanded_rodrigo_dates.discard(data_iso)
             else:
@@ -1671,19 +1671,19 @@ class GrowBotTUI(App):
         if self.view_mode == "TUDO":
             self.show_estoque = True
             self.show_recarga = True
-            self.show_saidas = True
+            self.show_entregas = True
         elif self.view_mode == "RECARGAS":
             self.show_estoque = False
             self.show_recarga = True
-            self.show_saidas = False
+            self.show_entregas = False
         elif self.view_mode == "SAIDAS":
             self.show_estoque = False
             self.show_recarga = False
-            self.show_saidas = True
+            self.show_entregas = True
         elif self.view_mode == "ESTOQUES":
             self.show_estoque = True
             self.show_recarga = False
-            self.show_saidas = False
+            self.show_entregas = False
 
         # Mostrar/ocultar painéis laterais conforme o modo
         try:

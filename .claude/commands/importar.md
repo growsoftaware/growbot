@@ -20,14 +20,23 @@ Pedidos de entrega do WhatsApp (use `/validar` em vez de `/importar`).
 Estoque atual de cada driver.
 
 **Campos:** driver, produto, quantidade, data_registro
-**Output:** `output/estoque_YYYYMMDD.json`
+**Output:** `output/estoque_YYYYMMDD_DRIVER.json`
 
 ```json
 {
   "tipo": "estoque",
+  "import_id": "estoque_20251227_RODRIGO",
   "data_import": "2025-12-27",
+  "texto_raw": "[texto original completo]",
+  "arquivo_origem": "estoque_20251227_RODRIGO.txt",
   "items": [
-    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 100, "data_registro": "27/12/2025"}
+    {
+      "driver": "RODRIGO",
+      "produto": "prensado",
+      "quantidade": 100,
+      "data_registro": "27/12/2025",
+      "id_sale_delivery": "estoque_20251227_RODRIGO"
+    }
   ],
   "resumo": {"total_drivers": 1, "total_produtos": 1, "total_unidades": 100}
 }
@@ -51,9 +60,19 @@ Produtos retirados do estoque central para o driver entregar.
 ```json
 {
   "tipo": "recarga",
+  "import_id": "recarga_20251227_RODRIGO",
   "data_import": "2025-12-27",
+  "texto_raw": "[texto original completo]",
+  "arquivo_origem": "recarga_20251227_RODRIGO.txt",
   "items": [
-    {"driver": "RODRIGO", "produto": "prensado", "quantidade": 50, "data_recarga": "27/12/2025", "observacao": null}
+    {
+      "driver": "RODRIGO",
+      "produto": "prensado",
+      "quantidade": 50,
+      "data_recarga": "27/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "recarga_20251227_RODRIGO"
+    }
   ],
   "resumo": {"total_recargas": 1, "total_unidades": 50, "por_driver": {"RODRIGO": 50}}
 }
@@ -98,7 +117,7 @@ Resgate 27/12:
 ## Processo de Importação
 
 1. **Identificar tipo** - estoque, recarga ou resgate
-2. **Ler arquivo** - WhatsApp export ou texto livre
+2. **Detectar fonte** - arquivo existente ou texto colado
 3. **Parsear conteúdo**
    - Identificar driver(s)
    - Extrair produtos e quantidades
@@ -109,7 +128,13 @@ Resgate 27/12:
    - Quantidades positivas
    - Datas válidas
 5. **Apresentar para confirmação**
-6. **Salvar JSON** em `output/{tipo}_YYYYMMDD.json`
+6. **Salvar texto original** em `imports/raw/{tipo}_{YYYYMMDD}_{DRIVER}.txt`
+7. **Gerar import_id**: `{tipo}_{YYYYMMDD}_{DRIVER}` (ex: `estoque_20251222_RODRIGO`)
+8. **Salvar JSON** em `output/{tipo}_{YYYYMMDD}_{DRIVER}.json` com:
+   - `import_id`: ID único para relacionamento
+   - `texto_raw`: texto original completo
+   - `arquivo_origem`: nome do arquivo salvo
+   - `items[].id_sale_delivery`: mesmo import_id (para relacionar com blocos_raw)
 
 ## Parser Inteligente
 

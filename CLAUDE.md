@@ -53,6 +53,17 @@ Quinta
 ### Drivers válidos (ENUM)
 RAFA, FRANCIS, RODRIGO, KAROL, ARTHUR
 
+### Tipos de Movimento (ENUM)
+| Tipo | Descrição | Origem |
+|------|-----------|--------|
+| `estoque` | Estoque inicial do driver | Importação manual |
+| `recarga` | Driver retira do estoque central | Importação manual |
+| `entrega` | Driver entrega ao cliente | Export WhatsApp |
+| `resgate_entrada` | Recebe de outro driver | Transferência |
+| `resgate_saida` | Passa para outro driver | Transferência |
+
+**IMPORTANTE**: Usar sempre `entrega` (não `saida`) para registros de delivery.
+
 ### Detecção de data
 - DD/MM/YYYY, DD/MM/YY, DD/MM
 - "DD do MM" (ex: 26 do 12)
@@ -293,23 +304,52 @@ Campos: driver_origem, driver_destino, produto, quantidade, data_resgate, motivo
 
 Ver schemas completos em `.claude/schemas/`
 
+## Tabelas do Banco de Dados
+
+### Arquitetura de Dados
+
+```
+blocos_raw (1 por entrega)          movimentos (N por entrega)
+┌─────────────────────────┐         ┌─────────────────────────┐
+│ id_sale_delivery (PK)   │◄────────│ id_sale_delivery (FK)   │
+│ driver (PK)             │         │ driver                  │
+│ data_entrega (PK)       │         │ data_movimento          │
+│ texto_raw               │         │ produto                 │
+│ review_status           │         │ quantidade              │
+│ review_severity         │         │ endereco                │
+│ review_category         │         │ tipo                    │
+│ review_issue            │         └─────────────────────────┘
+│ review_ai_notes         │
+└─────────────────────────┘
+```
+
+### blocos_raw
+Armazena o texto original do WhatsApp (1 registro por bloco/entrega).
+```
+Campos: id_sale_delivery, texto_raw, driver, data_entrega, arquivo_origem
+        review_status, review_severity, review_category, review_issue, review_ai_notes
+```
+
+### movimentos
+Armazena os itens parseados (N registros por bloco, 1 por produto).
+```
+Campos: tipo, id_sale_delivery, driver, produto, quantidade, data_movimento, endereco
+```
+
 ## Sistema de Revisão
 
 O sistema de revisão captura problemas detectados durante `/validar`, `/auditar` e `/importar`.
-Substitui o conceito de "dúvidas" por uma estrutura mais rica.
+Os campos de review ficam na tabela `blocos_raw` (não em movimentos).
 
-### Campos de Revisão (na tabela movimentos)
+### Campos de Revisão (na tabela blocos_raw)
 
 | Campo | Tipo | Descrição |
 |-------|------|-----------|
+| `review_status` | VARCHAR | Status: `ok`, `pendente`, `resolvido`, `ignorado` |
 | `review_severity` | VARCHAR | Gravidade: `critico`, `atencao`, `info` |
 | `review_category` | VARCHAR | Categoria: `tecnico` (sistema errou), `negocio` (humano errou) |
-| `review_status` | VARCHAR | Status: `ok`, `pendente`, `resolvido`, `ignorado` |
 | `review_issue` | TEXT | O QUÊ aconteceu (curto, buscável) |
 | `review_ai_notes` | TEXT | CONTEXTO do AI (detalhado) |
-| `review_human_notes` | TEXT | Comentários do operador |
-| `review_decision` | TEXT | Decisão final tomada |
-| `reviewed_at` | TIMESTAMP | Última atualização |
 
 ### Workflow de Status
 
@@ -323,23 +363,23 @@ pendente → ignorado (problema não requer ação)
 ### Consultas CLI
 
 ```bash
-python db.py review-pendentes          # Itens pendentes de revisão
+python db.py review-pendentes          # Blocos pendentes de revisão
 python db.py review-pendentes RODRIGO  # Filtrar por driver
 python db.py review-stats              # Estatísticas de revisão
 ```
 
 ### Views Disponíveis
 
-- `v_review_pendentes` - Itens pendentes ordenados por severidade
+- `v_review_pendentes` - Blocos pendentes ordenados por severidade
 - `v_review_stats` - Estatísticas por status/severidade/categoria
 
 ### Queries Úteis
 
 ```sql
--- Itens que passaram de primeira
-SELECT * FROM movimentos WHERE review_status = 'ok';
+-- Blocos que passaram de primeira
+SELECT * FROM blocos_raw WHERE review_status = 'ok';
 
--- Itens críticos pendentes
+-- Blocos críticos pendentes
 SELECT * FROM v_review_pendentes WHERE review_severity = 'critico';
 
 -- Taxa de sucesso por driver
@@ -348,9 +388,16 @@ SELECT
     COUNT(*) as total,
     COUNT(CASE WHEN review_status = 'ok' THEN 1 END) as passou_primeira,
     ROUND(COUNT(CASE WHEN review_status = 'ok' THEN 1 END) * 100.0 / COUNT(*), 2) as taxa_pct
-FROM movimentos
-WHERE review_status IS NOT NULL
+FROM blocos_raw
 GROUP BY driver;
+
+-- Movimentos com texto_raw via JOIN
+SELECT m.*, b.texto_raw
+FROM movimentos m
+LEFT JOIN blocos_raw b
+    ON m.id_sale_delivery = b.id_sale_delivery
+    AND m.driver = b.driver
+    AND m.data_movimento = b.data_entrega;
 ```
 
 ## Próximos passos sugeridos

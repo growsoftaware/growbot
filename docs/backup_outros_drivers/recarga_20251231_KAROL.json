@@ -1,0 +1,62 @@
+{
+  "tipo": "recarga",
+  "data_import": "2026-01-01",
+  "items": [
+    {
+      "driver": "KAROL",
+      "produto": "marmita",
+      "quantidade": 10,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "ice nugg",
+      "quantidade": 8,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "orange",
+      "quantidade": 30,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "exporta",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "bala piza hunt",
+      "quantidade": 20,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "super lemon",
+      "quantidade": 10,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    },
+    {
+      "driver": "KAROL",
+      "produto": "texas",
+      "quantidade": 10,
+      "data_recarga": "31/12/2025",
+      "observacao": null
+    }
+  ],
+  "resumo": {
+    "total_recargas": 7,
+    "total_unidades": 108,
+    "por_driver": {
+      "KAROL": 108
+    }
+  }
+}

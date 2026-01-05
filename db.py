@@ -24,12 +24,14 @@ class GrowBotDB:
         # Sequência para IDs
         self.conn.execute("CREATE SEQUENCE IF NOT EXISTS seq_movimentos START 1")
         self.conn.execute("CREATE SEQUENCE IF NOT EXISTS seq_aliases START 1")
+        self.conn.execute("CREATE SEQUENCE IF NOT EXISTS seq_blocos_raw START 1")
 
-        # Tabela principal de movimentos
+        # Tabela principal de movimentos (sem campos de review - agora em blocos_raw)
         self.conn.execute("""
             CREATE TABLE IF NOT EXISTS movimentos (
                 id INTEGER DEFAULT nextval('seq_movimentos') PRIMARY KEY,
                 tipo VARCHAR NOT NULL,
+                id_sale_delivery VARCHAR,
                 driver VARCHAR NOT NULL,
                 driver_destino VARCHAR,
                 produto VARCHAR NOT NULL,
@@ -38,20 +40,29 @@ class GrowBotDB:
                 endereco VARCHAR,
                 observacao VARCHAR,
                 arquivo_origem VARCHAR,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                review_severity VARCHAR,
-                review_category VARCHAR,
-                review_status VARCHAR,
-                review_issue TEXT,
-                review_ai_notes TEXT,
-                review_human_notes TEXT,
-                review_decision TEXT,
-                reviewed_at TIMESTAMP
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         """)
 
-        # Migração: Adiciona colunas de review se não existirem (para bancos antigos)
-        self._migrate_review_columns()
+        # Tabela de blocos raw (texto original do WhatsApp + review)
+        self.conn.execute("""
+            CREATE TABLE IF NOT EXISTS blocos_raw (
+                id INTEGER DEFAULT nextval('seq_blocos_raw') PRIMARY KEY,
+                id_sale_delivery VARCHAR NOT NULL,
+                texto_raw TEXT,
+                driver VARCHAR NOT NULL,
+                data_entrega DATE NOT NULL,
+                linha_origem INTEGER,
+                arquivo_origem VARCHAR,
+                review_status VARCHAR DEFAULT 'ok',
+                review_severity VARCHAR,
+                review_category VARCHAR,
+                review_issue TEXT,
+                review_ai_notes TEXT,
+                data_import TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                UNIQUE(id_sale_delivery, driver, data_entrega)
+            )
+        """)
 
         # Tabela de aliases
         self.conn.execute("""
@@ -74,30 +85,6 @@ class GrowBotDB:
 
         # Views para relatórios
         self._create_views()
-
-    def _migrate_review_columns(self):
-        """Adiciona colunas de review em bancos existentes (migração)"""
-        review_columns = [
-            ("review_severity", "VARCHAR"),
-            ("review_category", "VARCHAR"),
-            ("review_status", "VARCHAR"),
-            ("review_issue", "TEXT"),
-            ("review_ai_notes", "TEXT"),
-            ("review_human_notes", "TEXT"),
-            ("review_decision", "TEXT"),
-            ("reviewed_at", "TIMESTAMP"),
-        ]
-
-        # Verifica colunas existentes
-        existing = self.conn.execute(
-            "SELECT column_name FROM information_schema.columns WHERE table_name = 'movimentos'"
-        ).fetchall()
-        existing_names = {row[0] for row in existing}
-
-        # Adiciona colunas faltantes
-        for col_name, col_type in review_columns:
-            if col_name not in existing_names:
-                self.conn.execute(f"ALTER TABLE movimentos ADD COLUMN {col_name} {col_type}")
 
     def _create_views(self):
         """Cria views para relatórios"""
@@ -174,36 +161,34 @@ class GrowBotDB:
             ORDER BY data_movimento DESC, driver
         """)
 
-        # View: Itens pendentes de revisão (ordenados por severidade)
+        # View: Itens pendentes de revisão (agora usa blocos_raw)
         self.conn.execute("""
             CREATE OR REPLACE VIEW v_review_pendentes AS
             SELECT
-                id,
-                tipo,
-                driver,
-                produto,
-                quantidade,
-                data_movimento,
-                endereco,
-                review_severity,
-                review_category,
-                review_issue,
-                review_ai_notes,
-                reviewed_at,
-                arquivo_origem
-            FROM movimentos
-            WHERE review_status = 'pendente'
+                b.id,
+                b.id_sale_delivery,
+                b.driver,
+                b.data_entrega,
+                b.texto_raw,
+                b.review_severity,
+                b.review_category,
+                b.review_status,
+                b.review_issue,
+                b.review_ai_notes,
+                b.arquivo_origem
+            FROM blocos_raw b
+            WHERE b.review_status = 'pendente'
             ORDER BY
-                CASE review_severity
+                CASE b.review_severity
                     WHEN 'critico' THEN 1
                     WHEN 'atencao' THEN 2
                     WHEN 'info' THEN 3
                     ELSE 4
                 END,
-                reviewed_at DESC
+                b.data_import DESC
         """)
 
-        # View: Estatísticas de revisão
+        # View: Estatísticas de revisão (agora usa blocos_raw)
         self.conn.execute("""
             CREATE OR REPLACE VIEW v_review_stats AS
             SELECT
@@ -212,7 +197,7 @@ class GrowBotDB:
                 review_category,
                 COUNT(*) as total,
                 ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) as percentual
-            FROM movimentos
+            FROM blocos_raw
             GROUP BY review_status, review_severity, review_category
             ORDER BY total DESC
         """)
@@ -268,10 +253,14 @@ class GrowBotDB:
 
         count = 0
 
+        # Campos de rastreabilidade (novos para estoque/recarga)
+        texto_raw = data.get("texto_raw")
+        import_id = data.get("import_id")
+
         if tipo == "estoque":
-            count = self._import_estoque(items, arquivo)
+            count = self._import_estoque(items, arquivo, texto_raw, import_id)
         elif tipo == "recarga":
-            count = self._import_recarga(items, arquivo)
+            count = self._import_recarga(items, arquivo, texto_raw, import_id)
         elif tipo == "resgate":
             count = self._import_resgate(items, arquivo)
         elif tipo in ("entregas", None) and "items" in data:
@@ -295,43 +284,85 @@ class GrowBotDB:
             return "entregas"
         return None
 
-    def _import_estoque(self, items: list, arquivo: str) -> int:
+    def _import_estoque(self, items: list, arquivo: str, texto_raw: str = None, import_id: str = None) -> int:
         """Importa registros de estoque"""
+        if not items:
+            return 0
+
+        # Inserir em blocos_raw (1 registro por import) se tiver rastreabilidade
+        if texto_raw and import_id:
+            first = items[0]
+            data = self._parse_date(first.get("data_registro"))
+            driver = first.get("driver")
+            if data and driver:
+                self.conn.execute("""
+                    INSERT INTO blocos_raw (id_sale_delivery, texto_raw, driver, data_entrega, arquivo_origem)
+                    VALUES (?, ?, ?, ?, ?)
+                    ON CONFLICT (id_sale_delivery, driver, data_entrega) DO UPDATE SET
+                        texto_raw = EXCLUDED.texto_raw,
+                        arquivo_origem = EXCLUDED.arquivo_origem
+                """, [import_id, texto_raw, driver, data, arquivo])
+
+        # Inserir movimentos
         count = 0
         for item in items:
             data = self._parse_date(item.get("data_registro"))
             if not data:
                 continue
+            # Usar import_id como id_sale_delivery se disponível, senão do item
+            id_sale = item.get("id_sale_delivery") or import_id
             self.conn.execute("""
-                INSERT INTO movimentos (tipo, driver, produto, quantidade, data_movimento, arquivo_origem)
-                VALUES ('estoque', ?, ?, ?, ?, ?)
+                INSERT INTO movimentos (tipo, driver, produto, quantidade, data_movimento, arquivo_origem, id_sale_delivery)
+                VALUES ('estoque', ?, ?, ?, ?, ?, ?)
             """, [
                 item.get("driver"),
                 item.get("produto"),
                 item.get("quantidade"),
                 data,
-                arquivo
+                arquivo,
+                id_sale
             ])
             count += 1
         return count
 
-    def _import_recarga(self, items: list, arquivo: str) -> int:
+    def _import_recarga(self, items: list, arquivo: str, texto_raw: str = None, import_id: str = None) -> int:
         """Importa registros de recarga"""
+        if not items:
+            return 0
+
+        # Inserir em blocos_raw (1 registro por import) se tiver rastreabilidade
+        if texto_raw and import_id:
+            first = items[0]
+            data = self._parse_date(first.get("data_recarga"))
+            driver = first.get("driver")
+            if data and driver:
+                self.conn.execute("""
+                    INSERT INTO blocos_raw (id_sale_delivery, texto_raw, driver, data_entrega, arquivo_origem)
+                    VALUES (?, ?, ?, ?, ?)
+                    ON CONFLICT (id_sale_delivery, driver, data_entrega) DO UPDATE SET
+                        texto_raw = EXCLUDED.texto_raw,
+                        arquivo_origem = EXCLUDED.arquivo_origem
+                """, [import_id, texto_raw, driver, data, arquivo])
+
+        # Inserir movimentos
         count = 0
         for item in items:
             data = self._parse_date(item.get("data_recarga"))
             if not data:
                 continue
+            # Usar import_id como id_sale_delivery se disponível, senão do item
+            id_sale = item.get("id_sale_delivery") or import_id
             self.conn.execute("""
-                INSERT INTO movimentos (tipo, driver, produto, quantidade, data_movimento, observacao, arquivo_origem)
-                VALUES ('recarga', ?, ?, ?, ?, ?, ?)
+                INSERT INTO movimentos (tipo, driver, produto, quantidade, data_movimento, observacao, arquivo_origem, id_sale_delivery)
+                VALUES ('recarga', ?, ?, ?, ?, ?, ?, ?)
             """, [
                 item.get("driver"),
                 item.get("produto"),
                 item.get("quantidade"),
                 data,
                 item.get("observacao"),
-                arquivo
+                arquivo,
+                id_sale
             ])
             count += 1
         return count
@@ -374,23 +405,87 @@ class GrowBotDB:
             count += 2
         return count
 
+    def _import_blocos_raw(self, items: list, arquivo: str) -> int:
+        """Importa blocos raw únicos (1 por id_sale_delivery+driver+data)"""
+        blocos_unicos = {}
+
+        for item in items:
+            key = (
+                item.get("id_sale_delivery"),
+                item.get("driver"),
+                item.get("data_entrega")
+            )
+            # Pega o primeiro item de cada bloco (que tem o texto_raw)
+            if key not in blocos_unicos and item.get("texto_raw"):
+                blocos_unicos[key] = item
+
+        count = 0
+        for (id_sale, driver, data_str), item in blocos_unicos.items():
+            data = self._parse_date(data_str)
+            if not data:
+                continue
+
+            try:
+                self.conn.execute("""
+                    INSERT INTO blocos_raw (
+                        id_sale_delivery, texto_raw, driver, data_entrega,
+                        linha_origem, arquivo_origem, review_status, review_severity,
+                        review_category, review_issue, review_ai_notes
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ON CONFLICT (id_sale_delivery, driver, data_entrega) DO UPDATE SET
+                        texto_raw = EXCLUDED.texto_raw,
+                        linha_origem = EXCLUDED.linha_origem,
+                        review_status = EXCLUDED.review_status,
+                        review_severity = EXCLUDED.review_severity,
+                        review_category = EXCLUDED.review_category,
+                        review_issue = EXCLUDED.review_issue,
+                        review_ai_notes = EXCLUDED.review_ai_notes
+                """, [
+                    id_sale,
+                    item.get("texto_raw"),
+                    driver,
+                    data,
+                    item.get("linha_origem"),
+                    item.get("arquivo_origem") or arquivo,
+                    item.get("review_status"),
+                    item.get("review_severity"),
+                    item.get("review_category"),
+                    item.get("review_issue"),
+                    item.get("review_ai_notes")
+                ])
+                count += 1
+            except Exception:
+                pass
+
+        return count
+
     def _import_entregas(self, items: list, arquivo: str) -> int:
-        """Importa registros de entregas"""
+        """Importa registros de entregas (movimentos + blocos_raw)"""
+        # Primeiro importa blocos_raw
+        blocos_count = self._import_blocos_raw(items, arquivo)
+
+        # Depois importa movimentos (sem campos de review)
         count = 0
         for item in items:
             data = self._parse_date(item.get("data_entrega"))
             if not data:
                 continue
+            # arquivo_origem do item tem prioridade sobre o parâmetro
+            arq = item.get("arquivo_origem") or arquivo
             self.conn.execute("""
-                INSERT INTO movimentos (tipo, driver, produto, quantidade, data_movimento, endereco, arquivo_origem)
-                VALUES ('entrega', ?, ?, ?, ?, ?, ?)
+                INSERT INTO movimentos (
+                    tipo, id_sale_delivery, driver, produto, quantidade,
+                    data_movimento, endereco, arquivo_origem
+                )
+                VALUES ('entrega', ?, ?, ?, ?, ?, ?, ?)
             """, [
+                item.get("id_sale_delivery"),
                 item.get("driver"),
                 item.get("produto"),
                 item.get("quantidade"),
                 data,
                 item.get("endereco_1"),
-                arquivo
+                arq
             ])
             count += 1
         return count
@@ -406,6 +501,7 @@ class GrowBotDB:
         if force:
             # Limpa dados existentes
             self.conn.execute("DELETE FROM movimentos")
+            self.conn.execute("DELETE FROM blocos_raw")
             self.conn.execute("DELETE FROM arquivos_importados")
 
         resultado = {
@@ -592,16 +688,17 @@ if __name__ == "__main__":
             driver = sys.argv[2] if len(sys.argv) > 2 else None
             pendentes = db.review_pendentes(driver=driver)
             if pendentes:
-                print(f"Itens pendentes de revisão ({len(pendentes)}):")
+                print(f"Blocos pendentes de revisão ({len(pendentes)}):")
                 for row in pendentes:
                     sev = row.get('review_severity', '-')
                     cat = row.get('review_category', '-')
                     issue = row.get('review_issue', '-')
-                    print(f"  [{sev}|{cat}] {row['driver']} - {row['produto']} x{row['quantidade']}")
+                    id_sale = row.get('id_sale_delivery', '-')
+                    print(f"  [{sev}|{cat}] {row['driver']} - ID {id_sale} ({row['data_entrega']})")
                     if issue:
                         print(f"           Issue: {issue}")
             else:
-                print("Nenhum item pendente de revisão!")
+                print("Nenhum bloco pendente de revisão!")
 
         elif cmd == "review-stats":
             stats = db.review_stats()

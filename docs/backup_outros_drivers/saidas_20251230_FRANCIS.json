@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "id_sale_delivery": "014",
+      "produto": "5g colômbia",
+      "quantidade": 1,
+      "endereco_1": "Maria das Dores Dias 345",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "014",
+      "produto": "flor",
+      "quantidade": 1,
+      "endereco_1": "Maria das Dores Dias 345",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "015",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "Condomínio quaresmeiras",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "016",
+      "produto": "bala",
+      "quantidade": 1,
+      "endereco_1": "Rua Piauí 2945 custodio Pereira",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "017",
+      "produto": "exporta",
+      "quantidade": 2,
+      "endereco_1": "rua Santos Dumont 803.",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "018",
+      "produto": "2 exporta",
+      "quantidade": 1,
+      "endereco_1": "Rua austin 96",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "019",
+      "produto": "Ice",
+      "quantidade": 1,
+      "endereco_1": "Rua urucania 477 vigilato pereira",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "020",
+      "produto": "2escamas",
+      "quantidade": 1,
+      "endereco_1": "Joao Balbino 1833",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "021",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "Rua Paris 1100 Tibery",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "021",
+      "produto": "escama",
+      "quantidade": 2,
+      "endereco_1": "Rua Paris 1100 Tibery",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "022",
+      "produto": "1g escama",
+      "quantidade": 1,
+      "endereco_1": "Jamile Calil Attiê 191 Troco pra 100",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "023",
+      "produto": "Manda uma exportação por favor",
+      "quantidade": 1,
+      "endereco_1": "Rua Hercio Martins Gomide 25. Jardim Patrícia",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    },
+    {
+      "id_sale_delivery": "024",
+      "produto": "exporta",
+      "quantidade": 1,
+      "endereco_1": "rua do advogado 654",
+      "driver": "FRANCIS",
+      "data_entrega": "30/12/2025"
+    }
+  ]
+}

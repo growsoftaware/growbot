@@ -1,0 +1,14 @@
+{
+  "tipo": "recarga",
+  "data_import": "2025-12-27",
+  "items": [
+    {"driver": "ARTHUR", "produto": "arizona", "quantidade": 10, "data_recarga": "27/12/2025"},
+    {"driver": "ARTHUR", "produto": "texas", "quantidade": 10, "data_recarga": "27/12/2025"},
+    {"driver": "ARTHUR", "produto": "cogumelo", "quantidade": 16, "data_recarga": "27/12/2025"},
+    {"driver": "ARTHUR", "produto": "afghan", "quantidade": 20, "data_recarga": "27/12/2025"}
+  ],
+  "resumo": {
+    "total_produtos": 4,
+    "total_unidades": 56
+  }
+}

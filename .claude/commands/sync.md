@@ -51,3 +51,12 @@ python db.py query "SQL"     # Query livre
 - `v_saldo_produto` - Saldo por produto por driver
 - `v_produtos_negativos` - Alertas de inconsistência
 - `v_movimentos_dia` - Resumo diário por tipo/driver
+- `v_review_pendentes` - Blocos pendentes de revisão
+- `v_review_stats` - Estatísticas de revisão
+
+## Tabelas
+
+O sync popula duas tabelas principais:
+
+- `blocos_raw` - Texto original do WhatsApp (1 por entrega) + campos de review
+- `movimentos` - Itens parseados (N por entrega, 1 por produto)

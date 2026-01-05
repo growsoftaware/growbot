@@ -2,22 +2,109 @@
   "tipo": "recarga",
   "data_import": "2025-12-29",
   "items": [
-    {"driver": "RODRIGO", "produto": "ice nugg", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "marmita", "quantidade": 30, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "super lemon", "quantidade": 17, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "gold", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "bruce", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "arizona", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "texas", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "elon musk", "quantidade": 4, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "bala pizza hunt", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "bala canadian", "quantidade": 23, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "micro ponta estrela", "quantidade": 20, "data_recarga": "29/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "seda", "quantidade": 22, "data_recarga": "29/12/2025", "observacao": null}
+    {
+      "driver": "RODRIGO",
+      "produto": "ice nugg",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_001"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "marmita",
+      "quantidade": 30,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_002"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "super lemon",
+      "quantidade": 17,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_003"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "gold",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_004"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bruce",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_005"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "arizona",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_006"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "texas",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_007"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "elon musk",
+      "quantidade": 4,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_008"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bala pizza hunt",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_009"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bala canadian",
+      "quantidade": 23,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_010"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "micro ponta estrela",
+      "quantidade": 20,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_011"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "seda",
+      "quantidade": 22,
+      "data_recarga": "29/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_012"
+    }
   ],
   "resumo": {
     "total_recargas": 12,
     "total_unidades": 236,
-    "por_driver": {"RODRIGO": 236}
-  }
+    "por_driver": {
+      "RODRIGO": 236
+    }
+  },
+  "import_id": "recarga_20251229_RODRIGO"
 }

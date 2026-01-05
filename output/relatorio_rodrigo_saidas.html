@@ -1,0 +1,3712 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Saídas RODRIGO - Relatório para Impressão</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 10mm;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            font-size: 8pt;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .day-page {
+            page-break-after: always;
+            padding: 5mm;
+        }
+        
+        .day-page:last-child {
+            page-break-after: avoid;
+        }
+        
+        .day-header {
+            font-size: 14pt;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3mm;
+            margin-bottom: 5mm;
+        }
+        
+        .day-stats {
+            text-align: center;
+            font-size: 9pt;
+            margin-bottom: 5mm;
+            color: #333;
+        }
+        
+        .blocks-container {
+            column-count: 3;
+            column-gap: 5mm;
+            column-rule: 1px solid #ccc;
+        }
+        
+        .block {
+            break-inside: avoid;
+            border: 1px solid #999;
+            padding: 2mm;
+            margin-bottom: 2mm;
+            background: #fafafa;
+        }
+        
+        .block-id {
+            font-weight: bold;
+            font-size: 9pt;
+            background: #333;
+            color: white;
+            padding: 1mm 2mm;
+            margin: -2mm -2mm 2mm -2mm;
+        }
+        
+        .block-produtos {
+            margin-bottom: 1mm;
+        }
+        
+        .produto-line {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .produto-nome {
+            font-weight: bold;
+        }
+        
+        .produto-qtd {
+            color: #666;
+        }
+        
+        .block-endereco {
+            font-size: 7pt;
+            color: #555;
+            border-top: 1px dashed #ccc;
+            padding-top: 1mm;
+            margin-top: 1mm;
+        }
+        
+        @media print {
+            .day-page {
+                page-break-after: always;
+            }
+            
+            .blocks-container {
+                column-count: 3;
+            }
+        }
+        
+        @media screen {
+            body {
+                max-width: 210mm;
+                margin: 0 auto;
+                background: #eee;
+            }
+            
+            .day-page {
+                background: white;
+                margin-bottom: 10mm;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 22/12/2025</div>
+        <div class="day-stats">41 blocos | 53 itens | 123 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Igarapava 161 Granada</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">micro</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 23/12/2025</div>
+        <div class="day-stats">32 blocos | 38 itens | 145 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Dólar 592, São Jorge</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Getúlio Vargas 2380</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Senador Furtado 515</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professor Eudóxio Cassassanta Pereira 551, Carajás</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Santa Catarina 580</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Hercio Martins Gomide 25, Jardim Patrícia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Dolorita Elias do Nascimento 220, Laranjeiras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Vereador Carlito Cordeiro 2315</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco Antônio de Oliveira 1770</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Ensino 98, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Carteiro 760</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Cleanto Vieira Gonçalves 1645</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Antônio Scanapieco 166</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Sebastião Rangel 842, Apt 102</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Risde atiie 60, Jardim Europa</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua das Gaivotas 657</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Jose Carrijo 1289</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Alípio José de Souza 172, Laranjeiras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×6</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">tabaco</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua SU1 100, Spazio Unico</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Estudante 236</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Osmar Teixeira Moraes 101</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Bolonha 105, Jardim Europa</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av dos Jardins 250</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Gabão 40</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professor Euler Lannes Bernardes 841</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Maria Esperança 09</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Imperatriz Leopoldina 100, Tubalina</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Dr Munir Tannus Abidalla 201</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Orozimbro Ribeiro 1428, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Quintino Bocaiúva 2557</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Antônio Rezende Chaves 1424</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 24/12/2025</div>
+        <div class="day-stats">29 blocos | 46 itens | 89 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Maximiliano Carneiro, 15 - Luizote</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Afonso Pena 3322</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Rita Fonseca Marquez 97</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria da Conceição de Andrade 240</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome"></span><span class="produto-qtd">×0</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Chapada do apodi 688</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Wilson Pantaleão de Oliveira 107</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria dias Diniz 14</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Praça Renato Humberto Calcagno, 100</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pedro José Samora 484</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria Dirce Ribeiro 160 - Edifício Neuza Faria de Lima</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua cometa 445, Jardim Brasília</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco Antônio de Oliveira 935</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 João Ângelo Schiavinato, 2282, santa mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua turmalina 52, jardim inconfidência</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Passo fundo 201</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua antonio mano de carvalho 178</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Av esperança 385, Portal do Vale</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Coronel antonio alves 891</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria hambrisina de jesus 72</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Luiz Fuad abib 105, shopping park</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av. Iraque, 209 - Laranjeiras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Luiz fuad abid 105</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">onça</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">flor da vida</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Clarimundo Marques Pires 355, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Alaor Carlos Garcia, 455 Jardim Brasilia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Mato Grosso 1062</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Alameda um, 40, aclimação</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua maria da Conceição de Andrade 247, morada da colina</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 25/12/2025</div>
+        <div class="day-stats">23 blocos | 29 itens | 69 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×6</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×3</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×10</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco Antônio de Oliveira 935</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">tabaco</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 26/12/2025</div>
+        <div class="day-stats">53 blocos | 71 itens | 174 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pedro damis 140 roosvelt</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Afonso pena, 254</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Alexandre Ribeiro Guimarães 365</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua ana maria rodrigues alves 50</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria Dirce Ribeiro, 296 Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Paris 80 Correio</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Bento Gonçalves, 100 - Nossa Sra. das Graças</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Afonso Pena, 5134, Alto Umuarama</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Cassemiro de Abreu 272 saraiva</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Oscarina Cunha Chaves 510</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Sebastiana Arantes Fonseca, 1330</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 328 Pacaembu</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">isqueiro</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">tabaco</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Alamenda Paula César 530 / jardim Holanda</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professor Ciro de Castro Almeida 3432</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av joao pessoa 864</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av uirapuru 940</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Landscape 2195</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 johen carneiro 1638</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 rua Patagônia 391 custodio</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Luiz fuad abid 105</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 av landscape 2195</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Paraíba 2637 Umuarama</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Cesário Alvim 157</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 r mario pinto sobrinho 361</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Olinto Soares, 81</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Joao XXIII, 681 Saraiva</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Spazio Único</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 João Pessoa 964</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Las vegas 150 novo mundo</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco Vicente Ferreira 360 Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Geraldino Martins Rodrigues 237 granada</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua jesus Cassimiro 66</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Alcione zago 58 Luizote de Freitas</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av. Araguari, 9 - Martins</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Aristides Fernandes morais 405 alvorada</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pio Alves Barbosa, 84</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Albatroz, 336, Gran Ville</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Para 2200</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria Hambrosina de Jesus 72</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pericles Vieira da Mota 327 Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice pistachio</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua francisco sales, 1662</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua nego Amancio 189</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua José Leoni Segalla 387, São Jorge</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Francisco Sales, 657</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 045</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×20</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professora Maria Alves Castilho 1567 Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Patrulheiro Osmar Tavares 1445</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Travessa Cristo Rei 60 Lídice</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Ensino, 98, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Salerno 111</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 050</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Pedro damis 140 roosvelt</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 051</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 open house</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 0212</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do fotógrafo 380 planalto</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 0362</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 mutum 345</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 27/12/2025</div>
+        <div class="day-stats">50 blocos | 69 itens | 257 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Las vegas 150</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Silviano Brandão 101</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Gabriela Junqueira Freitas 2465</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua salto grande 191</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do estudante 236</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Alameda José de Oliveira Guimarães 1138 bl 09 ap 304 - Jd...</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua campo azul, 71</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rita Fonseca Marquez 97</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Location maps</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 condomínio jardins gênova</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Afonso Arinos 700</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 rua edmar fraga 101</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dos marrecos 98</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Vicente Paulo Magalhães 188</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×8</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria lemes de Souza 141</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Gabriela Junqueira Freitas 2465</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Alameda Maria lemes de Souza 171</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Francisco Rodrigues Serralha, 350</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Eduardo Marques 909</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av iraque 966</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Lourival Borges de Oliveira 145</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 rua francisco vicente ferreira 376 santa monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Orozimbo Ribeiro 607 Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Niterói 1771</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Armando tucci 890</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice pistachio</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Nicolau de Alves Brito 155</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Machado de Assis 719</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×10</span></div>
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua docelino de Freitas costas 554</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pedro José Samora n978</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 av lazara alves ferreira, 474</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dr luiz antonio waack, 1480, umuarama</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Marieta de Castro Santos, 135</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Nilton Augusto Alves, 122</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Geraldino Martins Rodrigues 590</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Vital Macedo 490</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Varginha 35 apto 2</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 av. afonso pena 1670</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua santina zanatta 18</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av. Oscarina Cunha Chaves, 510 - Patrimônio</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Armando tucci 890</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Varginha 35 apto 2</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Onofre Lopes da Silva 193</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 rua Wilson Rodrigues da Cunha n151</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av.Araguari-2168</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 045</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Manoel da Mata Gonçalves 557 Chácaras Tubalina</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua da carioca 1429</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Paulo Gracindo - Solar da gavia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professor João Luiz 90</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Eduardo Marques 909</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 050</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Carlos Roberto de Paiva, 65 - novo mundo</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 28/12/2025</div>
+        <div class="day-stats">52 blocos | 74 itens | 203 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Carajás 789, Tabajaras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua das papoulas 848</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua da serenata 900</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Monte Carmelo 311 Osvaldo Rezende condomínio Spazio u...</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">microponto</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Afonso Pena 2142</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Serra do cachimbo 43</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Passo fundo 201 Correio</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 rua dos patos, 200</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Pedro quirino da silva 1105</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Austin 135</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 av do corinto 350</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Francisco Rodrigues Serralha, 350</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 santa monica, maria das dores dias, 167</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Av araguari, 09</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida aspirante mega 806, Jaragua</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua das Hortênsias 306 cidade jardim</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Gustavo José da Silva, 102. Aclimação</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Na rua do MC</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">pretin</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua SU1 - 100</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Hildebrando Oliva, 1421, Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Jamile Calil Attiê 191</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Acacias 550</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Pará 2205</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×8</span></div>
+                </div>
+                <div class="block-endereco">📍 alameda uberaba 100</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 av cessar finotti 544</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 rua sapucai,230</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 rua do garçom 86</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Antônio Francisco Rosa, 231 - Aclimação</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua João balbino 1112 - Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av indaia 1333, planalto</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afeghan</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua mercurio 1560 bairro maravilha</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Bolonha 105</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua jurubeba 957 Morumbi</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua divino Lucas martins 371</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pedro José Samora 484 Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rafael marino neto 180</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua da costureira, 638, planalto</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Do agrônomo 52</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua natal 1222</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Irmãos maristas 114 Aclimação</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 R jeronima lucas barros 1056</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Alameda dos mandarins, 500 Grand Ville</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Felisberto Carrejo 1859</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 antonio rezende chaves 284, st monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 050</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 051</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 052</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Goiás 467</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 053</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua calistemon 363</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 054</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Antônio Vicente Ferreira, 214</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 055</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">isqueiro</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 alameda África 101</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 29/12/2025</div>
+        <div class="day-stats">49 blocos | 66 itens | 236 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av dos jardins 250</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco custódio Pereira, 95, Jardim Patrícia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">flor da vida</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">paki</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua leila diniz 200</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua José pena rispoli 622</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua João Rodrigues da Silva, 162</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av jacaranda, 100</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Santa Edwirges 155, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Austin 135</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Austin 96</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Av professora juvelinia dos santos, 1197, apto103, santa ...</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dos bacuris 165</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Estrela do Sul 2273</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice pistachio</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">tabaco organico</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 pça alcides borges oliveira 10</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 rua rodrigues da cunha, 790, martins</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida teylor Silva 811</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dr Luiz Antônio waack 1585</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×30</span></div>
+                </div>
+                <div class="block-endereco">📍 Av. Austrália, 143 - Tibery</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua gerson braga 660 segismundo Pereira</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av liberdade 756</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Timbiras 551</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Mário Pinto Sobrinho, 176</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Diamante 600, Jardim Patrícia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice pistachio</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua taranto 50</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Roosevelt de oliveira 632</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Francisco Ribeiro 301</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av godevino alves da rocha 797</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av dos jardins 250</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua paria 638 tibery</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Ronan Manuel Pereira, 1415</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Jornalista João de Oliveira 70</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Otávio Rodrigues da Cunha 71</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Alípio José de Souza, 172, laranjeiras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Goias, 50</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Jamil Abraão 45</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 atilio valentini 1345</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria Dirce Ribeiro, 296, Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Pedro José samora978</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua do engenheiro 1259</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Neilton cobo Victor 301, Correio</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 AV confederação do equador 785</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 R. Vitalino Rezende do Carmo, 77</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice pistachio</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Francisco Antônio Fernandes 21</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 045</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Coronel José Teófilo Carneiro 436, Jardim Brasília</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Antônia saltão de Almeida, 250 - Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 rua das gaivotas 657</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">manga rosa</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Ana Godoy de Souza 263</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Eduardo Marquez, 904</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 050</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Pedro José Samora 484, Santa mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 0182</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Detroit, 273, novo mundo</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 30/12/2025</div>
+        <div class="day-stats">49 blocos | 68 itens | 218 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua do Jardineiro, 769, Planalto</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av estrela do sul 655</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Gabão 40</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 João José Silva 293</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Landscape 2195</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Pericles Vieira da Mota 1112</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 R rio de janeiro bairro brasil 1755</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua camargos 672</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dos miosótis, 180, cidade jardim</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua Regina moraes 409</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Benjamin Alves dos Santos 1815</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Rio Branco, 1704</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 R. João Balbino, 1941, Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Cesário Alvim 157</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua delmira candida rodrigues da cunha 1178</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">colombia gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Hildebrando oliva 596</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua José Leoni Segalla 387, São Jorge</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×20</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×4</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 felipe joao 64 martins</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua silex 830</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Floriano Peixoto, 5322, Buritis</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Maria das Dores Dias, 850</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Alameda city campo, 386</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida indaia 1393</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">dry</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 rua real grandeza 872</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Coronel Antônio Alves Pereira 1325</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av maranhao 1073</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Afonso Pena 1205</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 av. landscape 3125, gávea</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua jorge amado 112</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 avenida dps jardins 250</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av dr Laerte 109, Santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Francisco Vicente Ferreira 416, santa monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua João Justino Fernandes 562</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av. Cesar Finotti, 795</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Nordau goncalvez de melo 810</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Bernardo Vasconcelos, 780</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av maranhao 1073</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Professora Maria Alves Castilho 1567, Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Albatroz 336</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×10</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua José Lelis França 1453</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Castela 24 Laranjeiras</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 045</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">sower</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">isqueiro</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 1560 rua mercurio bairro maravilha</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Av Carmo Gifoni, 1500 Martins</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua nilton augusto Alves 172 CS 2 novo mundo</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">marmita comercial</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">tabaco organico</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Deboche pub</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Joao Pereira da silva, 98</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="day-page">
+        <div class="day-header">RODRIGO - 31/12/2025</div>
+        <div class="day-stats">51 blocos | 74 itens | 205 unidades</div>
+        <div class="blocks-container">
+
+            <div class="block">
+                <div class="block-id">🏎️ 001</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 002</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av uirapuru 940</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 003</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 rua noraldino ferreira 57 bairro segismundo pereira</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 004</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Salerno 111</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 005</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Las vegas 150</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 006</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Antônio Rufino Borges 8 luizote</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 007</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Ravena 157 jd Europa</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 008</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">piteira</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dos pereiras 747</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 009</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua João velasco de Andrade 407 santa Monica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 010</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">seda</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Paris 80</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 011</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">cogumelo</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Ana godoy de sousa 263</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 012</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua siao 363 Canaa</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 013</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 R da bandeira 400</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 014</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua cometa 445, Jardim Brasília</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 015</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Adomervil Moreira Miranda 766</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 016</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 endereço romeno simão 10</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 017</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Rodolfo Correa, 463 - Cazeca</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 018</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Niteroi callink</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 019</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Terezina 2330</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 020</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 rua Bahia 1363, bairro Brasil</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 021</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av. divino adão moura, 157</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 022</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua natal 1222</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 023</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">bruce</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">meleca</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua nego Amancio 189</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 024</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Para, 2200</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 025</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Niteroi callink</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 026</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida Alexandre Ribeiro Guimarães 692 casa 1</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 027</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Av alexandrino Alves Vieira, 535, Santa Rosa</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 028</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×10</span></div>
+                </div>
+                <div class="block-endereco">📍 Tibery Londres 913</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 029</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua caule 231, Granada</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 030</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">afghan</span><span class="produto-qtd">×3</span></div>
+                    <div class="produto-line"><span class="produto-nome">ice khalifa</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">cnn</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">md</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Santa Edwirges, 123</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 031</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">exporta</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua João Justino Fernandes 562</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 032</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 av. profa juvenília dos santos 1373</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 033</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua joao pereira da silva 138, Santa Mônica</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 034</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua dos pereiras 691, Nossa Senhora Aparecida</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 035</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×15</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Campeio 55 - Morumbi</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 036</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">orange</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Av indaia 1333, planalto</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 037</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">paki</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 João Rodrigues de Castro 355</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 038</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Mário zara n 60</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 039</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 dr Laerte Vieira Gonçalves 1849</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 040</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">super lemon</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Duque de Caxias 1901</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 041</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">ice nugg</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Monte Carmelo 311, Spazio up town</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 042</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Timbiras 551</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 043</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">canadian</span><span class="produto-qtd">×2</span></div>
+                </div>
+                <div class="block-endereco">📍 Maria das Dores Dias 345, Stm</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 044</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">flypig</span><span class="produto-qtd">×2</span></div>
+                    <div class="produto-line"><span class="produto-nome">gold</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 João Velasco de Andrade 67</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 045</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua salvador 1106</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 046</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">elon musk</span><span class="produto-qtd">×5</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 rua antonio marciano de avila 1440</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 047</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">bubba</span><span class="produto-qtd">×4</span></div>
+                </div>
+                <div class="block-endereco">📍 Rua Manoel da Mata Gonçalves 557, Chácaras Tubalina</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 048</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">prensado</span><span class="produto-qtd">×1</span></div>
+                    <div class="produto-line"><span class="produto-nome">abacaxi</span><span class="produto-qtd">×1</span></div>
+                </div>
+                <div class="block-endereco">📍 Avenida João Naves de Ávila 2046</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 049</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">escama</span><span class="produto-qtd">×3</span></div>
+                </div>
+                <div class="block-endereco">📍 B&B Hotels Brasil, Praça Tubal Vilela, 192</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 051</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">texas</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 rua venus 460 jd brasilia</div>
+            </div>
+
+            <div class="block">
+                <div class="block-id">🏎️ 052</div>
+                <div class="block-produtos">
+                    <div class="produto-line"><span class="produto-nome">arizona</span><span class="produto-qtd">×5</span></div>
+                </div>
+                <div class="block-endereco">📍 rua mateus 94, Maravilha</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

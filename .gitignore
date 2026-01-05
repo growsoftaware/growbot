@@ -23,6 +23,12 @@ grow/
 
 # DuckDB
 *.wal
+*.duckdb?access_mode=*
 
 # Raw exports (user data)
 exports/
+
+# Temp files
+*.zip
+*.log
+aaa.md

@@ -2,17 +2,69 @@
   "tipo": "recarga",
   "data_import": "2025-12-28",
   "items": [
-    {"driver": "RODRIGO", "produto": "sower", "quantidade": 50, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "orange", "quantidade": 50, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "afeghan", "quantidade": 40, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "bubba", "quantidade": 50, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "dry", "quantidade": 50, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "exporta", "quantidade": 27, "data_recarga": "28/12/2025", "observacao": null},
-    {"driver": "RODRIGO", "produto": "escama", "quantidade": 25, "data_recarga": "28/12/2025", "observacao": null}
+    {
+      "driver": "RODRIGO",
+      "produto": "sower",
+      "quantidade": 50,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_001"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "orange",
+      "quantidade": 50,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_002"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "afeghan",
+      "quantidade": 40,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_003"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "bubba",
+      "quantidade": 50,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_004"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "dry",
+      "quantidade": 50,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_005"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "exporta",
+      "quantidade": 27,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_006"
+    },
+    {
+      "driver": "RODRIGO",
+      "produto": "escama",
+      "quantidade": 25,
+      "data_recarga": "28/12/2025",
+      "observacao": null,
+      "id_sale_delivery": "REC_007"
+    }
   ],
   "resumo": {
     "total_retiradas": 7,
     "total_unidades": 342,
-    "por_driver": {"RODRIGO": 342}
-  }
+    "por_driver": {
+      "RODRIGO": 342
+    }
+  },
+  "import_id": "recarga_20251228_RODRIGO"
 }

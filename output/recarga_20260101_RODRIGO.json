@@ -7,14 +7,16 @@
       "produto": "marmita",
       "quantidade": 20,
       "data_recarga": "01/01/2026",
-      "observacao": null
+      "observacao": null,
+      "id_sale_delivery": "REC_001"
     },
     {
       "driver": "RODRIGO",
       "produto": "md",
       "quantidade": 19,
       "data_recarga": "01/01/2026",
-      "observacao": null
+      "observacao": null,
+      "id_sale_delivery": "REC_002"
     }
   ],
   "resumo": {
@@ -23,5 +25,6 @@
     "por_driver": {
       "RODRIGO": 39
     }
-  }
+  },
+  "import_id": "recarga_20260101_RODRIGO"
 }

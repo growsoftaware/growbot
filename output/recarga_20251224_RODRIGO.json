@@ -7,21 +7,24 @@
       "produto": "marmita",
       "quantidade": 50,
       "data_recarga": "24/12/2025",
-      "observacao": null
+      "observacao": null,
+      "id_sale_delivery": "REC_001"
     },
     {
       "driver": "RODRIGO",
       "produto": "bala pizza hunt",
       "quantidade": 30,
       "data_recarga": "24/12/2025",
-      "observacao": null
+      "observacao": null,
+      "id_sale_delivery": "REC_002"
     },
     {
       "driver": "RODRIGO",
       "produto": "arizona",
       "quantidade": 20,
       "data_recarga": "24/12/2025",
-      "observacao": null
+      "observacao": null,
+      "id_sale_delivery": "REC_003"
     }
   ],
   "resumo": {
@@ -30,5 +33,6 @@
     "por_driver": {
       "RODRIGO": 100
     }
-  }
+  },
+  "import_id": "recarga_20251224_RODRIGO"
 }
