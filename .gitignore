@@ -25,8 +25,7 @@ grow/
 *.wal
 *.duckdb?access_mode=*
 
-# Raw exports (user data)
-exports/
+# Raw exports - agora versionado
 
 # Temp files
 *.zip
