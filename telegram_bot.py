@@ -796,7 +796,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if new_dates:
             for dt, count in new_dates:
                 dt_formatted = format_date_short(dt)
-                keyboard.append([InlineKeyboardButton(f"✨ {dt_formatted} ({count} del)", callback_data=f"date_{dt}")])
+                keyboard.append([InlineKeyboardButton(f"✨ {dt_formatted} 🏎️{count}", callback_data=f"date_{dt}")])
 
         # Botão de reimportar se houver datas existentes
         if existing_dates:
@@ -864,7 +864,7 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         keyboard = []
         for dt, count in existing_dates:
             dt_formatted = format_date_short(dt)
-            keyboard.append([InlineKeyboardButton(f"🔄 {dt_formatted} ({count} del)", callback_data=f"reimport_{dt}")])
+            keyboard.append([InlineKeyboardButton(f"🔄 {dt_formatted} 🏎️{count}", callback_data=f"reimport_{dt}")])
 
         keyboard.append([InlineKeyboardButton("⬅️ Voltar", callback_data=f"driver_{driver}")])
         keyboard.append([InlineKeyboardButton("❌ Cancelar", callback_data="cancel")])
