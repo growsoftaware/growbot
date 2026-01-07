@@ -34,23 +34,48 @@ def carregar_system_prompt(aliases_path: str = None) -> str:
 
 
 def extrair_json(texto: str) -> dict:
-    """Extrai JSON de uma resposta que pode ter markdown."""
+    """Extrai JSON de uma resposta que pode ter markdown ou texto extra."""
+    texto = texto.strip()
+
     # Tenta extrair de bloco ```json
     match = texto.find('```json')
     if match != -1:
         inicio = match + 7
         fim = texto.find('```', inicio)
         if fim != -1:
-            texto = texto[inicio:fim]
+            texto = texto[inicio:fim].strip()
 
     # Tenta extrair de bloco ``` genérico
     elif texto.find('```') != -1:
         inicio = texto.find('```') + 3
         fim = texto.find('```', inicio)
         if fim != -1:
-            texto = texto[inicio:fim]
+            texto = texto[inicio:fim].strip()
 
-    return json.loads(texto.strip())
+    # Se começa com { e termina com }, tenta parsear diretamente
+    if texto.startswith('{') and texto.endswith('}'):
+        return json.loads(texto)
+
+    # Tenta encontrar JSON no meio do texto
+    import re
+    json_match = re.search(r'\{[^{}]*"message"[^{}]*\}', texto, re.DOTALL)
+    if json_match:
+        return json.loads(json_match.group())
+
+    # Tenta encontrar JSON mais complexo (com objetos aninhados)
+    start = texto.find('{')
+    if start != -1:
+        # Encontra o } correspondente
+        depth = 0
+        for i, c in enumerate(texto[start:], start):
+            if c == '{':
+                depth += 1
+            elif c == '}':
+                depth -= 1
+                if depth == 0:
+                    return json.loads(texto[start:i+1])
+
+    return json.loads(texto)
 
 
 def extract_claude(bloco: str, aliases_path: str = None) -> dict:
