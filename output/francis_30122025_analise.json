@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "arquivo_origem": "export_30122025_FRANCIS.txt",
+    "driver": "FRANCIS",
+    "data_entrega": "30/12/2025",
+    "total_blocos": 13,
+    "ids_presentes": "14-26",
+    "ids_faltando": "1-13",
+    "alerta_geral": "Arquivo incompleto - faltam blocos 1-13"
+  },
+  "duvidas_gerais": [
+    {
+      "issue": "Arquivo incompleto",
+      "descricao": "Os IDs vao de 14 a 26. Faltam os blocos 1-13. Verificar se há outro arquivo ou se dados estão em _chat_2.txt"
+    }
+  ],
+  "blocos": [
+    {
+      "id_sale_delivery": "014",
+      "linha_origem": 1,
+      "texto_raw": "[2025-12-31, 3:07:13 AM] Akita: Trás 5 g pra min dessa Texas fazendo favor\n[2025-12-31, 3:07:14 AM] Akita: Rua ocidental 1054\n[2025-12-31, 3:07:14 AM] Akita: Bairro Ipanema\n[2025-12-31, 3:07:14 AM] Akita: 14🏎️",
+      "produtos": [
+        {"produto": "texas", "quantidade": 5}
+      ],
+      "endereco": "Rua ocidental 1054, Bairro Ipanema",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "015",
+      "linha_origem": 5,
+      "texto_raw": "[2025-12-31, 3:07:14 AM] Akita: Maria das Dores Dias 345\n[2025-12-31, 3:07:15 AM] Akita: 5g Colômbia 4g da flor q vc me indicou\n[2025-12-31, 3:07:15 AM] Akita: 15🏎️",
+      "produtos": [
+        {"produto": "colombia", "quantidade": 5},
+        {"produto": "texas", "quantidade": 4}
+      ],
+      "endereco": "Maria das Dores Dias 345",
+      "review_status": "resolvido",
+      "review_severity": "atencao",
+      "review_category": "negocio",
+      "review_issue": "Produto ambiguo - 'flor q vc me indicou'",
+      "review_ai_notes": "Texto diz '4g da flor q vc me indicou' - operador confirmou que era TEXAS (4g). Colombia identificada (5g)."
+    },
+    {
+      "id_sale_delivery": "016",
+      "linha_origem": 8,
+      "texto_raw": "[2025-12-31, 3:07:15 AM] Akita: Consegue manda uma exporta ?\n[2025-12-31, 3:07:15 AM] Akita: Risde atiie 60\n[2025-12-31, 3:07:16 AM] Akita: Condomínio quaresmeiras\n[2025-12-31, 3:07:16 AM] Akita: 16🏎️",
+      "produtos": [
+        {"produto": "exporta", "quantidade": 1}
+      ],
+      "endereco": "Risde atiie 60, Condominio quaresmeiras",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "Endereco pode estar com erro de digitacao (Risde atiie)"
+    },
+    {
+      "id_sale_delivery": "017",
+      "linha_origem": 12,
+      "texto_raw": "[2025-12-31, 3:07:16 AM] Akita: Rua Piauí 2945 custodio Pereira\n[2025-12-31, 3:07:17 AM] Akita: 1 papel 1 bala\n[2025-12-31, 3:07:17 AM] Akita: 17🏎️",
+      "produtos": [
+        {"produto": "seda", "quantidade": 1},
+        {"produto": "bala", "quantidade": 1}
+      ],
+      "endereco": "Rua Piauí 2945 custodio Pereira",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'papel' = seda. 'bala' tipo nao especificado - registrado como bala generica"
+    },
+    {
+      "id_sale_delivery": "018",
+      "linha_origem": 15,
+      "texto_raw": "[2025-12-31, 3:07:17 AM] Akita: mano preciso de 2 exportação\n[2025-12-31, 3:07:17 AM] Akita: rua Santos Dumont 803.\n[2025-12-31, 3:07:18 AM] Akita: 18🏎️",
+      "produtos": [
+        {"produto": "exporta", "quantidade": 2}
+      ],
+      "endereco": "rua Santos Dumont 803",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "019",
+      "linha_origem": 18,
+      "texto_raw": "[2025-12-31, 3:07:18 AM] Akita: Av. Oscarina Cunha Chaves, 510 - Patrimônio https://share.google/fvfhUpT2KoYI2xhQH\n[2025-12-31, 3:07:18 AM] Akita: 19🏎️",
+      "produtos": [],
+      "endereco": "Av. Oscarina Cunha Chaves, 510 - Patrimonio",
+      "review_status": "ignorado",
+      "review_severity": "critico",
+      "review_category": "negocio",
+      "review_issue": "Bloco sem produto",
+      "review_ai_notes": "Bloco 19 contem apenas endereco e link do Google, sem produto/quantidade. Operador confirmou: IGNORAR este bloco - nao e uma entrega valida."
+    },
+    {
+      "id_sale_delivery": "020",
+      "linha_origem": 20,
+      "texto_raw": "[2025-12-31, 3:07:18 AM] Akita: Rua austin 96\n[2025-12-31, 3:07:19 AM] Akita: Hj 2 exporta\n[2025-12-31, 3:07:19 AM] Akita: 20🏎️",
+      "produtos": [
+        {"produto": "exporta", "quantidade": 2}
+      ],
+      "endereco": "Rua austin 96",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'Hj' = hoje"
+    },
+    {
+      "id_sale_delivery": "021",
+      "linha_origem": 23,
+      "texto_raw": "[2025-12-31, 3:07:19 AM] Akita: Rua urucania 477 vigilato pereira\n[2025-12-31, 3:07:20 AM] Akita: Ice\n[2025-12-31, 3:07:20 AM] Akita: 21🏎️",
+      "produtos": [
+        {"produto": "ice", "quantidade": 1}
+      ],
+      "endereco": "Rua urucania 477 vigilato pereira",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'Ice' sem quantidade = 1g = 1 unidade"
+    },
+    {
+      "id_sale_delivery": "022",
+      "linha_origem": 26,
+      "texto_raw": "[2025-12-31, 3:07:20 AM] Akita: Joao Balbino 1833\n[2025-12-31, 3:07:20 AM] Akita: 2escamas\n[2025-12-31, 3:07:21 AM] Akita: 22🏎️",
+      "produtos": [
+        {"produto": "escama", "quantidade": 2}
+      ],
+      "endereco": "Joao Balbino 1833",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'2escamas' = 2 escamas"
+    },
+    {
+      "id_sale_delivery": "023",
+      "linha_origem": 29,
+      "texto_raw": "[2025-12-31, 3:07:21 AM] Akita: Pode ser 15g\n[2025-12-31, 3:07:21 AM] Akita: Rua Paris 1100\n[2025-12-31, 3:07:21 AM] Akita: Tibery\n[2025-12-31, 3:07:22 AM] Akita: Mais essa última pods ser\n[2025-12-31, 3:07:22 AM] Akita: 23🏎️",
+      "produtos": [
+        {"produto": "arizona", "quantidade": 15}
+      ],
+      "endereco": "Rua Paris 1100, Tibery",
+      "review_status": "resolvido",
+      "review_severity": "critico",
+      "review_category": "negocio",
+      "review_issue": "Quantidade sem produto especificado",
+      "review_ai_notes": "Texto diz 'Pode ser 15g' sem especificar produto. Operador confirmou: 15g de ARIZONA."
+    },
+    {
+      "id_sale_delivery": "024",
+      "linha_origem": 34,
+      "texto_raw": "[2025-12-31, 3:07:22 AM] Akita: 1g escama\n[2025-12-31, 3:07:22 AM] Akita: Jamile Calil Attiê 191\n[2025-12-31, 3:07:23 AM] Akita: Troco pra 100\n[2025-12-31, 3:07:23 AM] Akita: 24🏎️",
+      "produtos": [
+        {"produto": "escama", "quantidade": 1}
+      ],
+      "endereco": "Jamile Calil Attie 191",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'Troco pra 100' = cliente pediu troco para R$100"
+    },
+    {
+      "id_sale_delivery": "025",
+      "linha_origem": 38,
+      "texto_raw": "[2025-12-31, 3:07:23 AM] Akita: Manda uma exportação por favor\n[2025-12-31, 3:07:23 AM] Akita: Rua Hercio Martins Gomide 25. Jardim Patrícia\n[2025-12-31, 3:07:23 AM] Akita: 25🏎️",
+      "produtos": [
+        {"produto": "exporta", "quantidade": 1}
+      ],
+      "endereco": "Rua Hercio Martins Gomide 25, Jardim Patricia",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "026",
+      "linha_origem": 41,
+      "texto_raw": "[2025-12-31, 3:07:24 AM] Akita: rua do advogado 654\n[2025-12-31, 3:07:24 AM] Akita: 1 bala\n[2025-12-31, 3:07:24 AM] Akita: 🏎️26",
+      "produtos": [
+        {"produto": "bala", "quantidade": 1}
+      ],
+      "endereco": "rua do advogado 654",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "'bala' tipo nao especificado - registrado como bala generica"
+    }
+  ],
+  "resumo_review": {
+    "ok": 10,
+    "resolvido": 2,
+    "ignorado": 1
+  },
+  "pendentes_para_resolver": []
+}

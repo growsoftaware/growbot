@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "arquivo_origem": "export_30122025_KAROL.txt",
+    "driver": "KAROL",
+    "data_entrega": "30/12/2025",
+    "total_blocos": 13
+  },
+  "blocos": [
+    {
+      "id_sale_delivery": "001",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "marmita comercial",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Avenida joao naves de avila 6747",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "50g pren comercial = 1 marmita comercial"
+    },
+    {
+      "id_sale_delivery": "002",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "texas",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Avenida Doutor Laerte Vieira Gonçalves, 1980",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "003",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "exporta",
+          "quantidade": 3
+        }
+      ],
+      "endereco": "Las vegas 150 novo mundo",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "004",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "exporta",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Uberbrau (localização maps)",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "005",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Su1, 100",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "006",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "texas",
+          "quantidade": 5
+        },
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "rua paulo maia 760",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "007",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Avenida belarmino Cotta Pacheco 302",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "008",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua Rio Grande do Sul, 22",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "gold = colombia"
+    },
+    {
+      "id_sale_delivery": "009",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "av Alexandre Ribeiro Guimarães 280 saraiva",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "010",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua Cristina 43",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "011",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "md",
+          "quantidade": 1
+        },
+        {
+          "produto": "arizona",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "johen carneiro 1638",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "012",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 1
+        },
+        {
+          "produto": "exporta",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Lourival Borges de Oliveira 145",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "013",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "texas",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua Professor Leônidas Castro Serra, 122 - Roosevelt",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    }
+  ],
+  "resumo_review": {
+    "ok": 13,
+    "pendente": 0
+  },
+  "pendentes_para_resolver": []
+}

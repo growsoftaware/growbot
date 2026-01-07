@@ -1,0 +1,477 @@
+{
+  "metadata": {
+    "arquivo_origem": "export_30122025_ARTHUR.txt",
+    "driver": "ARTHUR",
+    "data_entrega": "30/12/2025",
+    "total_blocos": 26
+  },
+  "blocos": [
+    {
+      "id_sale_delivery": "001",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "elon musk",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "av Alexandre Ribeiro Guimarães 280 saraiva",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "002",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua do estudante 236",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "marmita = prensado"
+    },
+    {
+      "id_sale_delivery": "003",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        },
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua Rio Grande do Sul, 22",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "marmita = prensado, gold = colombia"
+    },
+    {
+      "id_sale_delivery": "004",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "rua Luiz Fuad abib 105 shopping park",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "005",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "rua corcovado 174",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "006",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "imbaubas 1400",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "007",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua João Pereira da Silva 138",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "008",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        },
+        {
+          "produto": "exporta",
+          "quantidade": 2
+        },
+        {
+          "produto": "pretin uva",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Brás sátiro de Souza, número 235",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "009",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "cnn",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Rua Marco Aurélio Resende dos Santos, 230",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "010",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "orange",
+          "quantidade": 4
+        },
+        {
+          "produto": "paki",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Rua Manoel ascenco Batista 1880",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "011",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "exporta",
+          "quantidade": 2
+        },
+        {
+          "produto": "canadian",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Rua transição 860",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "012",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "avenida chadi fad 1651",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "Pensado 20g = 1 marmita + 1 marmita (pedido confuso, mas menciona 20g + 1 marmita)"
+    },
+    {
+      "id_sale_delivery": "013",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "sower",
+          "quantidade": 4
+        }
+      ],
+      "endereco": "Rua Luiz Fuad Abib, 105",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "014",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [],
+      "endereco": "Rua Renato de Oliveira grama 245",
+      "review_status": "ignorado",
+      "review_severity": "critico",
+      "review_category": "negocio",
+      "review_issue": "Bloco sem produto",
+      "review_ai_notes": "Bloco só com endereço, sem produto. Operador confirmou: IGNORAR."
+    },
+    {
+      "id_sale_delivery": "015",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "arizona",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "rua senador salgado filha 254",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "016",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 4
+        }
+      ],
+      "endereco": "Rua dos cravos 385 / Rua Pericles Vieira da Mota 374",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "40g prem = 2 marmitas, aparece 2x no arquivo (40g total = 2 marmitas cada = 4 total?)"
+    },
+    {
+      "id_sale_delivery": "017",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "sower",
+          "quantidade": 4
+        }
+      ],
+      "endereco": "rua eduardo marquzes 350",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "018",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "bubba",
+          "quantidade": 4
+        }
+      ],
+      "endereco": "Av Lazara Alves Ferreira, 89",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "019",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Professor Joaquim Roberto 35",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "escMa = escama"
+    },
+    {
+      "id_sale_delivery": "020",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua dos angicos 530, Bairro Jaraguá",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "prem = prensado"
+    },
+    {
+      "id_sale_delivery": "021",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "sower",
+          "quantidade": 4
+        }
+      ],
+      "endereco": "Professor pedro Bernardo 40",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "022",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "sower",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Antônio Salviano de Rezende 559",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "se sower = de sower"
+    },
+    {
+      "id_sale_delivery": "023",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "exporta",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua das Seringueiras 931",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "expor = exporta"
+    },
+    {
+      "id_sale_delivery": "024",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 2
+        },
+        {
+          "produto": "bubba",
+          "quantidade": 8
+        }
+      ],
+      "endereco": "marques povoa 374",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "025",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Quintino Bocaiuva 563",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "026",
+      "linha_origem": 0,
+      "texto_raw": "",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Maria das dores dias 790",
+      "review_status": "resolvido",
+      "review_severity": "atencao",
+      "review_category": "negocio",
+      "review_issue": "Pedido em forma de pergunta",
+      "review_ai_notes": "Texto em forma de pergunta mas é pedido. Operador confirmou: 1 dry."
+    }
+  ],
+  "resumo_review": {
+    "ok": 24,
+    "resolvido": 1,
+    "ignorado": 1
+  },
+  "pendentes_para_resolver": []
+}

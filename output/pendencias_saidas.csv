@@ -1,0 +1,38 @@
+arquivo,driver,data_entrega,linha_inicio,linha_fim,blocos,status,prioridade,notas
+_chat_2.txt,RODRIGO,21/12/2025,12,104,43,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,ARTHUR,21/12/2025,109,182,34,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,KAROL,21/12/2025,185,258,34,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,FRANCIS,21/12/2025,261,304,22,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,RODRIGO,22/12/2025,306,405,44,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,KAROL,22/12/2025,408,466,24,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,ARTHUR,22/12/2025,469,520,24,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,FRANCIS,22/12/2025,523,579,23,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,RODRIGO,26/12/2025,704,819,40,processado,baixa,Quinta - PROCESSADO
+_chat_2.txt,ARTHUR,26/12/2025,822,914,32,processado,baixa,Quinta - PROCESSADO
+_chat_2.txt,KAROL,26/12/2025,1016,1083,11,processado,baixa,Quinta - PROCESSADO
+_chat_2.txt,RODRIGO,27/12/2025,1327,1587,69,processado,baixa,Sexta - PROCESSADO
+_chat_2.txt,KAROL,27/12/2025,1712,1838,27,processado,baixa,Sexta - PROCESSADO
+_chat_2.txt,RODRIGO,27/12/2025,1902,2210,69,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,KAROL,27/12/2025,2312,2509,12,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,ARTHUR,28/12/2025,2512,2664,39,processado,baixa,Sabado - PROCESSADO
+_chat_2.txt,RODRIGO,28/12/2025,2667,3028,55,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,ARTHUR,28/12/2025,3136,3307,34,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,KAROL,28/12/2025,3383,3496,21,processado,baixa,Domingo - PROCESSADO
+_chat_2.txt,RODRIGO,29/12/2025,3599,3930,68,processado,baixa,Segunda - PROCESSADO
+_chat_2.txt,ARTHUR,29/12/2025,3997,4163,39,processado,baixa,Segunda - PROCESSADO
+_chat_2.txt,KAROL,29/12/2025,4234,4362,24,processado,baixa,Segunda - PROCESSADO
+export_30122025_RODRIGO.txt,RODRIGO,30/12/2025,1,117,29,processado,baixa,PROCESSADO 06/01
+export_30122025_ARTHUR.txt,ARTHUR,30/12/2025,1,93,26,processado,baixa,PROCESSADO 06/01
+export_30122025_FRANCIS.txt,FRANCIS,30/12/2025,1,47,26,processado,baixa,PROCESSADO 06/01
+export_30122025_KAROL.txt,KAROL,30/12/2025,1,48,13,processado,baixa,PROCESSADO 06/01
+export_31122025_RODRIGO.txt,RODRIGO,31/12/2025,1,192,52,processado,baixa,PROCESSADO
+export_31122025_ARTHUR.txt,ARTHUR,31/12/2025,1,159,39,processado,baixa,PROCESSADO
+export_31122025_FRANCIS.txt,FRANCIS,31/12/2025,1,128,25,processado,baixa,PROCESSADO
+export_31122025_KAROL.txt,KAROL,31/12/2025,1,5,1,processado,baixa,INCOMPLETO - ignorado
+_chat_2.txt,RODRIGO,01/01/2026,7237,7408,27,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,ARTHUR,01/01/2026,7415,7544,20,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,FRANCIS,01/01/2026,7551,7769,34,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,RODRIGO,02/01/2026,7776,8051,42,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,FRANCIS,02/01/2026,8058,8222,25,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,KAROL,02/01/2026,8229,8372,21,processado,baixa,PROCESSADO 06/01
+_chat_2.txt,ARTHUR,02/01/2026,8379,8536,21,processado,baixa,PROCESSADO 06/01

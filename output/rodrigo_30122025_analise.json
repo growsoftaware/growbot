@@ -1,0 +1,572 @@
+{
+  "metadata": {
+    "arquivo_origem": "export_30122025_RODRIGO.txt",
+    "driver": "RODRIGO",
+    "data_entrega": "30/12/2025",
+    "total_blocos": 29
+  },
+  "blocos": [
+    {
+      "id_sale_delivery": "001",
+      "linha_origem": 83,
+      "texto_raw": "[2025-12-30, 2:58:35 AM] ~ Akita Inu: 4g Orange \n1 marmita\n[2025-12-30, 2:58:35 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:36 AM] ~ Akita Inu: 🏎️ 1",
+      "produtos": [
+        {
+          "produto": "orange",
+          "quantidade": 4
+        },
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "R. Maximiliano Carneiro, 15 - Luizote",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "002",
+      "linha_origem": 87,
+      "texto_raw": "[2025-12-30, 2:58:36 AM] ~ Akita Inu: R. Maximiliano Carneiro, 15 - Luizote\n[2025-12-30, 2:58:36 AM] ~ Akita Inu: 1 seda\n1 elon musk \n1 dry suíço\n[2025-12-30, 2:58:37 AM] ~ Akita Inu: av. landscape 3125, gávea\n[2025-12-30, 2:58:37 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:37 AM] ~ Akita Inu: 🏎️ 2",
+      "produtos": [
+        {
+          "produto": "seda",
+          "quantidade": 1
+        },
+        {
+          "produto": "elon musk",
+          "quantidade": 1
+        },
+        {
+          "produto": "dry",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "av. landscape 3125, gávea",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "dry suíço = dry"
+    },
+    {
+      "id_sale_delivery": "003",
+      "linha_origem": 1,
+      "texto_raw": "[2025-12-30, 2:52:08 AM] Akita: 32 corridas\n[2025-12-30, 2:58:08 AM] Akita: 2 escamas\n[2025-12-30, 2:58:08 AM] Akita: Afonso Pena 3322\n[2025-12-30, 2:58:08 AM] Akita: Telefone 1\n[2025-12-30, 2:58:08 AM] Akita: 🏎️ 3",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Afonso Pena 3322",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "004",
+      "linha_origem": 94,
+      "texto_raw": "[2025-12-30, 2:58:38 AM] ~ Akita Inu: 4g bubba \n1 ice\n[2025-12-30, 2:58:38 AM] ~ Akita Inu: Rua Rita Fonseca Marquez 97\n[2025-12-30, 2:58:39 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:39 AM] ~ Akita Inu: 🏎️4",
+      "produtos": [
+        {
+          "produto": "bubba",
+          "quantidade": 4
+        },
+        {
+          "produto": "ice",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Rita Fonseca Marquez 97",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "005",
+      "linha_origem": 6,
+      "texto_raw": "[2025-12-30, 2:58:09 AM] Akita: Rua Maria da Conceição de Andrade 240\n[2025-12-30, 2:58:09 AM] Akita: 5g dry\n[2025-12-30, 2:58:09 AM] Akita: 🏎️5",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua Maria da Conceição de Andrade 240",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "006",
+      "linha_origem": 99,
+      "texto_raw": "[2025-12-30, 2:58:39 AM] ~ Akita Inu: Deixar moeda\n[2025-12-30, 2:58:40 AM] ~ Akita Inu: 🏎️6",
+      "produtos": [],
+      "endereco": "",
+      "review_status": "ignorado",
+      "review_severity": "critico",
+      "review_category": null,
+      "review_issue": "Bloco sem produto - apenas \"Deixar moeda\"",
+      "review_ai_notes": "Texto diz apenas \"Deixar moeda\". Operador confirmou: IGNORAR - não é uma entrega."
+    },
+    {
+      "id_sale_delivery": "007",
+      "linha_origem": 9,
+      "texto_raw": "[2025-12-30, 2:58:09 AM] Akita: Quero 5g de Colômbia gold\n[2025-12-30, 2:58:09 AM] Akita: Chapada do apodi 688\n[2025-12-30, 2:58:10 AM] Akita: 🏎️7",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Chapada do apodi 688",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "Colombia gold = colombia"
+    },
+    {
+      "id_sale_delivery": "008",
+      "linha_origem": 12,
+      "texto_raw": "[2025-12-30, 2:58:10 AM] Akita: Rua Wilson Pantaleão de Oliveira 107\n[2025-12-30, 2:58:10 AM] Akita: 1 marmita\n[2025-12-30, 2:58:10 AM] Akita: 🏎️8",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Wilson Pantaleão de Oliveira 107",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "1 marmita = 1 prensado"
+    },
+    {
+      "id_sale_delivery": "009",
+      "linha_origem": 101,
+      "texto_raw": "[2025-12-30, 2:58:40 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:41 AM] ~ Akita Inu: Manda 1g do dry suiço e 1g de super Lenon haze\n[2025-12-30, 2:58:41 AM] ~ Akita Inu: Rua Maria dias Diniz 14\n[2025-12-30, 2:58:41 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:42 AM] ~ Akita Inu: 🏎️ 9",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 1
+        },
+        {
+          "produto": "super lemon",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Maria dias Diniz 14",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "dry suiço = dry, super Lenon haze = super lemon"
+    },
+    {
+      "id_sale_delivery": "010",
+      "linha_origem": 15,
+      "texto_raw": "[2025-12-30, 2:58:11 AM] Akita: Praça Renato Humberto Calcagno, 100\n[2025-12-30, 2:58:11 AM] Akita: 4g bubba\n[2025-12-30, 2:58:11 AM] Akita: 1g dry\n[2025-12-30, 2:58:11 AM] Akita: 🏎️10",
+      "produtos": [
+        {
+          "produto": "bubba",
+          "quantidade": 4
+        },
+        {
+          "produto": "dry",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Praça Renato Humberto Calcagno, 100",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "011",
+      "linha_origem": 19,
+      "texto_raw": "[2025-12-30, 2:58:12 AM] Akita: Rua Pedro José Samora 484\n[2025-12-30, 2:58:12 AM] Akita: 1 escama\n[2025-12-30, 2:58:12 AM] Akita: 🏎️11",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Pedro José Samora 484",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "012",
+      "linha_origem": 22,
+      "texto_raw": "[2025-12-30, 2:58:12 AM] Akita: 1g orange\n1g Lemon\n1g ice\n[2025-12-30, 2:58:13 AM] Akita: Rua Maria Dirce Ribeiro 160 - Edifício Neuza Faria de Lima\n[2025-12-30, 2:58:13 AM] Akita: 🏎️12",
+      "produtos": [
+        {
+          "produto": "orange",
+          "quantidade": 1
+        },
+        {
+          "produto": "super lemon",
+          "quantidade": 1
+        },
+        {
+          "produto": "ice",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Maria Dirce Ribeiro 160 - Edifício Neuza Faria de Lima",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "Lemon = super lemon"
+    },
+    {
+      "id_sale_delivery": "013",
+      "linha_origem": 27,
+      "texto_raw": "[2025-12-30, 2:58:13 AM] Akita: Jardim Brasília meu mn, rua cometa 445\n[2025-12-30, 2:58:13 AM] Akita: 1 pren comercial\n[2025-12-30, 2:58:14 AM] Akita: 🏎️13",
+      "produtos": [
+        {
+          "produto": "marmita comercial",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Jardim Brasília, rua cometa 445",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "pren comercial = marmita comercial (50g)"
+    },
+    {
+      "id_sale_delivery": "014",
+      "linha_origem": 30,
+      "texto_raw": "[2025-12-30, 2:58:14 AM] Akita: Francisco Antônio de Oliveira 935\n[2025-12-30, 2:58:14 AM] Akita: 2 g de dry\n[2025-12-30, 2:58:14 AM] Akita: 🏎️14",
+      "produtos": [
+        {
+          "produto": "dry",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Francisco Antônio de Oliveira 935",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "015",
+      "linha_origem": 106,
+      "texto_raw": "[2025-12-30, 2:58:42 AM] ~ Akita Inu: 1 marmita\n[2025-12-30, 2:58:42 AM] ~ Akita Inu: João Ângelo Schiavinato, 2282, santa mônica\n[2025-12-30, 2:58:43 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:43 AM] ~ Akita Inu: 🏎️ 15",
+      "produtos": [
+        {
+          "produto": "prensado",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "João Ângelo Schiavinato, 2282, santa mônica",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "016",
+      "linha_origem": 33,
+      "texto_raw": "[2025-12-30, 2:58:14 AM] Akita: rua turmalina, numero 52\njardim inconfidência\n[2025-12-30, 2:58:15 AM] Akita: 5g manga\n[2025-12-30, 2:58:15 AM] Akita: 🏎️16",
+      "produtos": [
+        {
+          "produto": "manga rosa",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "rua turmalina, numero 52, jardim inconfidência",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "manga = manga rosa"
+    },
+    {
+      "id_sale_delivery": "017",
+      "linha_origem": 37,
+      "texto_raw": "[2025-12-30, 2:58:15 AM] Akita: Passo fundo 201\n[2025-12-30, 2:58:16 AM] Akita: 1 md\n[2025-12-30, 2:58:16 AM] Akita: 2 dry\n[2025-12-30, 2:58:16 AM] Akita: 🏎️17",
+      "produtos": [
+        {
+          "produto": "md",
+          "quantidade": 1
+        },
+        {
+          "produto": "dry",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Passo fundo 201",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "018",
+      "linha_origem": 41,
+      "texto_raw": "[2025-12-30, 2:58:16 AM] Akita: rua antonio mano de carvalho 178\n[2025-12-30, 2:58:17 AM] Akita: 1g sower\n[2025-12-30, 2:58:17 AM] Akita: 🏎️18",
+      "produtos": [
+        {
+          "produto": "sower",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "rua antonio mano de carvalho 178",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "019",
+      "linha_origem": 44,
+      "texto_raw": "[2025-12-30, 2:58:17 AM] Akita: Av esperança 385\n[2025-12-30, 2:58:17 AM] Akita: Portal do Vale\n[2025-12-30, 2:58:18 AM] Akita: 2 ellon musk\n[2025-12-30, 2:58:18 AM] Akita: 🏎️19",
+      "produtos": [
+        {
+          "produto": "elon musk",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Av esperança 385, Portal do Vale",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "ellon musk = elon musk"
+    },
+    {
+      "id_sale_delivery": "020",
+      "linha_origem": 48,
+      "texto_raw": "[2025-12-30, 2:58:18 AM] Akita: Coronel antonio alves 891\n[2025-12-30, 2:58:19 AM] Akita: 1 md\n[2025-12-30, 2:58:19 AM] Akita: 🏎️20",
+      "produtos": [
+        {
+          "produto": "md",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Coronel antonio alves 891",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "021",
+      "linha_origem": 51,
+      "texto_raw": "[2025-12-30, 2:58:19 AM] Akita: Rua Maria hambrisina de jesus 72\n[2025-12-30, 2:58:19 AM] Akita: 1 escama\n[2025-12-30, 2:58:20 AM] Akita: 🏎️21",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Maria hambrisina de jesus 72",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "022",
+      "linha_origem": 54,
+      "texto_raw": "[2025-12-30, 2:58:20 AM] Akita: Pro endereço da rua Luiz Fuad abib 105 shopping park\n[2025-12-30, 2:58:20 AM] Akita: 2 escamas\n[2025-12-30, 2:58:20 AM] Akita: 🏎️22",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "rua Luiz Fuad abib 105 shopping park",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "023",
+      "linha_origem": 57,
+      "texto_raw": "[2025-12-30, 2:58:21 AM] Akita: Av. Iraque, 209 - Laranjeiras, Uberlândia - MG, 38410-663, Brasil (Av. Iraque, 209 - Laranjeiras, Uberlândia - MG, 38410-663, Brasil): https://maps.google.com/?q=-18.949759,-48.250336\n[2025-12-30, 2:58:21 AM] Akita: 1 escama\n[2025-12-30, 2:58:21 AM] Akita: 🏎️23",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Av. Iraque, 209 - Laranjeiras, Uberlândia",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "024",
+      "linha_origem": 60,
+      "texto_raw": "[2025-12-30, 2:58:22 AM] Akita: Rua Luiz fuad abid 105\n[2025-12-30, 2:58:22 AM] Akita: 1 escama\n[2025-12-30, 2:58:22 AM] Akita: 🏎️24",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Rua Luiz fuad abid 105",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "025",
+      "linha_origem": 63,
+      "texto_raw": "[2025-12-30, 2:58:22 AM] Akita: 2 onça \n2 abacaxi \n2 flor da vida \n2 Canadian \n2 Elon musk \n1 md europeu\n[2025-12-30, 2:58:23 AM] Akita: Clarimundo Marques Pires 355\n[2025-12-30, 2:58:23 AM] Akita: Santa Monica\n[2025-12-30, 2:58:23 AM] Akita: 🏎️25",
+      "produtos": [
+        {
+          "produto": "onca",
+          "quantidade": 2
+        },
+        {
+          "produto": "abacaxi",
+          "quantidade": 2
+        },
+        {
+          "produto": "flor da vida",
+          "quantidade": 2
+        },
+        {
+          "produto": "canadian",
+          "quantidade": 2
+        },
+        {
+          "produto": "elon musk",
+          "quantidade": 2
+        },
+        {
+          "produto": "md",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Clarimundo Marques Pires 355, Santa Monica",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": "md europeu = md"
+    },
+    {
+      "id_sale_delivery": "026",
+      "linha_origem": 72,
+      "texto_raw": "[2025-12-30, 2:58:23 AM] Akita: Rua Alaor Carlos Garcia, 455 Jardim Brasilia\n[2025-12-30, 2:58:24 AM] Akita: 2 escamas\n[2025-12-30, 2:58:24 AM] Akita: 🏎️26",
+      "produtos": [
+        {
+          "produto": "escama",
+          "quantidade": 2
+        }
+      ],
+      "endereco": "Rua Alaor Carlos Garcia, 455 Jardim Brasilia",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "027",
+      "linha_origem": 75,
+      "texto_raw": "[2025-12-30, 2:58:24 AM] Akita: Mano, queria 5g do colombia , 1g da meleca e 1g do ice pistachio\n[2025-12-30, 2:58:25 AM] Akita: Av Mato Grosso 1062\n[2025-12-30, 2:58:25 AM] Akita: 🏎️27",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        },
+        {
+          "produto": "meleca",
+          "quantidade": 1
+        },
+        {
+          "produto": "ice pistachio",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Av Mato Grosso 1062",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    },
+    {
+      "id_sale_delivery": "028",
+      "linha_origem": 78,
+      "texto_raw": "[2025-12-30, 2:58:25 AM] Akita: Alameda um, 40\n[2025-12-30, 2:58:25 AM] Akita: aclimação\n[2025-12-30, 2:58:26 AM] Akita: 5g gold\n[2025-12-30, 2:58:26 AM] Akita: Q dry\n[2025-12-30, 2:58:26 AM] Akita: 🏎️28",
+      "produtos": [
+        {
+          "produto": "colombia",
+          "quantidade": 5
+        },
+        {
+          "produto": "dry",
+          "quantidade": 1
+        }
+      ],
+      "endereco": "Alameda um, 40, aclimação",
+      "review_status": "resolvido",
+      "review_severity": "atencao",
+      "review_category": null,
+      "review_issue": "Quantidade ambigua - Q dry",
+      "review_ai_notes": "Q dry = 1 dry (confirmado pelo operador). gold = colombia."
+    },
+    {
+      "id_sale_delivery": "029",
+      "linha_origem": 110,
+      "texto_raw": "[2025-12-30, 2:58:44 AM] ~ Akita Inu: Rua maria da Conceição de Andrade 247 morada da colina\n[2025-12-30, 2:58:44 AM] ~ Akita Inu: 5g de manga\n[2025-12-30, 2:58:44 AM] ~ Akita Inu: Telefone 2\n[2025-12-30, 2:58:45 AM] ~ Akita Inu: 🏎️29",
+      "produtos": [
+        {
+          "produto": "manga rosa",
+          "quantidade": 5
+        }
+      ],
+      "endereco": "Rua maria da Conceição de Andrade 247 morada da colina",
+      "review_status": "ok",
+      "review_severity": null,
+      "review_category": null,
+      "review_issue": null,
+      "review_ai_notes": null
+    }
+  ],
+  "resumo_review": {
+    "ok": 27,
+    "resolvido": 1,
+    "ignorado": 1
+  },
+  "pendentes_para_resolver": []
+}
