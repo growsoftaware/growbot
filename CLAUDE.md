@@ -28,6 +28,7 @@ growbot/
 ├── db.py              # Banco de dados DuckDB
 ├── ui.py              # Interface terminal (Rich) - legado
 ├── tui.py             # Dashboard TUI (Textual) - principal
+├── telegram_bot.py    # Bot Telegram para processar exports
 ├── api.py             # FastAPI (UI futura)
 └── system_prompt.md   # Prompt do extrator
 ```
@@ -400,8 +401,60 @@ LEFT JOIN blocos_raw b
     AND m.data_movimento = b.data_entrega;
 ```
 
+## Telegram Bot (telegram_bot.py)
+
+Bot para processar exports do WhatsApp diretamente pelo Telegram.
+
+### Configuração
+```bash
+# .env
+TELEGRAM_BOT_TOKEN=seu_token_do_botfather
+TELEGRAM_AUTHORIZED_USERS=123456789  # IDs separados por vírgula
+```
+
+### Execução
+```bash
+source venv/bin/activate
+python telegram_bot.py
+```
+
+### Fluxo de Uso
+1. Envie arquivo `.txt` ou `.zip` (export do WhatsApp)
+2. Selecione o **driver** (mostra ✨ novos e 🔄 reimportar)
+3. Selecione a **data**
+4. Escolha o **modo de processamento**:
+   - **👁️ Ver 1 por 1**: Valida cada bloco manualmente
+   - **⚡ Auto**: Processa tudo, só mostra dúvidas
+
+### Modos de Processamento
+
+| Modo | Descrição |
+|------|-----------|
+| Ver 1 por 1 | Mostra texto completo de cada bloco para validação |
+| Auto | Auto-confirma blocos OK, só para em dúvidas (sem itens, qtd alta, produto curto) |
+
+### Comandos
+| Comando | Descrição |
+|---------|-----------|
+| `/start` | Boas-vindas e instruções |
+| `/status` | Últimos arquivos salvos |
+| `/saldo` | Saldo por driver |
+| `/saldo RODRIGO` | Saldo de um driver |
+| `/cancelar` | Cancelar processamento |
+
+### Detecção de Dúvidas (Modo Auto)
+- Nenhum item detectado no bloco
+- Quantidade > 50 (suspeita)
+- Produto com ≤ 2 caracteres
+- Issues do parser (driver/data faltando)
+
+### Salvamento
+- Salva em `blocos_raw` (texto original) + `movimentos` (itens parseados)
+- Suporta reimportação (deleta dados antigos antes de inserir)
+
 ## Próximos passos sugeridos
-1. [ ] UI web (FastAPI + React/shadcn) para comparar outputs
+1. [x] ~~Telegram Bot para processar exports~~
+2. [ ] UI web (FastAPI + React/shadcn) para comparar outputs
 2. [ ] Detecção de endereços no parser (antes do LLM)
 3. [ ] Batch processing para arquivos grandes
 4. [ ] Exportar relatórios do TUI para PDF/Excel

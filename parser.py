@@ -143,18 +143,46 @@ def detectar_data(texto: str, data_base: datetime = None) -> Optional[str]:
     # Formato DD/MM/YYYY ou DD/MM/YY
     match = re.search(r'(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?', texto)
     if match:
-        dia, mes = match.group(1), match.group(2)
-        ano = match.group(3) or (data_base.year if data_base else 2025)
-        if len(str(ano)) == 2:
-            ano = f"20{ano}"
-        return f"{dia.zfill(2)}/{mes.zfill(2)}/{ano}"
+        dia, mes = int(match.group(1)), int(match.group(2))
+        ano_str = match.group(3)
+
+        if ano_str:
+            # Ano explícito
+            ano = int(ano_str)
+            if ano < 100:
+                ano = 2000 + ano
+        else:
+            # Ano não especificado - inferir do timestamp
+            ano = data_base.year if data_base else 2025
+
+            # Se a data seria no futuro relativo ao timestamp, usar ano anterior
+            # Ex: timestamp 01/01/2026, texto "31/12" -> deve ser 31/12/2025
+            if data_base:
+                try:
+                    data_mencionada = datetime(ano, mes, dia)
+                    if data_mencionada > data_base:
+                        ano -= 1
+                except ValueError:
+                    pass  # Data inválida, manter ano original
+
+        return f"{str(dia).zfill(2)}/{str(mes).zfill(2)}/{ano}"
 
     # Formato "DD do MM"
     match = re.search(r'(\d{1,2})\s+do\s+(\d{1,2})', texto)
     if match:
-        dia, mes = match.group(1), match.group(2)
+        dia, mes = int(match.group(1)), int(match.group(2))
         ano = data_base.year if data_base else 2025
-        return f"{dia.zfill(2)}/{mes.zfill(2)}/{ano}"
+
+        # Mesma lógica: se seria futuro, usar ano anterior
+        if data_base:
+            try:
+                data_mencionada = datetime(ano, mes, dia)
+                if data_mencionada > data_base:
+                    ano -= 1
+            except ValueError:
+                pass
+
+        return f"{str(dia).zfill(2)}/{str(mes).zfill(2)}/{ano}"
 
     # Dia da semana
     if data_base:
