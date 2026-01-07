@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-GrowBot Telegram - v1.1
-Modos de processamento: 1por1 ou Auto (só dúvidas).
+GrowBot Telegram - v2.0
+Agente conversacional com Claude.
 """
 
 import os
@@ -32,6 +32,7 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from db import GrowBotDB
 from parser import parsear_arquivo, Bloco
+from llm import chat_with_context
 
 # Carregar variáveis de ambiente
 load_dotenv()
@@ -113,6 +114,65 @@ class FileAnalysis:
     total_lines: int = 0
     raw_content: str = ""
     saved_filename: str = ""
+
+
+@dataclass
+class ConversationContext:
+    """Contexto de conversa para o agente."""
+    user_id: int
+    history: List[dict] = field(default_factory=list)  # [{"role": "user/assistant", "content": "..."}]
+    file_data: Optional[dict] = None  # Dados do arquivo atual
+    selected_driver: Optional[str] = None
+    selected_date: Optional[str] = None
+    pending_blocks: List[dict] = field(default_factory=list)
+    confirmed_blocks: List[dict] = field(default_factory=list)
+    current_block_idx: int = 0
+    last_action: Optional[str] = None
+
+    def to_context_dict(self) -> dict:
+        """Converte para dict para enviar ao LLM."""
+        return {
+            "arquivo_carregado": self.file_data is not None,
+            "driver_selecionado": self.selected_driver,
+            "data_selecionada": self.selected_date,
+            "total_blocos_pendentes": len(self.pending_blocks),
+            "total_blocos_confirmados": len(self.confirmed_blocks),
+            "bloco_atual_idx": self.current_block_idx,
+            "ultima_acao": self.last_action,
+            "resumo_arquivo": self._resumo_arquivo() if self.file_data else None,
+            "bloco_atual": self._bloco_atual() if self.pending_blocks else None
+        }
+
+    def _resumo_arquivo(self) -> dict:
+        """Retorna resumo do arquivo para contexto."""
+        if not self.file_data:
+            return None
+        return {
+            "drivers": list(self.file_data.get("driver_stats", {}).keys()),
+            "stats": {
+                driver: {
+                    "novos": len(stats.get("new", [])),
+                    "existentes": len(stats.get("existing", []))
+                }
+                for driver, stats in self.file_data.get("driver_stats", {}).items()
+            }
+        }
+
+    def _bloco_atual(self) -> dict:
+        """Retorna info do bloco atual."""
+        if not self.pending_blocks or self.current_block_idx >= len(self.pending_blocks):
+            return None
+        bloco = self.pending_blocks[self.current_block_idx]
+        return {
+            "id": bloco.get("id_entrega"),
+            "texto": bloco.get("texto_raw", "")[:200],
+            "items": bloco.get("items", []),
+            "ambiguidades": bloco.get("ambiguidades", [])
+        }
+
+
+# Contextos de conversa por usuário
+conversation_contexts: Dict[int, ConversationContext] = {}
 
 
 def normalize_product(name: str) -> str:
@@ -1707,10 +1767,11 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_authorized(user_id):
         return
 
-    # Verificar se está aguardando entrada de data manual
+    text = update.message.text.strip()
+
+    # Verificar se está aguardando entrada de data manual (modo legado)
     if user_id in user_states and user_states[user_id].get('mode') == 'await_date_input':
         state = user_states[user_id]
-        text = update.message.text.strip()
 
         # Tentar parsear data
         date_match = re.match(r'^(\d{1,2})/(\d{1,2})(?:/(\d{2,4}))?$', text)
@@ -1730,8 +1791,6 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 "Iniciando processamento..."
             )
 
-            # Criar query fake para iniciar processamento
-            # Usamos send_message e depois chamamos a função
             await start_block_processing_from_message(update.message, context, user_id)
             return
         else:
@@ -1742,7 +1801,365 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
             return
 
-    await update.message.reply_text("Envie um arquivo .txt ou .zip\nUse /help para ajuda.")
+    # ============ MODO AGENTE CONVERSACIONAL ============
+    await handle_agent_message(update, context, user_id, text)
+
+
+async def handle_agent_message(update: Update, context: ContextTypes.DEFAULT_TYPE, user_id: int, text: str):
+    """Processa mensagem usando o agente Claude."""
+
+    # Obter ou criar contexto de conversa
+    if user_id not in conversation_contexts:
+        conversation_contexts[user_id] = ConversationContext(user_id=user_id)
+
+    conv_ctx = conversation_contexts[user_id]
+
+    # Sincronizar com user_states se houver arquivo carregado
+    if user_id in user_states and not conv_ctx.file_data:
+        state = user_states[user_id]
+        conv_ctx.file_data = {
+            "driver_stats": state.get("driver_stats", {}),
+            "file_sessions": state.get("file_sessions", {}),
+            "existing_sessions": state.get("existing_sessions", {}),
+            "saved_files": state.get("saved_files", [])
+        }
+
+    # Adicionar mensagem do usuário ao histórico
+    conv_ctx.history.append({"role": "user", "content": text})
+
+    # Mostrar "digitando..."
+    await update.message.chat.send_action("typing")
+
+    try:
+        # Chamar Claude com contexto
+        response = chat_with_context(
+            message=text,
+            history=conv_ctx.history,
+            context=conv_ctx.to_context_dict()
+        )
+
+        message = response.get("message", "Desculpe, não entendi.")
+        action = response.get("action")
+        params = response.get("params", {})
+
+        # Executar ação se houver
+        if action:
+            action_result = await execute_agent_action(update, context, user_id, action, params)
+            if action_result:
+                # Se a ação retornou uma mensagem adicional, anexa
+                message = f"{message}\n\n{action_result}"
+
+        # Adicionar resposta ao histórico
+        conv_ctx.history.append({"role": "assistant", "content": message})
+        conv_ctx.last_action = action
+
+        # Responder ao usuário
+        await update.message.reply_text(message, parse_mode="Markdown")
+
+    except Exception as e:
+        logger.error(f"Erro no agente: {e}")
+        await update.message.reply_text(
+            f"Desculpe, tive um problema. Tenta de novo?\n\n"
+            f"Ou use os botões enviando o arquivo novamente."
+        )
+
+
+async def execute_agent_action(
+    update: Update,
+    context: ContextTypes.DEFAULT_TYPE,
+    user_id: int,
+    action: str,
+    params: dict
+) -> Optional[str]:
+    """Executa ação retornada pelo agente Claude."""
+
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return None
+
+    logger.info(f"Executando ação: {action} com params: {params}")
+
+    try:
+        match action:
+            case "SHOW_SUMMARY":
+                # Já incluído na mensagem do Claude
+                return None
+
+            case "SELECT_DRIVER":
+                driver = params.get("driver", "").upper()
+                if driver in DRIVERS:
+                    conv_ctx.selected_driver = driver
+                    # Sincroniza com user_states para compatibilidade
+                    if user_id in user_states:
+                        user_states[user_id]["driver"] = driver
+                return None
+
+            case "SELECT_DATE":
+                date = params.get("date", "")
+                conv_ctx.selected_date = date
+                if user_id in user_states:
+                    user_states[user_id]["data"] = date
+
+                # Carregar blocos para esta data
+                await load_blocks_for_context(user_id)
+                return None
+
+            case "PROCESS_AUTO":
+                if conv_ctx.selected_driver and conv_ctx.selected_date:
+                    # Carrega blocos se ainda não carregou
+                    if not conv_ctx.pending_blocks:
+                        await load_blocks_for_context(user_id)
+
+                    # Processa automaticamente
+                    return await auto_process_context_blocks(user_id)
+                return "Selecione driver e data primeiro."
+
+            case "CONFIRM_BLOCK":
+                block_id = params.get("id", "")
+                return await confirm_context_block(user_id, block_id)
+
+            case "SKIP_BLOCK":
+                block_id = params.get("id", "")
+                return await skip_context_block(user_id, block_id)
+
+            case "CONFIRM_ALL":
+                return await confirm_all_context_blocks(user_id)
+
+            case "SAVE":
+                return await save_context_to_db(user_id)
+
+            case "CANCEL":
+                conv_ctx.pending_blocks = []
+                conv_ctx.confirmed_blocks = []
+                conv_ctx.selected_driver = None
+                conv_ctx.selected_date = None
+                return "Operação cancelada."
+
+            case "QUERY_SALDO":
+                driver = params.get("driver")
+                return await query_saldo(driver)
+
+            case _:
+                return None
+
+    except Exception as e:
+        logger.error(f"Erro executando ação {action}: {e}")
+        return f"Erro ao executar: {e}"
+
+
+async def load_blocks_for_context(user_id: int):
+    """Carrega blocos para o contexto de conversa."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx or not conv_ctx.file_data:
+        return
+
+    driver = conv_ctx.selected_driver
+    date = conv_ctx.selected_date
+
+    if not driver or not date:
+        return
+
+    # Usar arquivos salvos
+    saved_files = conv_ctx.file_data.get("saved_files", [])
+    all_blocos = []
+
+    for saved_filename, filepath, content in saved_files:
+        try:
+            blocos, log = parsear_arquivo(str(filepath), gerar_log=False)
+            for bloco in blocos:
+                if bloco.driver == driver and bloco.data_entrega == date:
+                    all_blocos.append(bloco)
+        except Exception as e:
+            logger.error(f"Erro ao parsear {filepath}: {e}")
+
+    # Converter para formato dict
+    conv_ctx.pending_blocks = []
+    for bloco in all_blocos:
+        items = extract_items_from_text(bloco.texto)
+        conv_ctx.pending_blocks.append({
+            "id_entrega": bloco.id_entrega,
+            "texto_raw": bloco.texto,
+            "items": [{"produto": i.produto, "quantidade": i.quantidade} for i in items] if items else [],
+            "endereco": extract_address(bloco.texto),
+            "ambiguidades": detect_block_doubts(
+                ParsedBlock(bloco.id_entrega, bloco.texto, items or [], None, 0),
+                bloco
+            )
+        })
+
+    conv_ctx.current_block_idx = 0
+
+
+async def auto_process_context_blocks(user_id: int) -> str:
+    """Processa blocos automaticamente, retorna resumo."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return "Contexto não encontrado."
+
+    ok_count = 0
+    doubt_count = 0
+
+    new_pending = []
+    for bloco in conv_ctx.pending_blocks:
+        if bloco.get("ambiguidades"):
+            doubt_count += 1
+            new_pending.append(bloco)
+        else:
+            ok_count += 1
+            conv_ctx.confirmed_blocks.append(bloco)
+
+    conv_ctx.pending_blocks = new_pending
+    conv_ctx.current_block_idx = 0
+
+    result = f"✅ {ok_count} confirmados automaticamente"
+    if doubt_count > 0:
+        result += f"\n⚠️ {doubt_count} com dúvidas para revisar"
+
+    return result
+
+
+async def confirm_context_block(user_id: int, block_id: str) -> str:
+    """Confirma um bloco específico."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return "Contexto não encontrado."
+
+    for i, bloco in enumerate(conv_ctx.pending_blocks):
+        if bloco.get("id_entrega") == block_id:
+            conv_ctx.confirmed_blocks.append(bloco)
+            conv_ctx.pending_blocks.pop(i)
+            return f"✅ Bloco {block_id} confirmado."
+
+    return f"Bloco {block_id} não encontrado."
+
+
+async def skip_context_block(user_id: int, block_id: str) -> str:
+    """Pula um bloco específico."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return "Contexto não encontrado."
+
+    for i, bloco in enumerate(conv_ctx.pending_blocks):
+        if bloco.get("id_entrega") == block_id:
+            conv_ctx.pending_blocks.pop(i)
+            return f"⏭️ Bloco {block_id} pulado."
+
+    return f"Bloco {block_id} não encontrado."
+
+
+async def confirm_all_context_blocks(user_id: int) -> str:
+    """Confirma todos os blocos pendentes."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return "Contexto não encontrado."
+
+    count = len(conv_ctx.pending_blocks)
+    conv_ctx.confirmed_blocks.extend(conv_ctx.pending_blocks)
+    conv_ctx.pending_blocks = []
+
+    return f"✅ {count} blocos confirmados."
+
+
+async def save_context_to_db(user_id: int) -> str:
+    """Salva blocos confirmados no banco."""
+    conv_ctx = conversation_contexts.get(user_id)
+    if not conv_ctx:
+        return "Contexto não encontrado."
+
+    if not conv_ctx.confirmed_blocks:
+        return "Nenhum bloco confirmado para salvar."
+
+    driver = conv_ctx.selected_driver
+    date = conv_ctx.selected_date
+
+    if not driver or not date:
+        return "Driver ou data não selecionados."
+
+    try:
+        db = GrowBotDB()
+
+        # Converter data DD/MM/YYYY para YYYY-MM-DD
+        parts = date.split('/')
+        data_iso = f"{parts[2]}-{parts[1]}-{parts[0]}"
+
+        # Arquivo origem
+        saved_files = conv_ctx.file_data.get("saved_files", []) if conv_ctx.file_data else []
+        arquivo_origem = saved_files[0][0] if saved_files else None
+
+        blocos_count = 0
+        mov_count = 0
+
+        for bloco in conv_ctx.confirmed_blocks:
+            # Salvar em blocos_raw
+            try:
+                db.conn.execute("""
+                    INSERT INTO blocos_raw (
+                        id_sale_delivery, texto_raw, driver, data_entrega,
+                        arquivo_origem, review_status
+                    ) VALUES (?, ?, ?, ?, ?, 'ok')
+                    ON CONFLICT (id_sale_delivery, driver, data_entrega) DO UPDATE SET
+                        texto_raw = EXCLUDED.texto_raw,
+                        arquivo_origem = EXCLUDED.arquivo_origem,
+                        review_status = 'ok'
+                """, [
+                    bloco["id_entrega"],
+                    bloco["texto_raw"],
+                    driver,
+                    data_iso,
+                    arquivo_origem
+                ])
+                blocos_count += 1
+            except Exception as e:
+                logger.warning(f"Erro ao salvar bloco_raw: {e}")
+
+            # Salvar itens em movimentos
+            for item in bloco.get("items", []):
+                db.conn.execute("""
+                    INSERT INTO movimentos (
+                        tipo, id_sale_delivery, driver, produto, quantidade,
+                        data_movimento, endereco, arquivo_origem
+                    ) VALUES ('entrega', ?, ?, ?, ?, ?, ?, ?)
+                """, [
+                    bloco["id_entrega"],
+                    driver,
+                    item["produto"],
+                    item["quantidade"],
+                    data_iso,
+                    bloco.get("endereco"),
+                    arquivo_origem
+                ])
+                mov_count += 1
+
+        db.close()
+
+        # Limpar blocos confirmados
+        conv_ctx.confirmed_blocks = []
+
+        return f"✅ Salvo!\n📦 {blocos_count} blocos\n📥 {mov_count} movimentos"
+
+    except Exception as e:
+        logger.error(f"Erro ao salvar: {e}")
+        return f"❌ Erro ao salvar: {e}"
+
+
+async def query_saldo(driver: Optional[str] = None) -> str:
+    """Consulta saldo do banco."""
+    try:
+        db = GrowBotDB(read_only=True)
+        saldos = db.saldo_driver(driver)
+        db.close()
+
+        if not saldos:
+            return "Nenhum dado encontrado."
+
+        lines = []
+        for s in saldos:
+            lines.append(f"• {s['driver']}: Est {s['estoque']} + Rec {s['recargas']} - Saí {s['saidas']} = *{s['saldo']}*")
+
+        return "\n".join(lines)
+
+    except Exception as e:
+        return f"Erro ao consultar: {e}"
 
 
 async def start_block_processing_from_message(message, context, user_id: int):

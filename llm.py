@@ -102,6 +102,88 @@ def extract(bloco: str, provider: str = "claude", aliases_path: str = None) -> d
         raise ValueError(f"Provider desconhecido: {provider}")
 
 
+# ============ AGENT CHAT ============
+
+AGENT_PROMPT_PATH = Path(__file__).parent / "system_prompt_agent.md"
+
+
+def load_agent_prompt(context: dict = None) -> str:
+    """Carrega o system prompt do agente e injeta contexto."""
+    with open(AGENT_PROMPT_PATH, 'r', encoding='utf-8') as f:
+        prompt = f.read()
+
+    # Injeta contexto se fornecido
+    if context:
+        context_str = json.dumps(context, indent=2, ensure_ascii=False)
+        prompt = prompt.replace("{context}", context_str)
+    else:
+        prompt = prompt.replace("{context}", "Nenhum arquivo carregado ainda.")
+
+    return prompt
+
+
+def chat_with_context(
+    message: str,
+    history: list = None,
+    context: dict = None,
+    model: str = "claude-sonnet-4-20250514"
+) -> dict:
+    """
+    Envia mensagem para Claude com histórico de conversa e contexto.
+
+    Args:
+        message: Mensagem do usuário
+        history: Lista de mensagens anteriores [{"role": "user/assistant", "content": "..."}]
+        context: Dicionário com contexto atual (arquivo, driver, data, blocos, etc.)
+        model: Modelo Claude a usar
+
+    Returns:
+        dict com {"message": str, "action": str|None, "params": dict}
+    """
+    import anthropic
+
+    client = anthropic.Anthropic()
+    system_prompt = load_agent_prompt(context)
+
+    # Monta histórico de mensagens
+    messages = []
+    if history:
+        # Limita a últimas 20 mensagens para economia de tokens
+        for msg in history[-20:]:
+            messages.append({"role": msg["role"], "content": msg["content"]})
+
+    # Adiciona mensagem atual
+    messages.append({"role": "user", "content": message})
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=1024,
+            system=system_prompt,
+            messages=messages
+        )
+
+        texto = response.content[0].text
+
+        # Tenta parsear como JSON
+        try:
+            return extrair_json(texto)
+        except json.JSONDecodeError:
+            # Se não for JSON válido, retorna como mensagem simples
+            return {
+                "message": texto,
+                "action": None,
+                "params": {}
+            }
+
+    except Exception as e:
+        return {
+            "message": f"Erro ao processar: {str(e)}",
+            "action": None,
+            "params": {}
+        }
+
+
 def main():
     import argparse
 
