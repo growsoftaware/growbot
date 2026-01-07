@@ -60,3 +60,13 @@ O sync popula duas tabelas principais:
 
 - `blocos_raw` - Texto original do WhatsApp (1 por entrega) + campos de review
 - `movimentos` - Itens parseados (N por entrega, 1 por produto)
+
+## Sync para Windows (DataGrip)
+
+Após o sync, copie o banco para o Windows para acesso via DataGrip:
+
+```bash
+cp growbot.duckdb /mnt/c/temp/
+```
+
+Caminho no Windows: `C:\temp\growbot.duckdb`
